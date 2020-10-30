@@ -1,0 +1,243 @@
+                           - Physpec SDK Library -
+
+About
+=====
+
+This Library is intended to be used with Photon etc. filters. In its current
+state, it is compatible with only LLTF Contrast. This document explains some
+particularities of this Library to ease the first contact.
+
+First steps walkthrough
+=======================
+
+First you need to create the environment in which the library will be working.
+To do so, call 'PE_Create()' with the configuration file (XML) appropriate for
+your instrument. This file is usually located in PHySpec installation directory
+(C:\Program Files (x86)\Photon etc\PHySpecV2) and is named 'system.xml'. All 
+information needed for your instrument to work is contained in this file. Be
+aware that unwarranted modification to this file can cause the instrument to
+stop working, but cannot cause physical damage.
+
+The next step is to connect to your instrument using 'PE_Open()' function. The
+name needed can be found in the configuration file or by enumerating the
+systems currently available for your configuration. To enumerate the systems
+names, call 'PE_GetSystemCount()' to know the number of systems and then
+iterate through those system using 'PE_GetSystemName()' to retrieve their name.
+
+Now you can control the central filtering wavelength of your instrument with
+'PE_SetWavelength()'. Other information is also provided to describe the state
+of the instrument.
+
+At the end of your program, you should cleanup resources in use by calling
+'PE_Close()' to disconnect the instrument and then 'PE_Destroy()' to clear the
+library environment. If you do not call those functions, the instrument may
+become unresponsive to your next attempt to connect. To resolve this, simply
+power cycle your instrument.
+
+Example in C
+============
+
+#include <PE_Filter.h>
+
+int main(int argc, char *argv[])
+{
+	PE_HANDLE handle = NULL;
+	char systemName[256];
+
+	// Please note that error checks are omitted for clarity reasons
+	PE_Create("system.xml", &handle);
+
+	// Retrieve the first system name available
+	PE_GetSystemName(handle, 0, systemName, sizeof(systemName));
+
+	// Connect to the system found
+	PE_Open(hanlde, systemName);
+
+	// Select an arbitrary wavelength
+	PE_SetWavelength(handle, 650.0);
+
+	// Cleanup resource
+	PE_Close(handle);
+	PE_Destory(handle);
+}
+
+
+Example in C#
+=============
+
+public unsafe class LLTF
+{
+    //RETURN ERROR CODES
+    public enum PE_STATUS
+    {
+	    PE_SUCCESS = 0,		//!< Successful operation
+	    PE_FAILURE,			//!< Instrument communication failure
+	    PE_MISSING_FILTER,		//!< Missing filter from configuration file
+	    PE_INVALID_FILTER,		//!< Filter request does not match any available
+	    PE_INVALID_WAVELENGTH,	//!< Wavelength is out of bound
+	    PE_INVALID_HANDLE,		//!< Handle is already deleted or null
+	    PE_UNKNOWN			//!< Unknown status
+    };
+
+
+    //! Creates filter resource with configuration file but do not connect to filter.
+    //! @param[in] conffile Full path to the XML configuration file
+    //! @param[out] peHandle Handle to the resource created
+    //! @return Error code
+    [DllImport(@"libPhyspec.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Auto)]
+    public static extern ushort PE_Create([MarshalAs(UnmanagedType.LPStr)]string dllname, out IntPtr handle);
+
+    //! Destroys filter resource previously created with PE_Create().
+    //! @param[in] peHandle Handle to the resource
+    //! @return Error code
+    [DllImport(@"libPhyspec.dll", CallingConvention = CallingConvention.Cdecl)]
+    public static extern ushort PE_Destroy(IntPtr handle);
+
+    //! Gets the number of systems available in the configuration file.
+    //! @param[in] peHandle Handle to the resource
+    //! @return Number of configured systems
+    [DllImport(@"libPhyspec.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Auto)]
+    public static extern ushort PE_GetSystemCount(IntPtr handle);
+
+    //! Gets the name of the system specified by @c index in the list of systems.
+    //! @param[in] peHandle Handle to the resource
+    //! @param[in] index Position of the system to get
+    //! @param[out] name String defining uniquely a system
+    //! @param[in] dize Maximum length of the given string buffer
+    //! @return Error code
+    [DllImport(@"libPhyspec.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Auto)]
+    public static extern ushort PE_GetSystemName(IntPtr handle, [MarshalAs(UnmanagedType.U4)]uint index, StringBuilder systemName, [MarshalAs(UnmanagedType.U4)]uint stringBufferSize);
+
+    //! Opens a communicaiton channel with the filter with the given name.
+    //! @param[in] peHandle Handle to the resource
+    //! @param[in] name String defining uniquely a system
+    //! @return Error code
+    [DllImport(@"libPhyspec.dll", CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Auto)]
+    public static extern ushort PE_Open(IntPtr handle, StringBuilder systemName);
+
+    //! Closes the communication and reset the filter.
+    //! @param[in] peHandle Handle to the resource
+    //! @return Error code
+    [DllImport(@"libPhyspec.dll", CallingConvention = CallingConvention.Cdecl)]
+    public static extern ushort PE_Close(IntPtr handle);
+
+    //! Gets the current central wavelength filtered by the system.
+    //! @param[in] peHandle Handle to the resource
+    //! @param[out] wavelength Central wavelength in nanometers
+    //! @return Error code
+    [DllImport(@"libPhyspec.dll", CallingConvention = CallingConvention.Cdecl)]
+    public static extern ushort PE_GetWavelength(IntPtr handle, out double wavelength);
+
+    //! Sets the central wavelength of the system.
+    //! @param[in] peHandle Handle to the resource
+    //! @param[out] wavelength Central wavelength in nanometers
+    //! @return Error code
+    [DllImport(@"libPhyspec.dll", CallingConvention = CallingConvention.Cdecl)]
+    public static extern ushort PE_SetWavelength(IntPtr handle, double wavelength);
+
+    //! Gets the wavelength range of the system.
+    //! @param[in] peHandle Handle to the resource
+    //! @param[out] minimum Minimum wavelength in nanometers
+    //! @param[out] maximum Maximum wavelength in nanometers
+    //! @return Error code
+    [DllImport(@"libPhyspec.dll", CallingConvention = CallingConvention.Cdecl)]
+    public static extern ushort PE_GetWavelengthRange(IntPtr handle, out double minimum, out double maximum);
+
+    //! Gets the availability of the harmonic filter accessory.
+    //! @param[in] peHandle Handle to the resource
+    //! @return A non-zero value is returned if available, otherwise zero is returned
+    [DllImport(@"libPhyspec.dll", CallingConvention = CallingConvention.Cdecl)]
+    public static extern ushort PE_HasHarmonicFilter(IntPtr handle);
+
+    //! Gets the status of the harmonic filter accessory.
+    //! @param[in] peHandle Handle to the resource
+    //! @param[out] enable State of the harmonic filter
+    //! @return Error code
+    [DllImport(@"libPhyspec.dll", CallingConvention = CallingConvention.Cdecl)]
+    public static extern ushort PE_GetHarmonicFilterEnabled(IntPtr handle, out uint enable);
+
+    //! Sets the status of the harmonic filter accessory.
+    //! @param[in] peHandle Handle to the resource
+    //! @param[in] enable State of the harmonic filter
+    //! @return Error code
+    [DllImport(@"libPhyspec.dll", CallingConvention = CallingConvention.Cdecl)]
+    public static extern ushort PE_SetHarmonicFilterEnabled(IntPtr handle, uint enable);
+
+    //! Gets the string explaining the given status code.
+    //! @param[in] code Status code to describe
+    //! @return String describing the status code, do not free memory
+    [DllImport(@"libPhyspec.dll", CallingConvention = CallingConvention.Cdecl)]    
+    public static extern IntPtr PE_GetStatusStr(PE_STATUS pE_STATUS);
+
+    //! Gets the version number of this library.
+    //! @return Version number encoded as (major << 16) + (minor << 8) + bugfix
+    [DllImport(@"libPhyspec.dll", CallingConvention = CallingConvention.Cdecl)]
+    public static extern uint PE_GetLibraryVersion();
+
+
+}
+
+namespace LLTFGUI
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+        }
+
+        private void btnLLTFTesdSDK_Click(object sender, RoutedEventArgs e)
+        {   
+                //LLTF hardware configuration information.
+                string fileName = @"system.xml";
+
+                //convert from string to pointers
+                IntPtr filePtr = Marshal.StringToHGlobalAnsi(fileName);
+
+                //get handle to talk to LLTF hardware  
+                IntPtr handle = IntPtr.Zero;                                  
+                ushort statusResponse = LLTF.PE_Create(fileName, out handle);
+                               
+                //find out how many LLTF systems are attached
+                int intLLTFCount = LLTF.PE_GetSystemCount(handle);
+
+                //set up variables to call PE_GetSystemName
+                int intSystemNameStringLength = 256;
+                StringBuilder stringSystemName = new StringBuilder(intSystemNameStringLength);
+
+                //Retrieve the first system name available
+                statusResponse = LLTF.PE_GetSystemName(handle, (uint)0, stringSystemName, (uint)intSystemNameStringLength);
+
+                //open a channel with the filter
+                statusResponse = LLTF.PE_Open(handle, stringSystemName);
+
+                uint uintHarmonicFilterEnabledState;
+                statusResponse = LLTF.PE_GetHarmonicFilterEnabled(handle, out uintHarmonicFilterEnabledState);
+               
+                double wavelength = 0;
+                statusResponse = LLTF.PE_GetWavelength(handle, out wavelength); 
+                statusResponse = LLTF.PE_SetWavelength(handle, 1500.0);
+
+                //also available system info
+                uint version = LLTF.PE_GetLibraryVersion();
+
+                //example how to call PE_GetStatusStr
+                int intStringLength = 256;
+                StringBuilder strResponseCode = new StringBuilder(intStringLength);
+                //convert from string to pointers
+                IntPtr pResponseCode= Marshal.StringToHGlobalAnsi(strResponseCode.ToString());
+                //Get the string explaining the given status code.
+                pResponseCode = LLTF.PE_GetStatusStr(LLTF.PE_STATUS.PE_MISSING_FILTER);
+                //convert from string to pointers
+                Console.WriteLine(Marshal.PtrToStringAnsi(pResponseCode, intStringLength));           
+
+                // Cleanup resource
+                statusResponse = LLTF.PE_Close(handle);
+                statusResponse = LLTF.PE_Destroy(handle);        
+        }
+
+    }
+}

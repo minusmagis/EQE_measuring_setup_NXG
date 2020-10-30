@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="4B88C96EE24ECED4075CD8A9CC934A2691BC605FF1B7970044F8B34321BC602E5C0D55D13341324B2CAADBE9F67C4495CCE29FC1FB9EBB721C33BD4DD256B3AB" Timestamp="1D592F2793E567D" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="External Code" Name="http://www.ni.com/ExternalCode" OldestCompatibleVersion="5.1.0.0" Version="5.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="6.1.0.1" Version="6.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="6.2.0.49154" Version="6.2.0.49154" />
+		<ApplicationVersionInfo Build="6.4.1.50844" Name="LabVIEW NXG" Version="3.1.0" />
+	</SourceModelFeatureSet>
+	<ComponentDefinition DefaultConfigurationName="Default" Id="75edd0e95434448cb41b669808f3db21" RootNamespaceId="c99ba90272a140188f344e4f4704d224" xmlns="http://www.ni.com/GComponent.xsd">
+		<Icon Id="71a00e79e6144a5ca9f39e91dd84d0ff" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="ea604037c376486382240280526a96e0" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate Height="[float]40" Id="24515218467548a38848e41858f0aa4e" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
+			</IconPanel>
+		</Icon>
+		<CompilerSymbolTable Id="47c977314cd543e4b6e1cb4d30396c9b" xmlns="http://www.ni.com/PlatformFramework" />
+		<ComponentConfiguration Id="506a0dc2d0b1451f9ecf5854a1e43515" Name="Default">
+			<CompilerSymbolTable Id="2a07810bc89c49d0bd80bb3a0076947a" xmlns="http://www.ni.com/PlatformFramework" />
+			<ComponentItemProperties AssociatedEnvoyId="e16e1a8bb4ad45dfba13d5efa60a35c3" Exported="True" Id="5bc57be382aa444dac9adf389d0f717e" />
+			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="beeaa42b630f494bbcd4e9e224f86a15" Id="39482d93814545218556a181e554d7bb" />
+		</ComponentConfiguration>
+	</ComponentDefinition>
+	<EnvoyManagerFile Id="469d58d6857d4c3290d5b4d72704330a" xmlns="http://www.ni.com/PlatformFramework">
+		<ProjectSettings Id="bad4aebce1724b58a96e79dc004393bd" ModelDefinitionType="ProjectSettings" Name="ZProjectSettings" />
+		<EmbeddedDefinitionReference Id="6a076dd7a8634f3db8a2427eef1815e4" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionEnvoyHierarchyRoot" Name="Global namespace">
+			<ComponentDefinitionEnvoyHierarchyRoot xmlns="http://www.ni.com/GComponent.xsd" />
+			<NameScopingEnvoy AutomaticallyResolveUp="True" Id="c99ba90272a140188f344e4f4704d224" Name="Main">
+				<EmbeddedDefinitionReference Id="444d60826ee143e09893ff685aef9ff8" ModelDefinitionType="NationalInstruments.ProjectExplorer.ExternalFileSupport.Modeling.ExternalFileType" Name="PHySpec.log">
+					<ExternalFile>
+						<p.StoragePath>PHySpec.log</p.StoragePath>
+					</ExternalFile>
+				</EmbeddedDefinitionReference>
+				<SourceFileReference Bindings="EnvoyManager" Id="e16e1a8bb4ad45dfba13d5efa60a35c3" ModelDefinitionType="{http://www.ni.com/ExternalCode}SharedLibrary" Name="PE_Filter_SDK.sli" StoragePath="PE_Filter_SDK.sli" />
+				<EmbeddedDefinitionReference Id="beeaa42b630f494bbcd4e9e224f86a15" ModelDefinitionType="NationalInstruments.ProjectExplorer.ExternalFileSupport.Modeling.ExternalFileType" Name="PE_Filter_SDK.dll">
+					<ExternalFile>
+						<p.StoragePath>PE_Filter_SDK.dll</p.StoragePath>
+					</ExternalFile>
+				</EmbeddedDefinitionReference>
+			</NameScopingEnvoy>
+		</EmbeddedDefinitionReference>
+		<NameScopingEnvoy Id="914a29370fa3490d94de6c6657236470" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionContentReferenceRoot" Name="Main.gcomp" NameTracksFileName="True">
+			<ComponentDefinitionContentReferenceRoot xmlns="http://www.ni.com/GComponent.xsd" />
+			<ContentReference ContentIdentifier="506a0dc2d0b1451f9ecf5854a1e43515" Id="483daf68687949f1819c287fb7bc0755" Name="Default" OverridingModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentConfiguration" />
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+</SourceFile>

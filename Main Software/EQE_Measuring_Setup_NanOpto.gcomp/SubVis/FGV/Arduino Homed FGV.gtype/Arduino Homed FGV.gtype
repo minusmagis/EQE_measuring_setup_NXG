@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="F61681EDA62F685153E208B46F508462F852289F1D6C4DD2E7D2D13FBFC220FADD9872AE0EA873455ED62C5FCED7121FF8F38E6A4EC8584A1653330FB755392F" Timestamp="1D64959874F1A2C" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="6.2.0.49153" Version="6.2.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="6.2.0.49154" Version="6.2.0.49154" />
+		<ApplicationVersionInfo Build="6.4.1.50844" Name="LabVIEW NXG" Version="3.1.0" />
+	</SourceModelFeatureSet>
+	<TypeDefinition DataType="@2cda4faab604465593ee00061d4467b4" Id="f37b73b1066b47d48ee8d8c0d0066ed8" xmlns="http://www.ni.com/MocCommon">
+		<Icon Id="9bb9f217c4624080bd5f3a6afbb8a979" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="1bb1ae9b12e0442fbd891ee777712aea" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate Height="[float]40" Id="3e844c9ded724f98a96d31beeed4ce5d" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
+			</IconPanel>
+		</Icon>
+		<DataItem DataType="@2cda4faab604465593ee00061d4467b4" Id="151d42ab65ff4cffa6bfd2341f45152b" Name="Arduino Homed instructions">
+			<p.DefaultValue>0</p.DefaultValue>
+		</DataItem>
+	</TypeDefinition>
+	<EnvoyManagerFile Id="ecde2a36a9fe4ff7a90d471a1f388318" xmlns="http://www.ni.com/PlatformFramework">
+		<ProjectSettings Id="299add28cb9f4494af7d308e51aeb423" ModelDefinitionType="ProjectSettings" Name="ZProjectSettings" />
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="384d536f762d446989040cde14f0433f" Name="Type.gtype" NameTracksFileName="True">
+			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy" Id="4a7101989a4846778cf27a5d5fde7432" ModelDefinitionType="NationalInstruments.PanelCommon.SourceModel.ControlDefinition" Name="ControlDefinition">
+				<ControlDefinition DefaultDirection="Control" Id="62f2fb38d6304a8f8a6767d2e42b6198" xmlns="http://www.ni.com/MocCommon">
+					<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]24" Id="abce3876204a421d85929678ebc5f027" IsTypeAheadEnabled="[bool]True" Label="[UIModel]56b24308a5054f57844dc7f522d3e6ab" Left="[float]342" MinHeight="[float]24" TabIndex="[int]0" Top="[float]140" Value="{DataItemBinding Id=151d42ab65ff4cffa6bfd2341f45152b}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]204" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+						<EnumSelectorInfo DisplayValue="[string]Read Current State" DisplayValueOverride="[string]" Id="26" IsEnabled="[bool]True" Value="[ushort]0" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Reset to not Homed" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]1" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Set to Homed" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]2" ValueType="[Type]UInt16" />
+					</EnumSelector>
+					<Label Height="[float]16" Id="56b24308a5054f57844dc7f522d3e6ab" LabelOwner="[UIModel]abce3876204a421d85929678ebc5f027" Left="[float]342" Text="[string]Arduino Homed instructions" Top="[float]120" Width="[float]150" xmlns="http://www.ni.com/PanelCommon" />
+				</ControlDefinition>
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="2cda4faab604465593ee00061d4467b4">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="Read Current State" />
+					<EnumerationMember Value="1" Name="Reset to not Homed" />
+					<EnumerationMember Value="2" Name="Set to Homed" />
+				</Members>
+				<DataType>UInt16</DataType>
+			</Enumeration>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>

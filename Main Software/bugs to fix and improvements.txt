@@ -1,0 +1,64 @@
+-R.01 X:145.50 Z:0.50
+Calibrate the exact wavelength (we have seen that deviations are well within the fwhm a part from the clearest ones on the transition)
+~Transition between grids fix
+~Plot labels corresponding to cell labels
+-correct the R.01 origin coordinate
+~ficar missatge avisant de que ja esta
+~Scan de celes per trobar punt optim
+valor potencia photodetector a 550 nm 
+~implementar un set position custom
++implementar un read current position (no te sentit perque sempre sha dinicialitzar)
+implement some kind of startup tour to guide the user
+~add message while laser is turning on / off (even a progress bar could do it on the side of the button)
+~add arduino flip switch
+-fix date being wrong
+~fix l and r coordinates
+~remove the messages that arduino says
+--dark current move cell out of the way
+~hacer un boton para cambiar de monochromador (modificar wavelength max i min segun monochromador)
+~Cambiar texto boton laser
+~Add chicken out functionality in global abort and prevent people from closing the window
+~add small progress indicator when measuring
+?mejorar la initialization progres bar
+~output dark current real time
+~increase timeout for dark current measurement because it takes too long sometimes
+??average the calibration to deminish the ammount of noise in the peaks
+~Save reference coordinates when changed
+~Manual acqire initialize keithley does not work sometimes
+~fix the intensity jump by changing the wavelength of the jump
+portar cable micro usb mes flexible
+~mirar be la alineacio del laser amb les cel·les
+afegir autoalineation feature
+~afegir feature skip to next cell
+~set current wavelength always even within the measurement
+~turn keithley on only
+~fer la mesura de dark currents totes alhora amb el carriage quiet i apartat
+-opcio de mesurar IV
+~Acceptar name change on the flight
+~funcio que estimi el temps de mesura previ a mesurar
+donar opcio de mesurar a diferents voltatges en una mateixa mesura
+~afegir opció escollir separacio entre l i r 
+~funcio trobar r1 automaticament
+~custom multiplexer cell selection
+add a checkup subroutine that checks the fiannium file if it is the right one or not
+
+substract dark current on all measurements
+~Check beforehand if cells are dead or not
+Check if R.01 Cell is dead and if it is do not scan it for reference and scan another one
+~Fix multiple aqcuire progress bar (it does not add the progress of each cell)
+~add a percentage counter to the progress bar
+~skip cell es salta totes les celes
+plot auto adjusts only to fist cell so next ones not visible if first skipped
+~buffer primera mesura esta dessincronitzat (fer un clear buffer abans)
+~fix skip cell not being able to skip because initialize app (Cancelar que el current state sigui necessariament multiple acquire)
+check if any of the names will have to be replaced and ask beforehand
+~try to make faster measurements when cell is low on current
+~dark current not getting into the saved file
+enviar telegram quan acabi i personalitzarho segons autor
+scan every cell maybe??
+calculate theoretical efficiency for a given voc and fill factor
+prevent the main window from appearing while initializing
+make faster measurements
+~set threshold to 10e-8
+~falta connectar dead cell threshold current de single parameters a multiple parameters
+change sequences for state machines

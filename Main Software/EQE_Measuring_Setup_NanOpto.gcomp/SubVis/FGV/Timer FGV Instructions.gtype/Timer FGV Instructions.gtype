@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="485440CC388AC4F43A5480A51D5A4250EC1E094C8F3957AA047157FBBCDD0DE1B21FF219E68AF4033C69837307FC4102B105B76990CBBB08DB042DEE9FF27AFE" Timestamp="1D64333038CF249" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="6.2.0.49153" Version="6.2.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="6.2.0.49154" Version="6.2.0.49154" />
+		<ApplicationVersionInfo Build="6.4.1.50844" Name="LabVIEW NXG" Version="3.1.0" />
+	</SourceModelFeatureSet>
+	<TypeDefinition DataType="@eea2ed0cded54dba96138e3952abed9f" Id="26321f11f1cf4c19abceba5fb86e60bb" xmlns="http://www.ni.com/MocCommon">
+		<Icon Id="2efed9d3b6de438e8ef516df894caf9d" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="d6714431ef59483a989f88b42b639787" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate Height="[float]40" Id="261b41a89ffa4168b725bbb8593548b6" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
+			</IconPanel>
+		</Icon>
+		<DataItem DataType="@eea2ed0cded54dba96138e3952abed9f" Id="1523ffad7bae48a9b111fb5805840a50" Name="Enum">
+			<p.DefaultValue>0</p.DefaultValue>
+		</DataItem>
+	</TypeDefinition>
+	<EnvoyManagerFile Id="1a07a4001cd34319be8e9f002837869e" xmlns="http://www.ni.com/PlatformFramework">
+		<ProjectSettings Id="42aaa71631154be6997aec6e5060e67d" ModelDefinitionType="ProjectSettings" Name="ZProjectSettings" />
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="a8efb501f53448db8175b14753be6d2c" Name="Timer FGV Instructions.gtype" NameTracksFileName="True">
+			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy" Id="ba646390ff064893831772bc3f63a77f" ModelDefinitionType="NationalInstruments.PanelCommon.SourceModel.ControlDefinition" Name="ControlDefinition">
+				<ControlDefinition DefaultDirection="Control" Id="bf4dfa4e163445a78eee2fdf0ad927e4" xmlns="http://www.ni.com/MocCommon">
+					<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]24" Id="2e7b6838f5d6438586d018f6db3e76ee" IsTypeAheadEnabled="[bool]True" Label="[UIModel]49cf76c7ee784ad885e6f47a0eb56002" Left="[float]100" MinHeight="[float]24" TabIndex="[int]0" Top="[float]100" Value="{DataItemBinding Id=1523ffad7bae48a9b111fb5805840a50}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]137" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+						<EnumSelectorInfo DisplayValue="[string]Reset Timer" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]0" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Read Time" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]1" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Pause Timer" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]2" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Resume Timer" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]3" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Start Timer" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]4" ValueType="[Type]UInt16" />
+					</EnumSelector>
+					<Label Height="[float]16" Id="49cf76c7ee784ad885e6f47a0eb56002" LabelOwner="[UIModel]2e7b6838f5d6438586d018f6db3e76ee" Left="[float]100" Text="[string]Enum" Top="[float]80" Width="[float]30" xmlns="http://www.ni.com/PanelCommon" />
+				</ControlDefinition>
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="eea2ed0cded54dba96138e3952abed9f">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="Reset Timer" />
+					<EnumerationMember Value="1" Name="Read Time" />
+					<EnumerationMember Value="2" Name="Pause Timer" />
+					<EnumerationMember Value="3" Name="Resume Timer" />
+					<EnumerationMember Value="4" Name="Start Timer" />
+				</Members>
+				<DataType>UInt16</DataType>
+			</Enumeration>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>

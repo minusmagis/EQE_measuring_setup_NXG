@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="DD6591E8CFFA7B8D111393299E911A37162D64A2AD3E2469103BCA436762E83BCEED81914A6111E30C4591B996F9CF34EF4B5D9DF51C244204B0748E6357B0E4" Timestamp="1D65084E87CE57B" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="6.2.0.49153" Version="6.2.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="6.2.0.49154" Version="6.2.0.49154" />
+		<ApplicationVersionInfo Build="6.4.1.50844" Name="LabVIEW NXG" Version="3.1.0" />
+	</SourceModelFeatureSet>
+	<TypeDefinition DataType="@cd9811693bca48978cb673009e1845ea" Id="d96214580d74259a8b8a746bcc1a7a8" xmlns="http://www.ni.com/MocCommon">
+		<Icon Id="ff5f86eb9e144e38a4aea21ad6c8ffe0" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="56bbb239922741c497a4b86c3dacfd1a" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate Height="[float]40" Id="c8216db75701458ea207635ff9f5d70e" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
+			</IconPanel>
+		</Icon>
+		<DataItem DataType="@cd9811693bca48978cb673009e1845ea" Id="ac49de05cdba4e0aa74350cae0a1273d" Name="Visible infrared">
+			<p.DefaultValue>0</p.DefaultValue>
+		</DataItem>
+	</TypeDefinition>
+	<EnvoyManagerFile Id="7b9747a4ddbc481abf4d8720c55277c2" xmlns="http://www.ni.com/PlatformFramework">
+		<ProjectSettings Id="e7183250ce2845dcb1c0a4797b18d963" ModelDefinitionType="ProjectSettings" Name="ZProjectSettings" />
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="8bf1cd24f28345bb9a0731d8ee34feb1" Name="Visible infrared enum.gtype" NameTracksFileName="True">
+			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy" Id="acd32931a1754a4faacb0306e7c64ece" ModelDefinitionType="NationalInstruments.PanelCommon.SourceModel.ControlDefinition" Name="ControlDefinition">
+				<ControlDefinition DefaultDirection="Control" Id="57fc123a44284260ae5091da14d2fd8e" xmlns="http://www.ni.com/MocCommon">
+					<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]24" Id="6c62bd7835dd4109b9512e3f52267d17" InteractionMode="[SelectorInteractionModes]ArrowKeys, Keyboard, MouseClick, ScrollWheel, ButtonClicks" IsTabStop="[bool]True" IsTypeAheadEnabled="[bool]True" Label="[UIModel]b64d8b3dbc954d648fa3633138b6040d" Left="[float]100" MinHeight="[float]24" TabIndex="[int]0" Top="[float]100" Value="{DataItemBinding Id=ac49de05cdba4e0aa74350cae0a1273d}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]206" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+						<EnumSelectorInfo DisplayValue="[string]Visible monochromator file" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]0" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Infrared monochromator file" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]1" ValueType="[Type]UInt16" />
+					</EnumSelector>
+					<Label Height="[float]16" Id="b64d8b3dbc954d648fa3633138b6040d" LabelOwner="[UIModel]6c62bd7835dd4109b9512e3f52267d17" Left="[float]100" Text="[string]Visible infrared" Top="[float]80" Width="[float]79" xmlns="http://www.ni.com/PanelCommon" />
+				</ControlDefinition>
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="cd9811693bca48978cb673009e1845ea">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="Visible monochromator file" />
+					<EnumerationMember Value="1" Name="Infrared monochromator file" />
+				</Members>
+				<DataType>UInt16</DataType>
+			</Enumeration>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="1A3C45D625CC23BAB37178C6D4CE5876EF24EC70AC738840777B3DF4AEDB4D1AD0308CA44AEED172A36EA40CB0C0288C0536AEB81288CCC5AEB4E664EC2B1D89" Timestamp="1D69D72C11B7147" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="6.2.0.49153" Version="6.2.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="6.2.0.49154" Version="6.2.0.49154" />
+		<ApplicationVersionInfo Build="6.4.1.50844" Name="LabVIEW NXG" Version="3.1.0" />
+	</SourceModelFeatureSet>
+	<TypeDefinition DataType="@452289e240fd4ea1a23e4955a82acf32" Id="f7cfc2ce807a4b9dbecc958151d5c3b7" xmlns="http://www.ni.com/MocCommon">
+		<Icon Id="7f084924bed94b599fc2af69e7d995df" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="39415da143104510847c93513b8e386a" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate Height="[float]40" Id="e16b58750c6541c38e98fe7c54e93b49" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
+			</IconPanel>
+		</Icon>
+		<DataItem DataType="@452289e240fd4ea1a23e4955a82acf32" Id="d935e31469be49f4b77400c4324f6c7a" Name="Arduino Filter Flipper FGV instructions">
+			<p.DefaultValue>0</p.DefaultValue>
+		</DataItem>
+	</TypeDefinition>
+	<EnvoyManagerFile Id="8a5c933598774908aa15fd280fd93cc5" xmlns="http://www.ni.com/PlatformFramework">
+		<ProjectSettings Id="ad7e8af9ee844de4a3f5a4ef89cdb4f6" ModelDefinitionType="ProjectSettings" Name="ZProjectSettings" />
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="af11f747dc714620be2113a8d9d07e35" Name="Arduino Filter Flipper FGV instructions.gtype" NameTracksFileName="True">
+			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy" Id="ecb114bbab8a44148fbb289228befad1" ModelDefinitionType="NationalInstruments.PanelCommon.SourceModel.ControlDefinition" Name="ControlDefinition">
+				<ControlDefinition DefaultDirection="Control" Id="7501c42ead5d4a52b85870411f717c8b" xmlns="http://www.ni.com/MocCommon">
+					<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]24" Id="1124b04a90164229b7e412fc6ee8ec77" InteractionMode="[SelectorInteractionModes]ArrowKeys, Keyboard, MouseClick, ScrollWheel, ButtonClicks" IsTypeAheadEnabled="[bool]True" Label="[UIModel]f2e108746a7640799ff68163b0af3189" Left="[float]100" TabIndex="[int]0" Top="[float]100" Value="{DataItemBinding Id=d935e31469be49f4b77400c4324f6c7a}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+						<EnumSelectorInfo DisplayValue="[string]Read State" DisplayValueOverride="[string]" Id="34" IsEnabled="[bool]True" Value="[ushort]0" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Set State" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]1" ValueType="[Type]UInt16" />
+					</EnumSelector>
+					<Label Height="[float]16" Id="f2e108746a7640799ff68163b0af3189" LabelOwner="[UIModel]1124b04a90164229b7e412fc6ee8ec77" Left="[float]100" Text="[string]Arduino Filter Flipper FGV instructions" Top="[float]80" Width="[float]201" xmlns="http://www.ni.com/PanelCommon" />
+				</ControlDefinition>
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="452289e240fd4ea1a23e4955a82acf32">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="Read State" />
+					<EnumerationMember Value="1" Name="Set State" />
+				</Members>
+				<DataType>UInt16</DataType>
+			</Enumeration>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>

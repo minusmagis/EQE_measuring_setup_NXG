@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="DB409F9136E118C96F44D32E64EC313D6A25F1DF5175448301E8C33A0D52500EAF673CAE24DCA6F4E552A00B66BF6AA04E047D661FA2C6308356746F0E8C6DED" Timestamp="1D6AD1E1EC54CF6" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="6.2.0.49153" Version="6.2.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="6.2.0.49154" Version="6.2.0.49154" />
+		<ApplicationVersionInfo Build="6.4.1.50844" Name="LabVIEW NXG" Version="3.1.0" />
+	</SourceModelFeatureSet>
+	<TypeDefinition DataType="@bab33a5e2d93423ca4672e4470584443" Id="380c8aa7776c4087973b740a62fc87b2" xmlns="http://www.ni.com/MocCommon">
+		<Icon Id="561e97c4e70b4f69a45617f2b3fc6b24" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="dd80d5f2959842138b1f9aac7bd26717" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate Height="[float]40" Id="9ae0d10968b246008408f39cb6d06143" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
+			</IconPanel>
+		</Icon>
+		<DataItem DataType="@bab33a5e2d93423ca4672e4470584443" Id="1fbc726d4101459ebdadac4ca2682299" Name="SubStates">
+			<p.DefaultValue>1</p.DefaultValue>
+		</DataItem>
+	</TypeDefinition>
+	<EnvoyManagerFile Id="961173e66b8c4244a8cf4590d1a21cd2" xmlns="http://www.ni.com/PlatformFramework">
+		<ProjectSettings Id="7faaaffa7c4447faabdd5602aa874313" ModelDefinitionType="ProjectSettings" Name="ZProjectSettings" />
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="376342d395144e89abdbe4fb9299410e" Name="Sub states enum.gtype" NameTracksFileName="True">
+			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy" Id="61be6d5364014d1281ca553bdb934a14" ModelDefinitionType="NationalInstruments.PanelCommon.SourceModel.ControlDefinition" Name="ControlDefinition">
+				<ControlDefinition DefaultDirection="Control" Id="134fd6c0516346fa9b1b69d24835b408" xmlns="http://www.ni.com/MocCommon">
+					<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]24" Id="1ce483b94c7144c8a58d8fd356d64263" IsTypeAheadEnabled="[bool]True" Label="[UIModel]90bc2a745cc14bf5974b553292918fc6" Left="[float]562" MinHeight="[float]24" TabIndex="[int]0" Top="[float]218" Value="{DataItemBinding Id=1fbc726d4101459ebdadac4ca2682299}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]196" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+						<EnumSelectorInfo DisplayValue="[string]Not specified" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]0" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Measuring Dark Current" DisplayValueOverride="[string]" Id="26" IsEnabled="[bool]True" Value="[ushort]1" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Initializing Keithley" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]2" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Initializing Monochromator" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]3" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Measuring with Keithley" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]4" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Moving Arduino" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]5" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Detecting Monochromator" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]6" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Detecting Keithley" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]7" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Detecting Photodetector" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]8" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Detecting Arduinos" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]9" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Homing XZ Carriage Arduino" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]10" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Moving XZ Carriage Arduino" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]11" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Moving Filter Flipper Arduino" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]12" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Setting Pin Multiplexer Arduino" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]13" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Detecting Supercontinuum" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]14" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Scanning R.01 cell position" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]15" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Prechecking Cells" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]16" ValueType="[Type]UInt16" />
+					</EnumSelector>
+					<Label Height="[float]16" Id="90bc2a745cc14bf5974b553292918fc6" LabelOwner="[UIModel]1ce483b94c7144c8a58d8fd356d64263" Left="[float]562" Text="[string]SubStates" Top="[float]198" Width="[float]52" xmlns="http://www.ni.com/PanelCommon" />
+				</ControlDefinition>
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="bab33a5e2d93423ca4672e4470584443">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="Not specified" />
+					<EnumerationMember Value="1" Name="Measuring Dark Current" />
+					<EnumerationMember Value="2" Name="Initializing Keithley" />
+					<EnumerationMember Value="3" Name="Initializing Monochromator" />
+					<EnumerationMember Value="4" Name="Measuring with Keithley" />
+					<EnumerationMember Value="5" Name="Moving Arduino" />
+					<EnumerationMember Value="6" Name="Detecting Monochromator" />
+					<EnumerationMember Value="7" Name="Detecting Keithley" />
+					<EnumerationMember Value="8" Name="Detecting Photodetector" />
+					<EnumerationMember Value="9" Name="Detecting Arduinos" />
+					<EnumerationMember Value="10" Name="Homing XZ Carriage Arduino" />
+					<EnumerationMember Value="11" Name="Moving XZ Carriage Arduino" />
+					<EnumerationMember Value="12" Name="Moving Filter Flipper Arduino" />
+					<EnumerationMember Value="13" Name="Setting Pin Multiplexer Arduino" />
+					<EnumerationMember Value="14" Name="Detecting Supercontinuum" />
+					<EnumerationMember Value="15" Name="Scanning R.01 cell position" />
+					<EnumerationMember Value="16" Name="Prechecking Cells" />
+				</Members>
+				<DataType>UInt16</DataType>
+			</Enumeration>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>

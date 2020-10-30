@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="0D498F8F7CAA510920EFDD20DAC06BF374F3AB410C25ED028C6CF5A2453D0CD1FEB7A9E4CA27C254A227C20EE27B015EE3614A0299CC17938B0A1E93149FE660" Timestamp="1D69D5E89600E4D" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="6.2.0.49153" Version="6.2.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="6.2.0.49154" Version="6.2.0.49154" />
+		<ApplicationVersionInfo Build="6.4.1.50844" Name="LabVIEW NXG" Version="3.1.0" />
+	</SourceModelFeatureSet>
+	<TypeDefinition DataType="@cb708a56e9ce4b17b8a4cff97e89741b" Id="435db96853ab4b7ba5aa2170e814d983" xmlns="http://www.ni.com/MocCommon">
+		<Icon Id="6a80cf5e0c44b84b07cf00b053f6710" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="5218be56dd1a4611ae0a6a15538564fe" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate Height="[float]40" Id="c690bf53545246de914b0d6cf5085273" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
+			</IconPanel>
+		</Icon>
+		<DataItem DataType="@cb708a56e9ce4b17b8a4cff97e89741b" Id="9cd1cb341abe4706b04c1c6b04e7c80a" Name="Array">
+			<p.DefaultValue>null</p.DefaultValue>
+		</DataItem>
+	</TypeDefinition>
+	<EnvoyManagerFile Id="4b1f6c47929b495e923c582cd1c62d74" xmlns="http://www.ni.com/PlatformFramework">
+		<ProjectSettings Id="ca0e12c9e7b34b748daab2bc740a9121" ModelDefinitionType="ProjectSettings" Name="ZProjectSettings" />
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="69d99097faa24148975e71220ba1cd87" Name="XZ power scan map array cluster.gtype" NameTracksFileName="True">
+			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy" Id="af210fa90d184909b869524dc91c6608" ModelDefinitionType="NationalInstruments.PanelCommon.SourceModel.ControlDefinition" Name="ControlDefinition">
+				<ControlDefinition DefaultDirection="Control" Id="58739841aaa74fc29a87591a77efc160" xmlns="http://www.ni.com/MocCommon">
+					<ArrayViewer ArrayElement="[UIModel]7d13537ab7204067960a19b3e4ce4248" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]176" Id="de96d575cb2f4d168f599d330190db00" IndexVisibility="[Visibility]Visible" IsFixedSize="[bool]False" Label="[UIModel]605baa50628b4d1fa748c24e3a6f083a" Left="[float]279" Orientation="[SMOrientation]Horizontal" Rows="[int]1" TabIndex="[int]0" Top="[float]119" Value="{DataItemBinding Id=9cd1cb341abe4706b04c1c6b04e7c80a}" Width="[float]155" xmlns="http://www.ni.com/PanelCommon">
+						<p.DefaultElementValue>0x0_0x0_0x0_</p.DefaultElementValue>
+						<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@500558d82abf4be99e3828a9c0f12876" Height="[float]164" Id="7d13537ab7204067960a19b3e4ce4248" Label="[UIModel]8a93a3d4cd174e03b97a60638f095cac" TabIndex="[int]0" Width="[float]88">
+							<NumericText BaseName="[string]Numeric" Height="[float]24" Id="d3ef28bdcfbf4407b1c1b29c34dd52af" Label="[UIModel]b07d90e21fa146329fb2941c2c5dd76b" Left="[float]4" MinHeight="[float]24" Top="[float]24" Value="{ClusterBinding FieldName=X\ coordinate}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+							<Label Height="[float]16" Id="b07d90e21fa146329fb2941c2c5dd76b" LabelOwner="[UIModel]d3ef28bdcfbf4407b1c1b29c34dd52af" Left="[float]4" Text="[string]X coordinate" Top="[float]4" Width="[float]67" />
+							<NumericText BaseName="[string]Numeric" Height="[float]24" Id="24484ca9cb0c4907ace1d8db00efe96c" Label="[UIModel]d57df3778e7145009bada72aa536661f" Left="[float]4" MinHeight="[float]24" Top="[float]76" Value="{ClusterBinding FieldName=Z\ coordinate}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+							<Label Height="[float]16" Id="d57df3778e7145009bada72aa536661f" LabelOwner="[UIModel]24484ca9cb0c4907ace1d8db00efe96c" Left="[float]4" Text="[string]Z coordinate" Top="[float]56" Width="[float]67" />
+							<NumericText BaseName="[string]Numeric" Height="[float]24" Id="683deaf6d1de45dca0a69bd6c03bcd8f" Label="[UIModel]f9b45a7d41d4430090a0b5b6a46e8d7f" Left="[float]4" MinHeight="[float]24" Top="[float]128" Value="{ClusterBinding FieldName=Power\ Value}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+							<Label Height="[float]16" Id="f9b45a7d41d4430090a0b5b6a46e8d7f" LabelOwner="[UIModel]683deaf6d1de45dca0a69bd6c03bcd8f" Left="[float]4" Text="[string]Power Value" Top="[float]108" Width="[float]64" />
+							<Label Height="[float]16" Id="8a93a3d4cd174e03b97a60638f095cac" IsVisualChild="[bool]False" LabelOwner="[UIModel]7d13537ab7204067960a19b3e4ce4248" Left="[float]61" Text="[string]Cluster" Top="[float]-14" Width="[float]37" />
+						</Cluster>
+					</ArrayViewer>
+					<Label Height="[float]16" Id="605baa50628b4d1fa748c24e3a6f083a" LabelOwner="[UIModel]de96d575cb2f4d168f599d330190db00" Left="[float]279" Text="[string]Array" Top="[float]99" Width="[float]28" xmlns="http://www.ni.com/PanelCommon" />
+				</ControlDefinition>
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="cb708a56e9ce4b17b8a4cff97e89741b">
+			<VariableArray DereferenceType="@500558d82abf4be99e3828a9c0f12876" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="500558d82abf4be99e3828a9c0f12876">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="X coordinate" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Z coordinate" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Power Value" DataType="Double" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>

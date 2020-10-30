@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="E141CCDE043C891F1A66420D4EF5DEA97B1CC631ABBF7513A42E6FE13E46B3DF9DC9C338BD7D9FF373440068507E30BECB90BFAC44679F3D0B3B8BBD6876C7BA" Timestamp="1D6ABAFB4C4D177" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="6.2.0.49153" Version="6.2.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="6.2.0.49154" Version="6.2.0.49154" />
+		<ApplicationVersionInfo Build="6.4.1.50844" Name="LabVIEW NXG" Version="3.1.0" />
+	</SourceModelFeatureSet>
+	<TypeDefinition DataType="@e2e7b137aa4146709acc9cadca81b55a" Id="a121002de3274e20b9c00ee1ee7fb906" xmlns="http://www.ni.com/MocCommon">
+		<Icon Id="325877ff63454e86a1ac5ff1f17df970" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="54e6cc3803a24123ad3740b8950cd58f" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate Height="[float]40" Id="b6b9cd36d11d4b7da696192480fae866" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
+			</IconPanel>
+		</Icon>
+		<DataItem DataType="@e2e7b137aa4146709acc9cadca81b55a" Id="23e715dc1e5e4ab99702b19b6e757e2c" Name="Operation Mode Selection">
+			<p.DefaultValue>0</p.DefaultValue>
+		</DataItem>
+	</TypeDefinition>
+	<EnvoyManagerFile Id="9427c1d6453e40899daa0eb261e58bd1" xmlns="http://www.ni.com/PlatformFramework">
+		<ProjectSettings Id="35a66aaaf1ee4b9383d227147f8fab35" ModelDefinitionType="ProjectSettings" Name="ZProjectSettings" />
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="1a3c7e3f996e4d0aa850b6b749da3489" Name="Operation Mode Selection.gtype" NameTracksFileName="True">
+			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy" Id="7eaebf31be98403b8b9fc1e2426ecc7f" ModelDefinitionType="NationalInstruments.PanelCommon.SourceModel.ControlDefinition" Name="ControlDefinition">
+				<ControlDefinition DefaultDirection="Control" Id="5fc96cd3d4d24ddda749b914586c459f" xmlns="http://www.ni.com/MocCommon">
+					<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]24" Id="9d1547769fae4c3abed8b84e1aa93742" InteractionMode="[SelectorInteractionModes]ArrowKeys, Keyboard, MouseClick, ScrollWheel, ButtonClicks" IsTypeAheadEnabled="[bool]True" Label="[UIModel]d235066b70a64b04af8a9fa6542d4b95" Left="[float]100" TabIndex="[int]0" Top="[float]100" Value="{DataItemBinding Id=23e715dc1e5e4ab99702b19b6e757e2c}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]260" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+						<EnumSelectorInfo DisplayValue="[string]In program normal operation" DisplayValueOverride="[string]" Id="34" IsEnabled="[bool]True" Value="[ushort]0" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Stand Alone VI Operation" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]1" ValueType="[Type]UInt16" />
+					</EnumSelector>
+					<Label Height="[float]16" Id="d235066b70a64b04af8a9fa6542d4b95" LabelOwner="[UIModel]9d1547769fae4c3abed8b84e1aa93742" Left="[float]100" Text="[string]Operation Mode Selection" Top="[float]80" Width="[float]139" xmlns="http://www.ni.com/PanelCommon" />
+				</ControlDefinition>
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="e2e7b137aa4146709acc9cadca81b55a">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="In program normal operation" />
+					<EnumerationMember Value="1" Name="Stand Alone VI Operation" />
+				</Members>
+				<DataType>UInt16</DataType>
+			</Enumeration>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>

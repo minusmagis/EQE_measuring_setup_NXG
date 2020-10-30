@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="985994D4FEA40FF6E5373711B214C82FD171EF2E9DBF92C7F43A050517A2F1D24608D3EFBE4565935791B90C920B6F8BE9A4659EED8AD7D5715708A3CE918040" Timestamp="1D69D758627481E" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="6.2.0.49153" Version="6.2.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="6.2.0.49154" Version="6.2.0.49154" />
+		<ApplicationVersionInfo Build="6.4.1.50844" Name="LabVIEW NXG" Version="3.1.0" />
+	</SourceModelFeatureSet>
+	<VirtualInstrument Id="3322034222094a0d89d7c7256d05fd08" xmlns="http://www.ni.com/LabVIEW.VI">
+		<Icon Id="564b5948733e49c5a6e581f3f03d9313" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="c360c138446d41d496e611d725840d4b" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="c2adfc5a7a074880b3958b8a057c0f58" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]40">
+					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="2bda2a377284034a553b15a12896146" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="aacf3ce7778448879a23dc0a1a9825fa" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+					<FileNameText Attached="[bool]True" Height="[float]36" Id="2a3fc93c0e58467b8d7d1552e5416593" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]Arduino filter FGV current state" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]36">
+						<FontSetting FontFamily="Verdana" FontSize="6" Id="228eabf896bc4d46984975ceca69dafe" />
+					</FileNameText>
+				</IconTemplate>
+			</IconPanel>
+		</Icon>
+		<ConnectorPane Height="40" Id="2e5120547382470fb49d12508bfcef9e" ListViewHeight="130" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
+			<ConnectorPaneTerminal ListViewHotspot="0 110" Parameter="639755eca9ef4a46bd3828e24b1c3fdb" />
+			<ConnectorPaneTerminal Hotspot="0 15" ListViewHotspot="0 80" Parameter="91cbcfa114ff4e0d9652fbbe533defab" />
+			<ConnectorPaneTerminal Hotspot="0 25" />
+			<ConnectorPaneTerminal Hotspot="0 35" ListViewHotspot="0 35" Parameter="8b37d550a4a84c5399ef28c0fe6f4115" />
+			<ConnectorPaneTerminal Hotspot="15 0" />
+			<ConnectorPaneTerminal Hotspot="25 0" />
+			<ConnectorPaneTerminal Hotspot="40 5" ListViewHotspot="150 95" Parameter="f6b09bfded1c424da99dc702c3dee07b" />
+			<ConnectorPaneTerminal Hotspot="40 15" ListViewHotspot="150 65" Parameter="6dfc17af1f054c4798de10f7ffa92fdc" />
+			<ConnectorPaneTerminal Hotspot="40 25" />
+			<ConnectorPaneTerminal Hotspot="40 35" ListViewHotspot="150 50" Parameter="72f93df1b424c93baf03cf8270c0314" />
+			<ConnectorPaneTerminal Hotspot="15 40" />
+			<ConnectorPaneTerminal Hotspot="25 40" />
+		</ConnectorPane>
+		<DiagramUnplacedItems Id="9101a97f472c447e870c32e44c6ecf8f" xmlns="http://www.ni.com/MocCommon" />
+		<FrontPanelUnplacedItems Id="12e4330410cd421285b912c942816923" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0">
+			<Cluster BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]Error" Height="[float]176" Id="6c06b319f2fd449eb17607eb955b1776" IsTabStop="[bool]True" Label="[UIModel]5430ca5ea222480cb14a67630f779f63" Left="[float]0" MinHeight="[float]128" MinWidth="[float]112" TabIndex="[int]0" Top="[float]0" Value="{DataItemBinding Id=8b37d550a4a84c5399ef28c0fe6f4115}" Width="[float]176" p4:ControlDefinitionChecksum="e3nj023iwYRzhBkV8z61WFGSCt7pzzv3hwIJFanixR4=" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
+				<p4:p.TypeDefinitionTargets>
+					<p4:TypeDefinitionTarget TargetName="NI::G Core::Error::Error.gtype::ControlDefinition" />
+				</p4:p.TypeDefinitionTargets>
+				<LVCheckBox Content="[string]" ContentVisibility="[Visibility]Collapsed" Height="[float]22" Id="b9660647a791484fb3090a793ace7cbe" Label="[UIModel]9202a495322e4b8987a2dd3651e23b3e" Left="[float]3" MinHeight="[float]22" MinWidth="[float]22" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=status}" Width="[float]22" p6:DisplayAsErrorStatus="True" xmlns:p6="http://www.ni.com/Controls.LabVIEW.Design" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="9202a495322e4b8987a2dd3651e23b3e" LabelOwner="[UIModel]b9660647a791484fb3090a793ace7cbe" Left="[float]3" Text="[string]status" Top="[float]4" Width="[float]32" />
+				<NumericText Height="[float]24" Id="6e35a5d9078049a0ae1ea27beb385be7" Label="[UIModel]79d393d073bb4f8da075e3aa3b078d22" Left="[float]54" MinHeight="[float]24" RadixVisibility="[SMVisibility]Visible" TabIndex="[int]1" Top="[float]24" Value="{ClusterBinding FieldName=code}" ValueFormatter="[string]LV:G6" ValueType="[Type]Int32" Width="[float]111" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="79d393d073bb4f8da075e3aa3b078d22" LabelOwner="[UIModel]6e35a5d9078049a0ae1ea27beb385be7" Left="[float]54" Text="[string]code" Top="[float]4" Width="[float]26" />
+				<StringControl AcceptsReturn="[bool]True" Height="[float]95" Id="d154eca1b5e648668a5518e68070295a" Label="[UIModel]f2f312eb15b44660ae8165b0f7140a20" Left="[float]3" MinHeight="[float]24" TabIndex="[int]2" Text="{ClusterBinding FieldName=source}" Top="[float]70" Width="[float]162" WordWrap="[bool]True" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="f2f312eb15b44660ae8165b0f7140a20" LabelOwner="[UIModel]d154eca1b5e648668a5518e68070295a" Left="[float]3" Text="[string]source" Top="[float]50" Width="[float]35" />
+				<p4:Label Height="[float]16" Id="5430ca5ea222480cb14a67630f779f63" IsVisualChild="[bool]False" LabelOwner="[UIModel]6c06b319f2fd449eb17607eb955b1776" Left="[float]0" Text="[string]Error In" Top="[float]-20" Width="[float]26" />
+			</Cluster>
+			<Cluster BaseName="[string]Error" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]Error" Height="[float]176" Id="cb3255b6a2114be5aff5881ac117958a" Left="[float]266" MinHeight="[float]128" MinWidth="[float]112" Name="[string]Error Out" TabIndex="[int]1" Top="[float]67" Value="{DataItemBinding Id=72f93df1b424c93baf03cf8270c0314}" Width="[float]176" p4:ControlDefinitionChecksum="e3nj023iwYRzhBkV8z61WFGSCt7pzzv3hwIJFanixR4=" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
+				<p4:p.TypeDefinitionTargets>
+					<p4:TypeDefinitionTarget TargetName="NI::G Core::Error::Error.gtype::ControlDefinition" />
+				</p4:p.TypeDefinitionTargets>
+				<LVCheckBox Content="[string]" ContentVisibility="[Visibility]Collapsed" Height="[float]22" Id="9c8684066acd4ffe9f597ab96550773e" IsReadOnly="[bool]True" Label="[UIModel]d1aef33dba6f4bec91eed44020b89de0" Left="[float]3" MinHeight="[float]22" MinWidth="[float]22" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=status}" Width="[float]22" p6:DisplayAsErrorStatus="True" xmlns:p6="http://www.ni.com/Controls.LabVIEW.Design" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="d1aef33dba6f4bec91eed44020b89de0" LabelOwner="[UIModel]9c8684066acd4ffe9f597ab96550773e" Left="[float]3" Text="[string]status" Top="[float]4" Width="[float]32" />
+				<NumericText Height="[float]24" Id="f0d33c33321c404499cedbea93c15da4" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" IsReadOnly="[bool]True" Label="[UIModel]163e8b2ea4954edb8ab99b2cade0ac4f" Left="[float]54" MinHeight="[float]24" RadixVisibility="[SMVisibility]Visible" TabIndex="[int]1" Top="[float]24" Value="{ClusterBinding FieldName=code}" ValueFormatter="[string]LV:G6" ValueType="[Type]Int32" Width="[float]111" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="163e8b2ea4954edb8ab99b2cade0ac4f" LabelOwner="[UIModel]f0d33c33321c404499cedbea93c15da4" Left="[float]54" Text="[string]code" Top="[float]4" Width="[float]26" />
+				<StringControl AcceptsReturn="[bool]True" Height="[float]95" Id="34b1710d4dd244b59c39194666a974d6" IsReadOnly="[bool]True" Label="[UIModel]becae1adfefc4f769f2a26249d3ee1b0" Left="[float]3" MinHeight="[float]24" TabIndex="[int]2" Text="{ClusterBinding FieldName=source}" Top="[float]70" Width="[float]162" WordWrap="[bool]True" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="becae1adfefc4f769f2a26249d3ee1b0" LabelOwner="[UIModel]34b1710d4dd244b59c39194666a974d6" Left="[float]3" Text="[string]source" Top="[float]50" Width="[float]35" />
+			</Cluster>
+			<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]24" Id="b2d6e862933f46629be5de0413ebc31b" InteractionMode="[SelectorInteractionModes]ArrowKeys, Keyboard, MouseClick, ScrollWheel, ButtonClicks" IsTabStop="[bool]True" IsTypeAheadEnabled="[bool]True" Label="[UIModel]deaa55a75e2945b896ea56b881f3e0f6" Left="[float]0" TabIndex="[int]2" Top="[float]0" Value="{DataItemBinding Id=639755eca9ef4a46bd3828e24b1c3fdb}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]72" p4:ControlDefinitionChecksum="beIjsEsZO5W9yFmROlc0sR0eRC2Xe9gUL/GXo2yK+cI=" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+				<p4:p.TypeDefinitionTargets>
+					<p4:TypeDefinitionTarget TargetName="EQE_Measuring_Setup_NanOpto::SubVis::FGV::Arduino Filter Flipper FGV instructions.gtype::ControlDefinition" />
+				</p4:p.TypeDefinitionTargets>
+				<EnumSelectorInfo DisplayValue="[string]Read State" DisplayValueOverride="[string]" Id="34" IsEnabled="[bool]True" Value="[ushort]0" ValueType="[Type]UInt16" />
+				<EnumSelectorInfo DisplayValue="[string]Set State" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]1" ValueType="[Type]UInt16" />
+				<p4:Label Height="[float]16" Id="deaa55a75e2945b896ea56b881f3e0f6" IsVisualChild="[bool]False" LabelOwner="[UIModel]b2d6e862933f46629be5de0413ebc31b" Left="[float]0" Text="[string]Arduino Filter Flipper FGV instructions" Top="[float]-20" Width="[float]201" />
+			</EnumSelector>
+			<LED BaseName="[string]Square LED" FalseContent="[string]Off" Height="[float]24" Id="2584ef0ea0704bdf807e43fae80e8ed1" IsReadOnly="[bool]True" Left="[float]0" MinHeight="[float]16" MinWidth="[float]16" Name="[string]Flipper State Boolean" Shape="[LEDShape]Square" TabIndex="[int]3" Top="[float]0" TrueContent="[string]On" Value="{DataItemBinding Id=6dfc17af1f054c4798de10f7ffa92fdc}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum Constant" Height="[float]24" Id="21eeaab40d954117afa9a8bafa80f56c" InteractionMode="[SelectorInteractionModes]ReadOnly" IsTypeAheadEnabled="[bool]True" Left="[float]100" MinHeight="[float]24" Name="[string]Arduino Filter Flipper Instructions out" TabIndex="[int]4" Top="[float]100" Value="{DataItemBinding Id=f6b09bfded1c424da99dc702c3dee07b}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]72" p4:ControlDefinitionChecksum="+aSsghaW6IWN7SIlt72Bw4D8/bQD33yWYHusSpEzDoU=" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+				<p4:p.TypeDefinitionTargets>
+					<p4:TypeDefinitionTarget TargetName="EQE_Measuring_Setup_NanOpto::SubVis::Instrument Control::Arduinos::Filter Flipper Arduino::Arduino Filter Flipper Instructions.gtype::ControlDefinition" />
+				</p4:p.TypeDefinitionTargets>
+				<EnumSelectorInfo DisplayValue="[string]IR Pass" Value="[ushort]0" ValueType="[Type]UInt16" />
+				<EnumSelectorInfo DisplayValue="[string]Visible Pass" Value="[ushort]1" ValueType="[Type]UInt16" />
+			</EnumSelector>
+			<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum Constant" Height="[float]24" Id="f9eb2f140888410f82754e97291ca060" InteractionMode="[SelectorInteractionModes]ArrowKeys, Keyboard, MouseClick, ScrollWheel, ButtonClicks" IsTypeAheadEnabled="[bool]True" Left="[float]100" MinHeight="[float]24" Name="[string]Arduino Filter Flipper Instructions In" TabIndex="[int]5" Top="[float]100" Value="{DataItemBinding Id=91cbcfa114ff4e0d9652fbbe533defab}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]72" p4:ControlDefinitionChecksum="+aSsghaW6IWN7SIlt72Bw4D8/bQD33yWYHusSpEzDoU=" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+				<p4:p.TypeDefinitionTargets>
+					<p4:TypeDefinitionTarget TargetName="EQE_Measuring_Setup_NanOpto::SubVis::Instrument Control::Arduinos::Filter Flipper Arduino::Arduino Filter Flipper Instructions.gtype::ControlDefinition" />
+				</p4:p.TypeDefinitionTargets>
+				<EnumSelectorInfo DisplayValue="[string]IR Pass" Value="[ushort]0" ValueType="[Type]UInt16" />
+				<EnumSelectorInfo DisplayValue="[string]Visible Pass" Value="[ushort]1" ValueType="[Type]UInt16" />
+			</EnumSelector>
+		</FrontPanelUnplacedItems>
+		<BlockDiagram Id="5d84fb94580648b48611810750edce19">
+			<CaseStructure Bounds="260 115 910 270" DataType="Error" Default="d18df9d1b05a42e8b66063297b0eb60c" Id="d9df7bfd9853479bbc1d8d47a8ff6630" Selected="88ac76af55b8408480459ef40233f102" UserSelectorBounds="402 0 106 17">
+				<CaseStructure.Case Bounds="5 5 900 260" Id="d18df9d1b05a42e8b66063297b0eb60c" Pattern="Error">
+					<Wire Id="808019abb6e14bca9bfa16a2973cf711" Joints="N(f7c48fe530a44fc2a0f55dec48823a33:d18df9d1b05a42e8b66063297b0eb60c)|(4,240) N(338db060df054d9bb6ed8e017f366039:d18df9d1b05a42e8b66063297b0eb60c)|(896,240)" xmlns="http://www.ni.com/PlatformFramework" />
+				</CaseStructure.Case>
+				<CaseStructure.Case Bounds="5 5 900 260" Id="88ac76af55b8408480459ef40233f102" Pattern="No Error">
+					<Wire Id="fe632f1ed2ee459d9c95b7d5c4dcd176" Joints="N(f7c48fe530a44fc2a0f55dec48823a33:88ac76af55b8408480459ef40233f102)|(4,240) N(338db060df054d9bb6ed8e017f366039:88ac76af55b8408480459ef40233f102)|(896,240)" xmlns="http://www.ni.com/PlatformFramework" />
+					<WhileLoop Bounds="25 15 845 220" DiagramId="da985390431449429fa48208d2f9cb82" Id="a90eb3c8384a40ba936adec457297231">
+						<LoopIteration Bounds="0 195 15 15" Id="f6f8c0d5494f4f498921d79dd81cef1f" />
+						<LoopCondition Bounds="820 195 15 15" Id="300464306124730bba7ff43cec18358" />
+						<Literal Bounds="775 150 25 15" DataType="Boolean" Id="ac65f15c68b64b9c824068a105108fad" Label="1e572746d344458ea84159484fb6fc84" xmlns="http://www.ni.com/MocCommon">
+							<p.Data>True</p.Data>
+							<BooleanBehavior />
+						</Literal>
+						<NodeLabel AttachedTo="ac65f15c68b64b9c824068a105108fad" Bounds="775 168 30 15" Id="1e572746d344458ea84159484fb6fc84" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+							<p.Text>stop</p.Text>
+						</NodeLabel>
+						<Wire Id="8799ebcdb6c4488895d113138312e7ae" Joints="N(ac65f15c68b64b9c824068a105108fad:Out)|(800,155) h(10) v(45) N(300464306124730bba7ff43cec18358:Input)|(820,200)" xmlns="http://www.ni.com/PlatformFramework" />
+						<CaseStructure Bounds="310 20 475 125" DataType="@f69cd136e6f24b348d37ced1cee334a0" Default="8694bfc797fd400dba82c5d55f93a106" Id="a4b2f1a8197648469fc2582418e0fffa" Selected="8694bfc797fd400dba82c5d55f93a106" UserSelectorBounds="148 0 178 17">
+							<CaseStructure.Case Bounds="5 5 465 115" Id="2d41f5d04caf4fd7a75a90abc6910872" Pattern="&quot;Set State&quot;">
+								<Wire Id="e91ef4d99cd448e3a16a4c786915899a" Joints="N(a50fed5557984924947be302d6c8be07:Value)|(280,55) N(579d7fb581bc43208ec5835229d3d64f:2d41f5d04caf4fd7a75a90abc6910872)|(461,55)" xmlns="http://www.ni.com/PlatformFramework" />
+								<DataAccessor Bounds="240 50 40 15" DataItem="91cbcfa114ff4e0d9652fbbe533defab" Id="a50fed5557984924947be302d6c8be07" Label="d2fbb757006e4203ba14e6e08a4b9694" xmlns="http://www.ni.com/MocCommon">
+									<Terminal DataType="@51873ddf55dc4107b2678eac32db0ef1" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+								</DataAccessor>
+								<NodeLabel AttachedTo="a50fed5557984924947be302d6c8be07" Bounds="240 33 201 14" Id="d2fbb757006e4203ba14e6e08a4b9694" xmlns="http://www.ni.com/PlatformFramework">
+									<p.Text>Arduino Filter Flipper Instructions In</p.Text>
+								</NodeLabel>
+							</CaseStructure.Case>
+							<CaseStructure.Case Bounds="5 5 465 115" Id="8694bfc797fd400dba82c5d55f93a106" Pattern="&quot;Read State&quot;, Default">
+								<Wire Id="79d030871e6d432ca967b94f880fb9c7" Joints="N(13ff3a7bd4d64af1b5c324919888a859:8694bfc797fd400dba82c5d55f93a106)|(4,55) h(11) B(1) h(205) B(2) N(579d7fb581bc43208ec5835229d3d64f:8694bfc797fd400dba82c5d55f93a106)|(461,55) B(2) v(15) N(cd9cc61c29dc4b93a9f9e8aace8e480f:x)|(230,70) B(1) v(-15) N(2a277308b7354831a060ae384775fab0:Value)|(28,40)" xmlns="http://www.ni.com/PlatformFramework" />
+								<IsEqual Bounds="230 65 30 30" Id="cd9cc61c29dc4b93a9f9e8aace8e480f" />
+								<Wire Id="84419d09637b45d0aaa6b64a27db50ed" Joints="N(a0f51f8466da4f2d834c2c5b901135de:Out)|(120,85) N(cd9cc61c29dc4b93a9f9e8aace8e480f:y)|(230,85)" xmlns="http://www.ni.com/PlatformFramework" />
+								<DataAccessor Bounds="280 75 40 15" DataItem="6dfc17af1f054c4798de10f7ffa92fdc" Id="82fd2f0e4944aa298887a6d139ff5a6" Label="27af6bb0014e4939a734cafd2efb257b" xmlns="http://www.ni.com/MocCommon">
+									<Terminal DataType="Boolean" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+								</DataAccessor>
+								<NodeLabel AttachedTo="82fd2f0e4944aa298887a6d139ff5a6" Bounds="325 75 119 14" Id="27af6bb0014e4939a734cafd2efb257b" xmlns="http://www.ni.com/PlatformFramework">
+									<p.Text>Flipper State Boolean</p.Text>
+								</NodeLabel>
+								<Wire Id="2fc6a823eda748b28b82e0338af3b4aa" Joints="N(cd9cc61c29dc4b93a9f9e8aace8e480f:x = y?)|(260,80) N(82fd2f0e4944aa298887a6d139ff5a6:Value)|(283,80)" xmlns="http://www.ni.com/PlatformFramework" />
+								<Literal Bounds="25 80 95 15" DataType="@51873ddf55dc4107b2678eac32db0ef1" Id="a0f51f8466da4f2d834c2c5b901135de" Label="c9ddace01a7a4123b4fb9516127d8668" p9:ControlDefinitionChecksum="+aSsghaW6IWN7SIlt72Bw4D8/bQD33yWYHusSpEzDoU=" xmlns:p9="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
+									<p.Data>0</p.Data>
+									<p9:p.TypeDefinitionTargets>
+										<p9:TypeDefinitionTarget TargetName="EQE_Measuring_Setup_NanOpto::SubVis::Instrument Control::Arduinos::Filter Flipper Arduino::Arduino Filter Flipper Instructions.gtype" />
+										<p9:TypeDefinitionTarget TargetName="EQE_Measuring_Setup_NanOpto::SubVis::Instrument Control::Arduinos::Filter Flipper Arduino::Arduino Filter Flipper Instructions.gtype::ControlDefinition" />
+									</p9:p.TypeDefinitionTargets>
+									<EnumBehavior />
+								</Literal>
+								<NodeLabel AttachedTo="a0f51f8466da4f2d834c2c5b901135de" Bounds="25 63 186 14" Id="c9ddace01a7a4123b4fb9516127d8668" xmlns="http://www.ni.com/PlatformFramework">
+									<p.Text>Arduino Filter Flipper Instructions</p.Text>
+								</NodeLabel>
+								<DataAccessor Bounds="25 35 40 15" DataItem="f6b09bfded1c424da99dc702c3dee07b" Id="2a277308b7354831a060ae384775fab0" Label="5461a155ba4d414aaa9baeeec4fe610a" xmlns="http://www.ni.com/MocCommon">
+									<Terminal DataType="@51873ddf55dc4107b2678eac32db0ef1" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+								</DataAccessor>
+								<NodeLabel AttachedTo="2a277308b7354831a060ae384775fab0" Bounds="25 18 208 14" Id="5461a155ba4d414aaa9baeeec4fe610a" xmlns="http://www.ni.com/PlatformFramework">
+									<p.Text>Arduino Filter Flipper Instructions out</p.Text>
+								</NodeLabel>
+							</CaseStructure.Case>
+							<CaseStructure.Selector Bounds="-4 20 13 10" Docking="Left" Id="a0ced97a30854a4cb108b996b56e68c5" Terminals="a4b2f1a8197648469fc2582418e0fffa=3a182d89759c4fc99da0fc09677745c2, 2d41f5d04caf4fd7a75a90abc6910872, 8694bfc797fd400dba82c5d55f93a106" />
+							<CaseStructure.Tunnel Bounds="466 55 13 10" Docking="Right" Id="579d7fb581bc43208ec5835229d3d64f" Terminals="a4b2f1a8197648469fc2582418e0fffa=1c81a0c3303b4a87ac3a1f2e4838b5f8, 2d41f5d04caf4fd7a75a90abc6910872=e91ef4d99cd448e3a16a4c786915899a, 8694bfc797fd400dba82c5d55f93a106=79d030871e6d432ca967b94f880fb9c7" />
+							<CaseStructure.Tunnel Bounds="-4 55 13 10" Docking="Left" Id="13ff3a7bd4d64af1b5c324919888a859" Terminals="a4b2f1a8197648469fc2582418e0fffa=3e3400d05bb7465880390c1b7c030ac7, 2d41f5d04caf4fd7a75a90abc6910872, 8694bfc797fd400dba82c5d55f93a106=79d030871e6d432ca967b94f880fb9c7" />
+						</CaseStructure>
+						<DataAccessor Bounds="250 40 40 15" DataItem="639755eca9ef4a46bd3828e24b1c3fdb" Id="8f5c26396ef741a1855db509f1070966" Label="4fd15358e51f4dadb0cdb69e2ae6bd7f" xmlns="http://www.ni.com/MocCommon">
+							<Terminal DataType="@f69cd136e6f24b348d37ced1cee334a0" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+						</DataAccessor>
+						<NodeLabel AttachedTo="8f5c26396ef741a1855db509f1070966" Bounds="35 40 210 14" Id="4fd15358e51f4dadb0cdb69e2ae6bd7f" xmlns="http://www.ni.com/PlatformFramework">
+							<p.Text>Arduino Filter Flipper FGV instructions</p.Text>
+						</NodeLabel>
+						<Wire Id="3a182d89759c4fc99da0fc09677745c2" Joints="N(8f5c26396ef741a1855db509f1070966:Value)|(290,45) N(a0ced97a30854a4cb108b996b56e68c5:a4b2f1a8197648469fc2582418e0fffa)|(306,45)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="1c81a0c3303b4a87ac3a1f2e4838b5f8" Joints="N(579d7fb581bc43208ec5835229d3d64f:a4b2f1a8197648469fc2582418e0fffa)|(789,80) N(6374e15244414737bbfc762ee1d63690:da985390431449429fa48208d2f9cb82)|(831,80)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="3e3400d05bb7465880390c1b7c030ac7" Joints="N(c6ab170357d0466896aca24c46f2d210:i0)|(4,80) N(13ff3a7bd4d64af1b5c324919888a859:a4b2f1a8197648469fc2582418e0fffa)|(306,80)" xmlns="http://www.ni.com/PlatformFramework" />
+						<RightShiftRegister Bounds="836 80 13 10" Docking="Right" Id="6374e15244414737bbfc762ee1d63690" Terminals="a90eb3c8384a40ba936adec457297231, da985390431449429fa48208d2f9cb82=1c81a0c3303b4a87ac3a1f2e4838b5f8" />
+						<LeftShiftRegister Bounds="-4 80 13 10" Docking="Left" Id="c6ab170357d0466896aca24c46f2d210" RightRegister="6374e15244414737bbfc762ee1d63690" Terminals="o0, i0=3e3400d05bb7465880390c1b7c030ac7" />
+					</WhileLoop>
+				</CaseStructure.Case>
+				<CaseStructure.Selector Bounds="-4 240 13 10" Docking="Left" Id="f7c48fe530a44fc2a0f55dec48823a33" Terminals="d9df7bfd9853479bbc1d8d47a8ff6630=33de24d6a50548eb88ea32e6ad08b33a, d18df9d1b05a42e8b66063297b0eb60c=808019abb6e14bca9bfa16a2973cf711, 88ac76af55b8408480459ef40233f102=fe632f1ed2ee459d9c95b7d5c4dcd176" />
+				<CaseStructure.Tunnel Bounds="901 240 13 10" Docking="Right" Id="338db060df054d9bb6ed8e017f366039" Terminals="d9df7bfd9853479bbc1d8d47a8ff6630=ccb6750c3e54abdb6bbccad5ee7e392, d18df9d1b05a42e8b66063297b0eb60c=808019abb6e14bca9bfa16a2973cf711, 88ac76af55b8408480459ef40233f102=fe632f1ed2ee459d9c95b7d5c4dcd176" />
+			</CaseStructure>
+			<DataAccessor Bounds="200 355 40 15" DataItem="8b37d550a4a84c5399ef28c0fe6f4115" Id="99523734addd42f7b7333cc1d419bf7f" Label="1e25deb3b76340bb9ff91196ec230e17" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Error" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="99523734addd42f7b7333cc1d419bf7f" Bounds="151 355 44 14" Id="1e25deb3b76340bb9ff91196ec230e17" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Error In</p.Text>
+			</NodeLabel>
+			<Wire Id="33de24d6a50548eb88ea32e6ad08b33a" Joints="N(99523734addd42f7b7333cc1d419bf7f:Value)|(240,360) N(f7c48fe530a44fc2a0f55dec48823a33:d9df7bfd9853479bbc1d8d47a8ff6630)|(256,360)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="1195 355 40 15" DataItem="72f93df1b424c93baf03cf8270c0314" Id="c7a9f641c3bb4847bb94d934090b991e" Label="22f566311e6f426e9c2e6bbe24ce6db6" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Error" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="c7a9f641c3bb4847bb94d934090b991e" Bounds="1240 355 52 14" Id="22f566311e6f426e9c2e6bbe24ce6db6" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Error Out</p.Text>
+			</NodeLabel>
+			<Wire Id="ccb6750c3e54abdb6bbccad5ee7e392" Joints="N(338db060df054d9bb6ed8e017f366039:d9df7bfd9853479bbc1d8d47a8ff6630)|(1174,360) N(c7a9f641c3bb4847bb94d934090b991e:Value)|(1198,360)" xmlns="http://www.ni.com/PlatformFramework" />
+		</BlockDiagram>
+		<NativeFrontPanel Height="[float]1600" HtmlPanel="[bool]False" Id="b09155bcc5764781a93733b39d2f50f1" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" Width="[float]2000">
+			<PanelExecutionWindow Id="d6c63642b78f496c81cd6559f02bb8ec" />
+		</NativeFrontPanel>
+		<DataItem CallDirection="Input" CallIndex="0" DataType="Error" Id="8b37d550a4a84c5399ef28c0fe6f4115" Name="Error In" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>
+				<Cluster>
+					<Field1>False</Field1>
+					<Field2>0</Field2>
+					<Field3>""</Field3>
+				</Cluster>
+			</p.DefaultValue>
+			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+				<TypeDefinitionTarget TargetName="NI::G Core::Error::Error.gtype" />
+			</p.TypeDefinitionTargets>
+		</DataItem>
+		<DataItem CallDirection="Output" CallIndex="0" DataType="Error" Id="72f93df1b424c93baf03cf8270c0314" Name="Error Out" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>
+				<Cluster>
+					<Field1>False</Field1>
+					<Field2>0</Field2>
+					<Field3>""</Field3>
+				</Cluster>
+			</p.DefaultValue>
+			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+				<TypeDefinitionTarget TargetName="NI::G Core::Error::Error.gtype" />
+			</p.TypeDefinitionTargets>
+		</DataItem>
+		<DataItem CallDirection="Input" CallIndex="1" CallUsage="Required" DataType="@f69cd136e6f24b348d37ced1cee334a0" Id="639755eca9ef4a46bd3828e24b1c3fdb" Name="Arduino Filter Flipper FGV instructions" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0</p.DefaultValue>
+			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+				<TypeDefinitionTarget TargetName="EQE_Measuring_Setup_NanOpto::SubVis::FGV::Arduino Filter Flipper FGV instructions.gtype" />
+			</p.TypeDefinitionTargets>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="2" DataType="Boolean" Id="6dfc17af1f054c4798de10f7ffa92fdc" Name="Flipper State Boolean" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>False</p.DefaultValue>
+		</DataItem>
+		<DataItem CallDirection="Output" CallIndex="1" DataType="@51873ddf55dc4107b2678eac32db0ef1" Id="f6b09bfded1c424da99dc702c3dee07b" Name="Arduino Filter Flipper Instructions out" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0</p.DefaultValue>
+			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+				<TypeDefinitionTarget TargetName="EQE_Measuring_Setup_NanOpto::SubVis::Instrument Control::Arduinos::Filter Flipper Arduino::Arduino Filter Flipper Instructions.gtype" />
+			</p.TypeDefinitionTargets>
+		</DataItem>
+		<DataItem CallDirection="Input" CallIndex="2" DataType="@51873ddf55dc4107b2678eac32db0ef1" Id="91cbcfa114ff4e0d9652fbbe533defab" Name="Arduino Filter Flipper Instructions In" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0</p.DefaultValue>
+			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+				<TypeDefinitionTarget TargetName="EQE_Measuring_Setup_NanOpto::SubVis::Instrument Control::Arduinos::Filter Flipper Arduino::Arduino Filter Flipper Instructions.gtype" />
+			</p.TypeDefinitionTargets>
+		</DataItem>
+	</VirtualInstrument>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="f69cd136e6f24b348d37ced1cee334a0">
+			<Attributed AttributedType="@0af9df11f11546f2ab269f0bc1afd52e">
+				<AttributeValues>
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]EQE_Measuring_Setup_NanOpto::SubVis::FGV" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="51873ddf55dc4107b2678eac32db0ef1">
+			<Attributed AttributedType="@fe7f1abda76c4f70afa2878628b3c13e">
+				<AttributeValues>
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]EQE_Measuring_Setup_NanOpto::SubVis::Instrument Control::Arduinos::Filter Flipper Arduino" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="0af9df11f11546f2ab269f0bc1afd52e">
+			<Typedef TypedefName="Arduino Filter Flipper FGV instructions.gtype" UnderlyingType="@452289e240fd4ea1a23e4955a82acf32" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="fe7f1abda76c4f70afa2878628b3c13e">
+			<Typedef TypedefName="Arduino Filter Flipper Instructions.gtype" UnderlyingType="@c7309bdde3af43df9238621a9a24786d" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="452289e240fd4ea1a23e4955a82acf32">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="Read State" />
+					<EnumerationMember Value="1" Name="Set State" />
+				</Members>
+				<DataType>UInt16</DataType>
+			</Enumeration>
+		</p.TypeReference>
+		<p.TypeReference TypeId="c7309bdde3af43df9238621a9a24786d">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="IR Pass" />
+					<EnumerationMember Value="1" Name="Visible Pass" />
+				</Members>
+				<DataType>UInt16</DataType>
+			</Enumeration>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>

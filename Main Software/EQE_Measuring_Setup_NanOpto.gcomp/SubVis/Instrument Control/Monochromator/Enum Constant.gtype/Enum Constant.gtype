@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="6C229D48378FCFA442394874DDDE1D1B5DA3DDC15FD30E86B378AA91AD6A5A266A536D95ECAA1D9D739F4B42EA8DFB819C39E3AAAFE6DFA46BBC3058EBECC8DD" Timestamp="1D64EBBE69C7ECD" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="6.2.0.49153" Version="6.2.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="6.2.0.49154" Version="6.2.0.49154" />
+		<ApplicationVersionInfo Build="6.4.1.50844" Name="LabVIEW NXG" Version="3.1.0" />
+	</SourceModelFeatureSet>
+	<TypeDefinition DataType="@cd9811693bca48978cb673009e1845ea" Id="88118864f00c4fb192386f97f0d5f97d" xmlns="http://www.ni.com/MocCommon">
+		<Icon Id="8246b567a28345c7ae26d25a8fab0705" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="72b2e9d874974d26ab9a57f3167061e5" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate Height="[float]40" Id="54f1957ae0234fd3bdea7a1cc3d0d08b" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
+			</IconPanel>
+		</Icon>
+		<DataItem DataType="@cd9811693bca48978cb673009e1845ea" Id="52e4750c83594824b7d6afdbde5aea2f" Name="Enum Constant">
+			<p.DefaultValue>0</p.DefaultValue>
+		</DataItem>
+	</TypeDefinition>
+	<EnvoyManagerFile Id="b95bd4d6f14cdab1a0c0100c9c5744" xmlns="http://www.ni.com/PlatformFramework">
+		<ProjectSettings Id="fb584470653b47a498f740c675f52c91" ModelDefinitionType="ProjectSettings" Name="ZProjectSettings" />
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="3d7cedc1c8644977a3f50e64bd36cd2a" Name="Enum Constant.gtype" NameTracksFileName="True">
+			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy" Id="9fa1269649ba4330b39bd479756da2e7" ModelDefinitionType="NationalInstruments.PanelCommon.SourceModel.ControlDefinition" Name="ControlDefinition">
+				<ControlDefinition DefaultDirection="Control" Id="1ff51eb97b5a46f1ae7229165d5d734c" xmlns="http://www.ni.com/MocCommon">
+					<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]24" Id="f42c2c50489f4620a1a5da5902b635de" InteractionMode="[SelectorInteractionModes]ArrowKeys, Keyboard, MouseClick, ScrollWheel, ButtonClicks" IsTypeAheadEnabled="[bool]True" Label="[UIModel]cf02ec1770274e6da829da465506db33" Left="[float]100" MinHeight="[float]24" TabIndex="[int]0" Top="[float]100" Value="{DataItemBinding Id=52e4750c83594824b7d6afdbde5aea2f}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+						<EnumSelectorInfo DisplayValue="[string]Visible monochromator file" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]0" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Infrared monochromator file" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]1" ValueType="[Type]UInt16" />
+					</EnumSelector>
+					<Label Height="[float]16" Id="cf02ec1770274e6da829da465506db33" LabelOwner="[UIModel]f42c2c50489f4620a1a5da5902b635de" Left="[float]100" Text="[string]Enum Constant" Top="[float]80" Width="[float]81" xmlns="http://www.ni.com/PanelCommon" />
+				</ControlDefinition>
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="cd9811693bca48978cb673009e1845ea">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="Visible monochromator file" />
+					<EnumerationMember Value="1" Name="Infrared monochromator file" />
+				</Members>
+				<DataType>UInt16</DataType>
+			</Enumeration>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>

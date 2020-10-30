@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="D9B8A9FF62F01EFF31FB56AB6865ABD4CBFF179832C5C51F9F23F45262BE50AAED7BF1F408520574191F683CF517EEDFC52B3DEF4656BB4537C7C860BD603907" Timestamp="1D6AD131800B10B" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="6.2.0.49153" Version="6.2.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="6.2.0.49154" Version="6.2.0.49154" />
+		<ApplicationVersionInfo Build="6.4.1.50844" Name="LabVIEW NXG" Version="3.1.0" />
+	</SourceModelFeatureSet>
+	<TypeDefinition DataType="@f3e12cf0e79e4a4780a5bc03757132b5" Id="8f20264819074e479a3ba9d667d40c7c" xmlns="http://www.ni.com/MocCommon">
+		<Icon Id="52e54b2f7e464743af1455c21a523001" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="97ef92cbd7194ffd9060669107c1e53e" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate Height="[float]40" Id="f1f5c1a7484678a4ce0484297a4b8a" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
+			</IconPanel>
+		</Icon>
+		<DataItem DataType="@f3e12cf0e79e4a4780a5bc03757132b5" Id="ebe66efb1e7c42049a72c000af30ed59" Name="Enum">
+			<p.DefaultValue>1</p.DefaultValue>
+		</DataItem>
+	</TypeDefinition>
+	<EnvoyManagerFile Id="45346a068ed949f7a72a10e132e1f256" xmlns="http://www.ni.com/PlatformFramework">
+		<ProjectSettings Id="260a25e553e84337bea21144b2e5bed7" ModelDefinitionType="ProjectSettings" Name="ZProjectSettings" />
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="6ce5b508c26a4dbe9a8273d95d58e17c" Name="Queue instructions.gtype" NameTracksFileName="True">
+			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy" Id="77e451be35164d8fbac0de3ce8cf3a2a" ModelDefinitionType="NationalInstruments.PanelCommon.SourceModel.ControlDefinition" Name="ControlDefinition">
+				<ControlDefinition DefaultDirection="Control" Id="b231790cf5ca4e82aebf79462362c4b0" xmlns="http://www.ni.com/MocCommon">
+					<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]24" Id="bd957980ad744ea4aac29238cd757647" IsTypeAheadEnabled="[bool]True" Label="[UIModel]508831d605034b6aaa1577f7924182ce" Left="[float]100" MinHeight="[float]24" TabIndex="[int]0" Top="[float]100" Value="{DataItemBinding Id=ebe66efb1e7c42049a72c000af30ed59}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]251" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+						<EnumSelectorInfo DisplayValue="[string]Wrongly pointed State" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]0" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Initialize App" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]1" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Light Calibration" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]2" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Measure Photodetector" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]3" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Measure Keithley" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]4" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Instrument detection" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]5" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Single Acquire" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]6" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Multiple Acquire" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]7" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]EQE Mapping" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]8" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Debugging mode" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]9" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Move Arduino" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]10" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Arduino FF flip filter" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]11" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Help routine" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]12" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Idle" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]13" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Save Calibration" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]14" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Load Calibration" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]15" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Set Wavelength" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]16" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Turn supercontinuum laser on/off" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]17" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Set Multiplex arduino cell" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]18" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Save TXT EQE file" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]19" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Load TXT EQE" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]20" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Stop or Idle" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]21" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Stop App" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]22" ValueType="[Type]UInt16" />
+					</EnumSelector>
+					<Label Height="[float]16" Id="508831d605034b6aaa1577f7924182ce" LabelOwner="[UIModel]bd957980ad744ea4aac29238cd757647" Left="[float]100" Text="[string]Enum" Top="[float]80" Width="[float]30" xmlns="http://www.ni.com/PanelCommon" />
+				</ControlDefinition>
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="f3e12cf0e79e4a4780a5bc03757132b5">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="Wrongly pointed State" />
+					<EnumerationMember Value="1" Name="Initialize App" />
+					<EnumerationMember Value="2" Name="Light Calibration" />
+					<EnumerationMember Value="3" Name="Measure Photodetector" />
+					<EnumerationMember Value="4" Name="Measure Keithley" />
+					<EnumerationMember Value="5" Name="Instrument detection" />
+					<EnumerationMember Value="6" Name="Single Acquire" />
+					<EnumerationMember Value="7" Name="Multiple Acquire" />
+					<EnumerationMember Value="8" Name="EQE Mapping" />
+					<EnumerationMember Value="9" Name="Debugging mode" />
+					<EnumerationMember Value="10" Name="Move Arduino" />
+					<EnumerationMember Value="11" Name="Arduino FF flip filter" />
+					<EnumerationMember Value="12" Name="Help routine" />
+					<EnumerationMember Value="13" Name="Idle" />
+					<EnumerationMember Value="14" Name="Save Calibration" />
+					<EnumerationMember Value="15" Name="Load Calibration" />
+					<EnumerationMember Value="16" Name="Set Wavelength" />
+					<EnumerationMember Value="17" Name="Turn supercontinuum laser on/off" />
+					<EnumerationMember Value="18" Name="Set Multiplex arduino cell" />
+					<EnumerationMember Value="19" Name="Save TXT EQE file" />
+					<EnumerationMember Value="20" Name="Load TXT EQE" />
+					<EnumerationMember Value="21" Name="Stop or Idle" />
+					<EnumerationMember Value="22" Name="Stop App" />
+				</Members>
+				<DataType>UInt16</DataType>
+			</Enumeration>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>

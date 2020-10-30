@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="3C2F4E63365EC3E830561A129EBDBD9C9AC0DFD9773AF1174FB9D2D49628C6BBDF61EE1084AF22B6961BCB6BE1B1AFDE3760A4DC64FB4BF5E5FE38B8E267881E" Timestamp="1D66C0488B5F262" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="6.2.0.49153" Version="6.2.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="6.2.0.49154" Version="6.2.0.49154" />
+		<ApplicationVersionInfo Build="6.4.1.50844" Name="LabVIEW NXG" Version="3.1.0" />
+	</SourceModelFeatureSet>
+	<VirtualInstrument Id="31c844441eb4151b9880a678101e02b" xmlns="http://www.ni.com/LabVIEW.VI">
+		<Icon Id="1d732af31d3e476790d081b605aa181a" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="6d026ee500d44f7ab606b13675794c81" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="b2c491586cc742948ef0af960192cd1c" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]40">
+					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="6f146bf10d044981977026db22780b1c" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="4a8086aa345c43e3b700ccb157645200" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+					<FileNameText Attached="[bool]True" Height="[float]36" Id="4360ec92c11640a3920bf507eb70e1d8" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]Arduino Carriage Log FGV" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]36">
+						<FontSetting FontFamily="Verdana" FontSize="6" Id="63c171a1652540ef851d4670ab10f4f3" />
+					</FileNameText>
+				</IconTemplate>
+			</IconPanel>
+		</Icon>
+		<ConnectorPane Height="40" Id="a9033aff390d47a2b669ebafdf25d3f5" ListViewHeight="85" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
+			<ConnectorPaneTerminal ListViewHotspot="0 35" Parameter="62352bc5fccb4bb48ae13d786b6f369d" />
+			<ConnectorPaneTerminal Hotspot="0 15" />
+			<ConnectorPaneTerminal Hotspot="0 25" ListViewHotspot="0 50" Parameter="a2e3a05d8287400bb2410ee74a920292" />
+			<ConnectorPaneTerminal Hotspot="0 35" />
+			<ConnectorPaneTerminal Hotspot="15 0" />
+			<ConnectorPaneTerminal Hotspot="25 0" />
+			<ConnectorPaneTerminal Hotspot="40 5" />
+			<ConnectorPaneTerminal Hotspot="40 15" />
+			<ConnectorPaneTerminal Hotspot="40 25" ListViewHotspot="150 65" Parameter="6e9a015e08e440b6920b3db56d532a1a" />
+			<ConnectorPaneTerminal Hotspot="40 35" />
+			<ConnectorPaneTerminal Hotspot="15 40" />
+			<ConnectorPaneTerminal Hotspot="25 40" />
+		</ConnectorPane>
+		<DiagramUnplacedItems Id="b49fd57ed12483cb6590ba0081d294c" xmlns="http://www.ni.com/MocCommon" />
+		<FrontPanelUnplacedItems Id="1167cfb8f5ac443794d0c6b07ab4ccd0" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0">
+			<StringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="70465f44591945418f1b3ce5900e753b" IsReadOnly="[bool]True" Left="[float]0" Name="[string]Carriage Arduino LOG Out" TabIndex="[int]0" Text="{DataItemBinding Id=6e9a015e08e440b6920b3db56d532a1a}" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]24" Id="feb55bd459434d8789511a98a07d9d5a" InteractionMode="[SelectorInteractionModes]ArrowKeys, Keyboard, MouseClick, ScrollWheel, ButtonClicks" IsTabStop="[bool]True" IsTypeAheadEnabled="[bool]True" Label="[UIModel]18e037932f46406985939e1217f0bf05" Left="[float]0" MinHeight="[float]24" TabIndex="[int]1" Top="[float]0" Value="{DataItemBinding Id=62352bc5fccb4bb48ae13d786b6f369d}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]72" p4:ControlDefinitionChecksum="7sFRD0rsBPXF5cbACHNq0JKzjSLjh1iJlmr2/0I1P5U=" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+				<p4:p.TypeDefinitionTargets>
+					<p4:TypeDefinitionTarget TargetName="EQE_Measuring_Setup_NanOpto::SubVis::FGV::Arduino Carriage Log Enum.gtype::ControlDefinition" />
+				</p4:p.TypeDefinitionTargets>
+				<EnumSelectorInfo DisplayValue="[string]Read" Value="[ushort]0" ValueType="[Type]UInt16" />
+				<EnumSelectorInfo DisplayValue="[string]Write" Value="[ushort]1" ValueType="[Type]UInt16" />
+				<EnumSelectorInfo DisplayValue="[string]Reset" Value="[ushort]2" ValueType="[Type]UInt16" />
+				<p4:Label Height="[float]16" Id="18e037932f46406985939e1217f0bf05" IsVisualChild="[bool]False" LabelOwner="[UIModel]feb55bd459434d8789511a98a07d9d5a" Left="[float]0" Text="[string]Arduino Carriage Log Enum" Top="[float]-20" Width="[float]146" />
+			</EnumSelector>
+			<StringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="337c5b53c3ae4e94adedbc129a88144f" IsReadOnly="[bool]True" Left="[float]0" Name="[string]Carriage Arduino LOG In" TabIndex="[int]2" Text="{DataItemBinding Id=a2e3a05d8287400bb2410ee74a920292}" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+		</FrontPanelUnplacedItems>
+		<BlockDiagram Id="9204fe770da64376a2e1b6711c8348eb">
+			<WhileLoop Bounds="-25 70 560 205" DiagramId="c079ce6bcb3c4b648d62923f7930d984" Id="dfae6c8af6704cef9185187b3885bf0b">
+				<LoopIteration Bounds="0 180 15 15" Id="8ce23356974b445298cf5841889c57ed" />
+				<LoopCondition Bounds="535 180 15 15" Id="bb7cecfa75044efebcf93533da6ac08d" />
+				<Literal Bounds="490 135 25 15" DataType="Boolean" Id="15b42499da1f4782be07493df14c4294" Label="5ff5cb85833e40428408b427d3589abd" xmlns="http://www.ni.com/MocCommon">
+					<p.Data>True</p.Data>
+					<BooleanBehavior />
+				</Literal>
+				<NodeLabel AttachedTo="15b42499da1f4782be07493df14c4294" Bounds="490 153 30 15" Id="5ff5cb85833e40428408b427d3589abd" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>stop</p.Text>
+				</NodeLabel>
+				<Wire Id="84212ff0cb044180b13c6dad9c3473da" Joints="N(15b42499da1f4782be07493df14c4294:Out)|(515,140) h(10) v(45) N(bb7cecfa75044efebcf93533da6ac08d:Input)|(535,185)" xmlns="http://www.ni.com/PlatformFramework" />
+				<CaseStructure Bounds="250 20 250 110" DataType="@eb930828d0b545f49995c4d7834fb786" Default="3f984ae1134e42b9a61b97172b48dadb" Id="f22ea1fd165a4ea7af4af727be3d3de7" Selected="9733efcbbb5c4a81ba4f246760aeb049" UserSelectorBounds="51 0 148 17">
+					<CaseStructure.Case Bounds="5 5 240 100" Id="3f984ae1134e42b9a61b97172b48dadb" Pattern="&quot;Reset&quot;, Default">
+						<Literal Bounds="175 30 40 15" DataType="String" Id="7252b763df6b4f3ea83c39374056c2e2" xmlns="http://www.ni.com/MocCommon">
+							<p.Data>""</p.Data>
+							<StringBehavior TextDisplayMode="Default" />
+						</Literal>
+						<Wire Id="82433f2a7a846f89085b97a07f7350e" Joints="N(7252b763df6b4f3ea83c39374056c2e2:Out)|(215,35) N(5b4ff3b65a6e47129001bc8dbb058463:3f984ae1134e42b9a61b97172b48dadb)|(236,35)" xmlns="http://www.ni.com/PlatformFramework" />
+					</CaseStructure.Case>
+					<CaseStructure.Case Bounds="5 5 240 100" Id="9733efcbbb5c4a81ba4f246760aeb049" Pattern="&quot;Read&quot;">
+						<DataAccessor Bounds="25 45 40 15" DataItem="6e9a015e08e440b6920b3db56d532a1a" Id="ea1316bdabfb45a1a5c6b97f1b0c4027" Label="5497070321664db881ce9878815e93ff" xmlns="http://www.ni.com/MocCommon">
+							<Terminal DataType="String" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+						</DataAccessor>
+						<NodeLabel AttachedTo="ea1316bdabfb45a1a5c6b97f1b0c4027" Bounds="70 45 145 14" Id="5497070321664db881ce9878815e93ff" xmlns="http://www.ni.com/PlatformFramework">
+							<p.Text>Carriage Arduino LOG Out</p.Text>
+						</NodeLabel>
+						<Wire Id="6c0dd7648dcc4614ba4fb56333b0e363" Joints="N(befdd24428764c65b9e13380149df056:9733efcbbb5c4a81ba4f246760aeb049)|(4,35) h(11) B(1) N(5b4ff3b65a6e47129001bc8dbb058463:9733efcbbb5c4a81ba4f246760aeb049)|(236,35) B(1) v(15) N(ea1316bdabfb45a1a5c6b97f1b0c4027:Value)|(28,50)" xmlns="http://www.ni.com/PlatformFramework" />
+					</CaseStructure.Case>
+					<CaseStructure.Case Bounds="5 5 240 100" Id="e4d9102010424927936d498cebd321b9" Pattern="&quot;Write&quot;">
+						<Wire Id="4c09ea4d004546d08e1c70f77db3e8b8" Joints="N(983f2f95e9984e0f93dce85a273f0ad4:Value)|(215,35) N(5b4ff3b65a6e47129001bc8dbb058463:e4d9102010424927936d498cebd321b9)|(236,35)" xmlns="http://www.ni.com/PlatformFramework" />
+						<DataAccessor Bounds="175 30 40 15" DataItem="a2e3a05d8287400bb2410ee74a920292" Id="983f2f95e9984e0f93dce85a273f0ad4" Label="a111917d30624a69a0d077ff8b443a48" xmlns="http://www.ni.com/MocCommon">
+							<Terminal DataType="String" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+						</DataAccessor>
+						<NodeLabel AttachedTo="983f2f95e9984e0f93dce85a273f0ad4" Bounds="34 30 136 14" Id="a111917d30624a69a0d077ff8b443a48" xmlns="http://www.ni.com/PlatformFramework">
+							<p.Text>Carriage Arduino LOG In</p.Text>
+						</NodeLabel>
+					</CaseStructure.Case>
+					<CaseStructure.Selector Bounds="-4 20 13 10" Docking="Left" Id="d68c5681a8be4e2fb411b32ec88d1756" Terminals="f22ea1fd165a4ea7af4af727be3d3de7=78b9b5249485424b856ca7bd6397a495, 3f984ae1134e42b9a61b97172b48dadb, 9733efcbbb5c4a81ba4f246760aeb049, e4d9102010424927936d498cebd321b9" />
+					<CaseStructure.Tunnel Bounds="241 35 13 10" Docking="Right" Id="5b4ff3b65a6e47129001bc8dbb058463" Terminals="f22ea1fd165a4ea7af4af727be3d3de7=2c57cce95e3942c683fd80cdce94f279, 3f984ae1134e42b9a61b97172b48dadb=82433f2a7a846f89085b97a07f7350e, 9733efcbbb5c4a81ba4f246760aeb049=6c0dd7648dcc4614ba4fb56333b0e363, e4d9102010424927936d498cebd321b9=4c09ea4d004546d08e1c70f77db3e8b8" />
+					<CaseStructure.Tunnel Bounds="-4 35 13 10" Docking="Left" Id="befdd24428764c65b9e13380149df056" Terminals="f22ea1fd165a4ea7af4af727be3d3de7=fbc53890bc644c9d81bd7bb771912fc0, 3f984ae1134e42b9a61b97172b48dadb, 9733efcbbb5c4a81ba4f246760aeb049=6c0dd7648dcc4614ba4fb56333b0e363, e4d9102010424927936d498cebd321b9" />
+				</CaseStructure>
+				<Wire Id="78b9b5249485424b856ca7bd6397a495" Joints="N(76c7783b08224df3a65025c7545ef11d:Value)|(230,45) N(d68c5681a8be4e2fb411b32ec88d1756:f22ea1fd165a4ea7af4af727be3d3de7)|(246,45)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="2c57cce95e3942c683fd80cdce94f279" Joints="N(5b4ff3b65a6e47129001bc8dbb058463:f22ea1fd165a4ea7af4af727be3d3de7)|(504,60) N(e41c3cd3b734cdfb52a441f6674a232:c079ce6bcb3c4b648d62923f7930d984)|(546,60)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="fbc53890bc644c9d81bd7bb771912fc0" Joints="N(add3c76fe6d54b6ea4394f0a2eb72846:i0)|(4,60) N(befdd24428764c65b9e13380149df056:f22ea1fd165a4ea7af4af727be3d3de7)|(246,60)" xmlns="http://www.ni.com/PlatformFramework" />
+				<DataAccessor Bounds="190 40 40 15" DataItem="62352bc5fccb4bb48ae13d786b6f369d" Id="76c7783b08224df3a65025c7545ef11d" Label="21ca99628d79452e85d9f0e60c19290d" xmlns="http://www.ni.com/MocCommon">
+					<Terminal DataType="@eb930828d0b545f49995c4d7834fb786" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				</DataAccessor>
+				<NodeLabel AttachedTo="76c7783b08224df3a65025c7545ef11d" Bounds="32 40 153 14" Id="21ca99628d79452e85d9f0e60c19290d" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>Arduino Carriage Log Enum</p.Text>
+				</NodeLabel>
+				<RightShiftRegister Bounds="551 60 13 10" Docking="Right" Id="e41c3cd3b734cdfb52a441f6674a232" Terminals="dfae6c8af6704cef9185187b3885bf0b, c079ce6bcb3c4b648d62923f7930d984=2c57cce95e3942c683fd80cdce94f279" />
+				<LeftShiftRegister Bounds="-4 60 13 10" Docking="Left" Id="add3c76fe6d54b6ea4394f0a2eb72846" RightRegister="e41c3cd3b734cdfb52a441f6674a232" Terminals="o0, i0=fbc53890bc644c9d81bd7bb771912fc0" />
+			</WhileLoop>
+		</BlockDiagram>
+		<NativeFrontPanel Height="[float]1600" HtmlPanel="[bool]False" Id="86381edcc4ff40bf93697ec40f59906d" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" Width="[float]2000">
+			<PanelExecutionWindow Id="ed4df0434ac94164927259f6479b89b0" />
+		</NativeFrontPanel>
+		<DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="0" DataType="String" Id="6e9a015e08e440b6920b3db56d532a1a" Name="Carriage Arduino LOG Out" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>""</p.DefaultValue>
+		</DataItem>
+		<DataItem CallDirection="Input" CallIndex="1" DataType="@eb930828d0b545f49995c4d7834fb786" Id="62352bc5fccb4bb48ae13d786b6f369d" Name="Arduino Carriage Log Enum" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0</p.DefaultValue>
+			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+				<TypeDefinitionTarget TargetName="EQE_Measuring_Setup_NanOpto::SubVis::FGV::Arduino Carriage Log Enum.gtype" />
+			</p.TypeDefinitionTargets>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="0" DataType="String" Id="a2e3a05d8287400bb2410ee74a920292" Name="Carriage Arduino LOG In" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>""</p.DefaultValue>
+		</DataItem>
+	</VirtualInstrument>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="eb930828d0b545f49995c4d7834fb786">
+			<Attributed AttributedType="@b7436478be654c15948b3d7f7369dcfc">
+				<AttributeValues>
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]EQE_Measuring_Setup_NanOpto::SubVis::FGV" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="b7436478be654c15948b3d7f7369dcfc">
+			<Typedef TypedefName="Arduino Carriage Log Enum.gtype" UnderlyingType="@7f3811db735a4a9facc4fb7cae67c408" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="7f3811db735a4a9facc4fb7cae67c408">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="Read" />
+					<EnumerationMember Value="1" Name="Write" />
+					<EnumerationMember Value="2" Name="Reset" />
+				</Members>
+				<DataType>UInt16</DataType>
+			</Enumeration>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>

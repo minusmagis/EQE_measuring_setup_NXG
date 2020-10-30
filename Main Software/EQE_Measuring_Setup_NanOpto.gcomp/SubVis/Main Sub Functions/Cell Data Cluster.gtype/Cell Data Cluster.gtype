@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="CE49530C912E54DC96CB79FC2AA120D441D51EC3D354BF19296B8E8791798A44F4A43B1C4A35159FE5ADF0340B2765C5C68C06F6A3BE30B8851DA0E7CD8C72EC" Timestamp="1D63A487196508E" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="6.2.0.49153" Version="6.2.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="6.2.0.49154" Version="6.2.0.49154" />
+		<ApplicationVersionInfo Build="6.4.1.50844" Name="LabVIEW NXG" Version="3.1.0" />
+	</SourceModelFeatureSet>
+	<TypeDefinition DataType="@7e39fe7f9be644c2925e02d6c95b0be2" Id="1" xmlns="http://www.ni.com/MocCommon">
+		<Icon Id="2" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="3" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate Height="[float]40" Id="4" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
+			</IconPanel>
+		</Icon>
+		<DataItem DataType="@7e39fe7f9be644c2925e02d6c95b0be2" Id="62" Name="Cell data Cluster">
+			<p.DefaultValue>False_False_False_False_False_False_False_False_False_False_False_False_False_False_False_False_False_False_False_False_False_False_False_False_False_False_</p.DefaultValue>
+		</DataItem>
+	</TypeDefinition>
+	<EnvoyManagerFile Id="5" xmlns="http://www.ni.com/PlatformFramework">
+		<ProjectSettings Id="6" ModelDefinitionType="ProjectSettings" Name="ZProjectSettings" />
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="7" Name="Cell Data Cluster.gtype" NameTracksFileName="True">
+			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy" Id="8" ModelDefinitionType="NationalInstruments.PanelCommon.SourceModel.ControlDefinition" Name="ControlDefinition">
+				<ControlDefinition DefaultDirection="Control" Id="9" xmlns="http://www.ni.com/MocCommon">
+					<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@7e39fe7f9be644c2925e02d6c95b0be2" Height="[float]472" Id="10" Label="[UIModel]61" Left="[float]233" TabIndex="[int]0" Top="[float]256" Value="{DataItemBinding Id=62}" Width="[float]156" xmlns="http://www.ni.com/PanelCommon">
+						<LED BaseName="[string]Round LED" FalseContent="[string]Off" Height="[float]24" Id="11" IsReadOnly="[bool]False" Label="[UIModel]36" Left="[float]80" MinHeight="[float]24" MinWidth="[float]24" Shape="[LEDShape]Round" TabIndex="[int]0" TextAlignment="[TextAlignment]Center" Top="[float]110" TrueContent="[string]On" Value="{ClusterBinding FieldName=L.01}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<LED BaseName="[string]Round LED" FalseContent="[string]Off" Height="[float]24" Id="12" IsReadOnly="[bool]False" Label="[UIModel]37" Left="[float]43" MinHeight="[float]24" MinWidth="[float]24" Shape="[LEDShape]Round" TabIndex="[int]1" TextAlignment="[TextAlignment]Center" Top="[float]110" TrueContent="[string]On" Value="{ClusterBinding FieldName=R.01}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<LED BaseName="[string]Round LED" FalseContent="[string]Off" Height="[float]24" Id="13" IsReadOnly="[bool]False" Label="[UIModel]38" Left="[float]80" MinHeight="[float]24" MinWidth="[float]24" Shape="[LEDShape]Round" TabIndex="[int]2" Top="[float]139" TrueContent="[string]On" Value="{ClusterBinding FieldName=L.02}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<LED BaseName="[string]Round LED" FalseContent="[string]Off" Height="[float]24" Id="14" IsReadOnly="[bool]False" Label="[UIModel]39" Left="[float]43" MinHeight="[float]24" MinWidth="[float]24" Shape="[LEDShape]Round" TabIndex="[int]3" Top="[float]139" TrueContent="[string]On" Value="{ClusterBinding FieldName=R.02}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<LED BaseName="[string]Round LED" FalseContent="[string]Off" Height="[float]24" Id="15" IsReadOnly="[bool]False" Label="[UIModel]40" Left="[float]80" MinHeight="[float]24" MinWidth="[float]24" Shape="[LEDShape]Round" TabIndex="[int]4" Top="[float]168" TrueContent="[string]On" Value="{ClusterBinding FieldName=L.03}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<LED BaseName="[string]Round LED" FalseContent="[string]Off" Height="[float]24" Id="16" IsReadOnly="[bool]False" Label="[UIModel]41" Left="[float]43" MinHeight="[float]24" MinWidth="[float]24" Shape="[LEDShape]Round" TabIndex="[int]5" Top="[float]168" TrueContent="[string]On" Value="{ClusterBinding FieldName=R.03}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<LED BaseName="[string]Round LED" FalseContent="[string]Off" Height="[float]24" Id="17" IsReadOnly="[bool]False" Label="[UIModel]42" Left="[float]80" MinHeight="[float]24" MinWidth="[float]24" Shape="[LEDShape]Round" TabIndex="[int]6" Top="[float]197" TrueContent="[string]On" Value="{ClusterBinding FieldName=L.04}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<LED BaseName="[string]Round LED" FalseContent="[string]Off" Height="[float]24" Id="18" IsReadOnly="[bool]False" Label="[UIModel]43" Left="[float]43" MinHeight="[float]24" MinWidth="[float]24" Shape="[LEDShape]Round" TabIndex="[int]7" Top="[float]197" TrueContent="[string]On" Value="{ClusterBinding FieldName=R.04}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<LED BaseName="[string]Round LED" FalseContent="[string]Off" Height="[float]24" Id="19" IsReadOnly="[bool]False" Label="[UIModel]44" Left="[float]80" MinHeight="[float]24" MinWidth="[float]24" Shape="[LEDShape]Round" TabIndex="[int]8" Top="[float]226" TrueContent="[string]On" Value="{ClusterBinding FieldName=L.05}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<LED BaseName="[string]Round LED" FalseContent="[string]Off" Height="[float]24" Id="20" IsReadOnly="[bool]False" Label="[UIModel]45" Left="[float]43" MinHeight="[float]24" MinWidth="[float]24" Shape="[LEDShape]Round" TabIndex="[int]9" Top="[float]226" TrueContent="[string]On" Value="{ClusterBinding FieldName=R.05}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<LED BaseName="[string]Round LED" FalseContent="[string]Off" Height="[float]24" Id="21" IsReadOnly="[bool]False" Label="[UIModel]46" Left="[float]80" MinHeight="[float]24" MinWidth="[float]24" Shape="[LEDShape]Round" TabIndex="[int]10" Top="[float]255" TrueContent="[string]On" Value="{ClusterBinding FieldName=L.06}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<LED BaseName="[string]Round LED" FalseContent="[string]Off" Height="[float]24" Id="22" IsReadOnly="[bool]False" Label="[UIModel]47" Left="[float]43" MinHeight="[float]24" MinWidth="[float]24" Shape="[LEDShape]Round" TabIndex="[int]11" Top="[float]255" TrueContent="[string]On" Value="{ClusterBinding FieldName=R.06}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<LED BaseName="[string]Round LED" FalseContent="[string]Off" Height="[float]24" Id="23" IsReadOnly="[bool]False" Label="[UIModel]48" Left="[float]80" MinHeight="[float]24" MinWidth="[float]24" Shape="[LEDShape]Round" TabIndex="[int]12" Top="[float]284" TrueContent="[string]On" Value="{ClusterBinding FieldName=L.07}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<LED BaseName="[string]Round LED" FalseContent="[string]Off" Height="[float]24" Id="24" IsReadOnly="[bool]False" Label="[UIModel]49" Left="[float]43" MinHeight="[float]24" MinWidth="[float]24" Shape="[LEDShape]Round" TabIndex="[int]13" Top="[float]284" TrueContent="[string]On" Value="{ClusterBinding FieldName=R.07}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<LED BaseName="[string]Round LED" FalseContent="[string]Off" Height="[float]24" Id="25" IsReadOnly="[bool]False" Label="[UIModel]50" Left="[float]80" MinHeight="[float]24" MinWidth="[float]24" Shape="[LEDShape]Round" TabIndex="[int]14" Top="[float]313" TrueContent="[string]On" Value="{ClusterBinding FieldName=L.08}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<LED BaseName="[string]Round LED" FalseContent="[string]Off" Height="[float]24" Id="26" IsReadOnly="[bool]False" Label="[UIModel]51" Left="[float]43" MinHeight="[float]24" MinWidth="[float]24" Shape="[LEDShape]Round" TabIndex="[int]15" Top="[float]313" TrueContent="[string]On" Value="{ClusterBinding FieldName=R.08}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<LED BaseName="[string]Round LED" FalseContent="[string]Off" Height="[float]24" Id="27" IsReadOnly="[bool]False" Label="[UIModel]52" Left="[float]80" MinHeight="[float]24" MinWidth="[float]24" Shape="[LEDShape]Round" TabIndex="[int]16" Top="[float]342" TrueContent="[string]On" Value="{ClusterBinding FieldName=L.09}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<LED BaseName="[string]Round LED" FalseContent="[string]Off" Height="[float]24" Id="28" IsReadOnly="[bool]False" Label="[UIModel]53" Left="[float]43" MinHeight="[float]24" MinWidth="[float]24" Shape="[LEDShape]Round" TabIndex="[int]17" Top="[float]342" TrueContent="[string]On" Value="{ClusterBinding FieldName=R.09}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<LED BaseName="[string]Round LED" FalseContent="[string]Off" Height="[float]24" Id="29" IsReadOnly="[bool]False" Label="[UIModel]54" Left="[float]80" MinHeight="[float]24" MinWidth="[float]24" Shape="[LEDShape]Round" TabIndex="[int]18" Top="[float]371" TrueContent="[string]On" Value="{ClusterBinding FieldName=L.10}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<LED BaseName="[string]Round LED" FalseContent="[string]Off" Height="[float]24" Id="30" IsReadOnly="[bool]False" Label="[UIModel]55" Left="[float]43" MinHeight="[float]24" MinWidth="[float]24" Shape="[LEDShape]Round" TabIndex="[int]19" Top="[float]371" TrueContent="[string]On" Value="{ClusterBinding FieldName=R.10}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<LED BaseName="[string]Round LED" FalseContent="[string]Off" Height="[float]24" Id="31" IsReadOnly="[bool]False" Label="[UIModel]56" Left="[float]80" MinHeight="[float]24" MinWidth="[float]24" Shape="[LEDShape]Round" TabIndex="[int]20" Top="[float]400" TrueContent="[string]On" Value="{ClusterBinding FieldName=L.11}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<LED BaseName="[string]Round LED" FalseContent="[string]Off" Height="[float]24" Id="32" IsReadOnly="[bool]False" Label="[UIModel]57" Left="[float]43" MinHeight="[float]24" MinWidth="[float]24" Shape="[LEDShape]Round" TabIndex="[int]21" Top="[float]400" TrueContent="[string]On" Value="{ClusterBinding FieldName=R.11}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<LED BaseName="[string]Round LED" FalseContent="[string]Off" Height="[float]24" Id="33" IsReadOnly="[bool]False" Label="[UIModel]58" Left="[float]80" MinHeight="[float]24" MinWidth="[float]24" Shape="[LEDShape]Round" TabIndex="[int]22" Top="[float]429" TrueContent="[string]On" Value="{ClusterBinding FieldName=L.12}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<LED BaseName="[string]Round LED" FalseContent="[string]Off" Height="[float]24" Id="34" IsReadOnly="[bool]False" Label="[UIModel]59" Left="[float]43" MinHeight="[float]24" MinWidth="[float]24" Shape="[LEDShape]Round" TabIndex="[int]23" Top="[float]429" TrueContent="[string]On" Value="{ClusterBinding FieldName=R.12}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Switch BaseName="[string]Switch" FalseContent="[string]Off" Height="[float]72" Id="35" IsReadOnly="[bool]False" Label="[UIModel]60" Left="[float]26" MinHeight="[float]36" MinWidth="[float]34" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" TabIndex="[int]24" Top="[float]21" TrueContent="[string]On" Value="{ClusterBinding FieldName=All}" Width="[float]40" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="36" LabelAlignment="[PartAlignment]RightCenter" LabelOwner="[UIModel]11" Left="[float]112" Text="[string]L.01" Top="[float]114" Width="[float]21" />
+						<Label Height="[float]16" Id="37" LabelAlignment="[PartAlignment]LeftCenter" LabelOwner="[UIModel]12" Left="[float]12" Text="[string]R.01" Top="[float]114" Width="[float]23" />
+						<Label Height="[float]16" Id="38" LabelAlignment="[PartAlignment]RightCenter" LabelOwner="[UIModel]13" Left="[float]112" Text="[string]L.02" Top="[float]143" Width="[float]21" />
+						<Label Height="[float]16" Id="39" LabelAlignment="[PartAlignment]LeftCenter" LabelOwner="[UIModel]14" Left="[float]12" Text="[string]R.02" Top="[float]143" Width="[float]23" />
+						<Label Height="[float]16" Id="40" LabelAlignment="[PartAlignment]RightCenter" LabelOwner="[UIModel]15" Left="[float]112" Text="[string]L.03" Top="[float]172" Width="[float]21" />
+						<Label Height="[float]16" Id="41" LabelAlignment="[PartAlignment]LeftCenter" LabelOwner="[UIModel]16" Left="[float]12" Text="[string]R.03" Top="[float]172" Width="[float]23" />
+						<Label Height="[float]16" Id="42" LabelAlignment="[PartAlignment]RightCenter" LabelOwner="[UIModel]17" Left="[float]112" Text="[string]L.04" Top="[float]201" Width="[float]21" />
+						<Label Height="[float]16" Id="43" LabelAlignment="[PartAlignment]LeftCenter" LabelOwner="[UIModel]18" Left="[float]12" Text="[string]R.04" Top="[float]201" Width="[float]23" />
+						<Label Height="[float]16" Id="44" LabelAlignment="[PartAlignment]RightCenter" LabelOwner="[UIModel]19" Left="[float]112" Text="[string]L.05" Top="[float]230" Width="[float]21" />
+						<Label Height="[float]16" Id="45" LabelAlignment="[PartAlignment]LeftCenter" LabelOwner="[UIModel]20" Left="[float]12" Text="[string]R.05" Top="[float]230" Width="[float]23" />
+						<Label Height="[float]16" Id="46" LabelAlignment="[PartAlignment]RightCenter" LabelOwner="[UIModel]21" Left="[float]112" Text="[string]L.06" Top="[float]259" Width="[float]21" />
+						<Label Height="[float]16" Id="47" LabelAlignment="[PartAlignment]LeftCenter" LabelOwner="[UIModel]22" Left="[float]12" Text="[string]R.06" Top="[float]259" Width="[float]23" />
+						<Label Height="[float]16" Id="48" LabelAlignment="[PartAlignment]RightCenter" LabelOwner="[UIModel]23" Left="[float]112" Text="[string]L.07" Top="[float]288" Width="[float]21" />
+						<Label Height="[float]16" Id="49" LabelAlignment="[PartAlignment]LeftCenter" LabelOwner="[UIModel]24" Left="[float]12" Text="[string]R.07" Top="[float]288" Width="[float]23" />
+						<Label Height="[float]16" Id="50" LabelAlignment="[PartAlignment]RightCenter" LabelOwner="[UIModel]25" Left="[float]112" Text="[string]L.08" Top="[float]317" Width="[float]21" />
+						<Label Height="[float]16" Id="51" LabelAlignment="[PartAlignment]LeftCenter" LabelOwner="[UIModel]26" Left="[float]12" Text="[string]R.08" Top="[float]317" Width="[float]23" />
+						<Label Height="[float]16" Id="52" LabelAlignment="[PartAlignment]RightCenter" LabelOwner="[UIModel]27" Left="[float]112" Text="[string]L.09" Top="[float]346" Width="[float]21" />
+						<Label Height="[float]16" Id="53" LabelAlignment="[PartAlignment]LeftCenter" LabelOwner="[UIModel]28" Left="[float]12" Text="[string]R.09" Top="[float]346" Width="[float]23" />
+						<Label Height="[float]16" Id="54" LabelAlignment="[PartAlignment]RightCenter" LabelOwner="[UIModel]29" Left="[float]112" Text="[string]L.10" Top="[float]375" Width="[float]21" />
+						<Label Height="[float]16" Id="55" LabelAlignment="[PartAlignment]LeftCenter" LabelOwner="[UIModel]30" Left="[float]12" Text="[string]R.10" Top="[float]375" Width="[float]23" />
+						<Label Height="[float]16" Id="56" LabelAlignment="[PartAlignment]RightCenter" LabelOwner="[UIModel]31" Left="[float]112" Text="[string]L.11" Top="[float]404" Width="[float]21" />
+						<Label Height="[float]16" Id="57" LabelAlignment="[PartAlignment]LeftCenter" LabelOwner="[UIModel]32" Left="[float]12" Text="[string]R.11" Top="[float]404" Width="[float]23" />
+						<Label Height="[float]16" Id="58" LabelAlignment="[PartAlignment]RightCenter" LabelOwner="[UIModel]33" Left="[float]112" Text="[string]L.12" Top="[float]433" Width="[float]21" />
+						<Label Height="[float]16" Id="59" LabelAlignment="[PartAlignment]LeftCenter" LabelOwner="[UIModel]34" Left="[float]12" Text="[string]R.12" Top="[float]433" Width="[float]23" />
+						<Label Height="[float]16" Id="60" LabelOwner="[UIModel]35" Left="[float]26" Text="[string]All" Top="[float]1" Width="[float]14" />
+						<Button BaseName="[string]TextButton" Content="[string]Reset" Height="[float]38" Id="71" IncludeInCapture="[bool]False" IsMomentary="[bool]False" Label="[UIModel]72" Left="[float]87" MinHeight="[float]30" MinWidth="[float]47" Shape="[ButtonShape]Square" TabIndex="[int]25" Top="[float]33" Value="{ClusterBinding FieldName=Reset}" Width="[float]48" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+							<FontSetting FontFamily="Segoe UI" FontSize="12" Id="73" xmlns="http://www.ni.com/PlatformFramework" />
+						</Button>
+						<Label Id="72" LabelOwner="[UIModel]71" Left="[float]87" Text="[string]Reset" Top="[float]13" Visible="[bool]False" />
+					</Cluster>
+					<Label Height="[float]16" Id="61" LabelOwner="[UIModel]10" Left="[float]233" Text="[string]Cell data Cluster" Top="[float]236" Width="[float]86" xmlns="http://www.ni.com/PanelCommon" />
+				</ControlDefinition>
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="7e39fe7f9be644c2925e02d6c95b0be2">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="L.01" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="R.01" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="L.02" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="R.02" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="L.03" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="R.03" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="L.04" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="R.04" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="L.05" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="R.05" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="L.06" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="R.06" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="L.07" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="R.07" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="L.08" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="R.08" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="L.09" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="R.09" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="L.10" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="R.10" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="L.11" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="R.11" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="L.12" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="R.12" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="All" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Reset" DataType="Boolean" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>

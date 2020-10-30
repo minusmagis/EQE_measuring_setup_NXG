@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="FE70E9E22CAC1B06748123BB082CCE2477957EBD7FC61E9101F5E4300F4C32FA4F0E7C6358F0B64BF93D05CE756EB1BC2B85A216575F88A4AD8008EE1E33CEA3" Timestamp="1D643C19CF29231" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="6.2.0.49153" Version="6.2.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="6.2.0.49154" Version="6.2.0.49154" />
+		<ApplicationVersionInfo Build="6.4.1.50844" Name="LabVIEW NXG" Version="3.1.0" />
+	</SourceModelFeatureSet>
+	<TypeDefinition DataType="@c7309bdde3af43df9238621a9a24786d" Id="a58d5f2c5cdb40538624d76b18e6dece" xmlns="http://www.ni.com/MocCommon">
+		<Icon Id="cfe2f3902e5d4c6e837289203b779767" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="6860759e3aec4ad983b2368c6bb241b6" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate Height="[float]40" Id="e9c1624a2d77483caafdd93d83dba9b1" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
+			</IconPanel>
+		</Icon>
+		<DataItem DataType="@c7309bdde3af43df9238621a9a24786d" Id="374cc2043ac74c8fbdd0c58be99b67d4" Name="Enum Constant">
+			<p.DefaultValue>0</p.DefaultValue>
+		</DataItem>
+	</TypeDefinition>
+	<EnvoyManagerFile Id="4e22cde9d63c4d4aa6ffabc4eed93725" xmlns="http://www.ni.com/PlatformFramework">
+		<ProjectSettings Id="a68420c74b9a44bdad35aa3086870877" ModelDefinitionType="ProjectSettings" Name="ZProjectSettings" />
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="c60ce6eedea748d582c67218b08d35f7" Name="Arduino Filter Flipper Instructions.gtype" NameTracksFileName="True">
+			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy" Id="3092ba0287874f1f882e120ed049c72b" ModelDefinitionType="NationalInstruments.PanelCommon.SourceModel.ControlDefinition" Name="ControlDefinition">
+				<ControlDefinition DefaultDirection="Control" Id="fb603b5d6a8b47d7a681de9330fe1ada" xmlns="http://www.ni.com/MocCommon">
+					<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]24" Id="a0355ea1590b492ebb166443f16d902a" InteractionMode="[SelectorInteractionModes]ArrowKeys, Keyboard, MouseClick, ScrollWheel, ButtonClicks" IsTypeAheadEnabled="[bool]True" Label="[UIModel]f1889fcbc4bb46e38aa594620f979eda" Left="[float]100" MinHeight="[float]24" TabIndex="[int]0" Top="[float]100" Value="{DataItemBinding Id=374cc2043ac74c8fbdd0c58be99b67d4}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+						<EnumSelectorInfo DisplayValue="[string]IR Pass" Value="[ushort]0" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Visible Pass" Value="[ushort]1" ValueType="[Type]UInt16" />
+					</EnumSelector>
+					<Label Id="f1889fcbc4bb46e38aa594620f979eda" LabelOwner="[UIModel]a0355ea1590b492ebb166443f16d902a" Left="[float]100" Text="[string]Enum Constant" Top="[float]80" xmlns="http://www.ni.com/PanelCommon" />
+				</ControlDefinition>
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="c7309bdde3af43df9238621a9a24786d">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="IR Pass" />
+					<EnumerationMember Value="1" Name="Visible Pass" />
+				</Members>
+				<DataType>UInt16</DataType>
+			</Enumeration>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>

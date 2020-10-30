@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="CD5EAB1D8C101D14924AEA170931F987E69652917D6ABAAC844406693FAA7613288B899DEF1E25AF8D61ADC0A51CB8C92D05205494087C2ACE05E3053BEAB727" Timestamp="1D69BB9B4E189E6" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="6.2.0.49153" Version="6.2.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="6.2.0.49154" Version="6.2.0.49154" />
+		<ApplicationVersionInfo Build="6.4.1.50844" Name="LabVIEW NXG" Version="3.1.0" />
+	</SourceModelFeatureSet>
+	<TypeDefinition DataType="Double" Id="3ef744f9ccad49d79582d49fa125ef6d" xmlns="http://www.ni.com/MocCommon">
+		<Icon Id="47a9b94621b84b52b51919f0854b027d" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="e8e4712c9dc4d39bc261a413f959171" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate Height="[float]40" Id="64d8cf24205a457aacacbff259a72ef2" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
+			</IconPanel>
+		</Icon>
+		<DataItem DataType="Double" Id="e7cafdf34a00438a8ea5d36fd728ef76" Name="Change Grating Wavelength">
+			<p.DefaultValue>0x0</p.DefaultValue>
+		</DataItem>
+	</TypeDefinition>
+	<EnvoyManagerFile Id="6e216e0b6b6f43498ea0f9bb5b86ba17" xmlns="http://www.ni.com/PlatformFramework">
+		<ProjectSettings Id="2ebb4aaff2b54f48a3d74b82292efc04" ModelDefinitionType="ProjectSettings" Name="ZProjectSettings" />
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="5a2d6ddba2194cff9bc791995b9ed9e7" Name="Change Grating Wavelength.gtype" NameTracksFileName="True">
+			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy" Id="8b5b4553b2274be1984b14fee91f34eb" ModelDefinitionType="NationalInstruments.PanelCommon.SourceModel.ControlDefinition" Name="ControlDefinition">
+				<ControlDefinition DefaultDirection="Indicator" Id="fd3a036ea84b4e10a9dd51f446d63d6c" xmlns="http://www.ni.com/MocCommon">
+					<NumericText BaseName="[string]Numeric" Height="[float]24" Id="6a1937b3f2a84f0e9082ec2ace478ed4" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" IsReadOnly="[bool]True" Label="[UIModel]8a7ea2da5155417f8af99a4614af76df" Left="[float]571" MinHeight="[float]24" TabIndex="[int]0" Top="[float]226" Value="{DataItemBinding Id=e7cafdf34a00438a8ea5d36fd728ef76}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+					<Label Height="[float]16" Id="8a7ea2da5155417f8af99a4614af76df" LabelOwner="[UIModel]6a1937b3f2a84f0e9082ec2ace478ed4" Left="[float]571" Text="[string]Change Grating Wavelength" Top="[float]206" Width="[float]150" xmlns="http://www.ni.com/PanelCommon" />
+				</ControlDefinition>
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+</SourceFile>

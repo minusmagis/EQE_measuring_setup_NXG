@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="51F50B88A8EDB9BA4F26540C0CE63A8919A2FCF1E6ED5DBC8FDC07B38E0E428EFB3BFAA47E28890D0F2F6DBDA4326EB8B4CAA3B16B1511CB72F790B3D4736888" Timestamp="1D69D7E89221D45" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="6.2.0.49153" Version="6.2.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="6.2.0.49154" Version="6.2.0.49154" />
+		<ApplicationVersionInfo Build="6.4.1.50844" Name="LabVIEW NXG" Version="3.1.0" />
+	</SourceModelFeatureSet>
+	<TypeDefinition DataType="@d7354c259ae947738a39d4fe616362c4" Id="2b9fa4babc424f4db112e27d5a453445" xmlns="http://www.ni.com/MocCommon">
+		<Icon Id="c30128036c7445498fe4ce4d1c47a68a" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="8a591e56b3b14e5f9bd22398f857b4b5" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate Height="[float]40" Id="a2cb0fcf3182418a94f77654fbbbaf79" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
+			</IconPanel>
+		</Icon>
+		<DataItem DataType="@d7354c259ae947738a39d4fe616362c4" Id="b352b7072a8b40899fdba08cfee43345" Name="Enum">
+			<p.DefaultValue>0</p.DefaultValue>
+		</DataItem>
+	</TypeDefinition>
+	<EnvoyManagerFile Id="bb8d3045a1794562af8a3476269d7958" xmlns="http://www.ni.com/PlatformFramework">
+		<ProjectSettings Id="e59417caef174dde9d22b7ef7ab17562" ModelDefinitionType="ProjectSettings" Name="ZProjectSettings" />
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="3b62909d66674f3389aef0a8ad37ec70" Name="Reset instructions.gtype" NameTracksFileName="True">
+			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy" Id="b2b9e44d8d044857aac514f72758dbf0" ModelDefinitionType="NationalInstruments.PanelCommon.SourceModel.ControlDefinition" Name="ControlDefinition">
+				<ControlDefinition DefaultDirection="Control" Id="b61b487934454cbcb7b80d46dd95c956" xmlns="http://www.ni.com/MocCommon">
+					<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]24" Id="f12f47402c6a4d3a95b0fcc886a2a398" IsTypeAheadEnabled="[bool]True" Label="[UIModel]9d280274e25e43f2aa368bd97eb5c584" Left="[float]100" MinHeight="[float]24" TabIndex="[int]0" Top="[float]100" Value="{DataItemBinding Id=b352b7072a8b40899fdba08cfee43345}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]245" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+						<EnumSelectorInfo DisplayValue="[string]Reset Global Variables" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]0" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Reset doubles" Value="[ushort]1" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Reset Strings" Value="[ushort]2" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Reset Booleans" Value="[ushort]3" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Reset arrays" Value="[ushort]4" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Reset Clusters" Value="[ushort]5" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Reset Current Date" Value="[ushort]6" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Reset Fiannium Config file" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]7" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Reset disabled controls" Value="[ushort]8" ValueType="[Type]UInt16" />
+					</EnumSelector>
+					<Label Height="[float]16" Id="9d280274e25e43f2aa368bd97eb5c584" LabelOwner="[UIModel]f12f47402c6a4d3a95b0fcc886a2a398" Left="[float]100" Text="[string]Enum" Top="[float]80" Width="[float]30" xmlns="http://www.ni.com/PanelCommon" />
+				</ControlDefinition>
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="d7354c259ae947738a39d4fe616362c4">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="Reset Global Variables" />
+					<EnumerationMember Value="1" Name="Reset doubles" />
+					<EnumerationMember Value="2" Name="Reset Strings" />
+					<EnumerationMember Value="3" Name="Reset Booleans" />
+					<EnumerationMember Value="4" Name="Reset arrays" />
+					<EnumerationMember Value="5" Name="Reset Clusters" />
+					<EnumerationMember Value="6" Name="Reset Current Date" />
+					<EnumerationMember Value="7" Name="Reset Fiannium Config file" />
+					<EnumerationMember Value="8" Name="Reset disabled controls" />
+				</Members>
+				<DataType>UInt16</DataType>
+			</Enumeration>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>

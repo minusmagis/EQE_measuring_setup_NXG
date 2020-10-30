@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="C0B0CCC563172EE711889230A4E0BBECCCE30C23FA020FAA51A255373039CD7721A149D4BB1F5714C4F11713C18F2BDF5A3B2B2C3CF294F2E362C7D83CCECD53" Timestamp="1D649675BE393D2" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="6.2.0.49153" Version="6.2.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="6.2.0.49154" Version="6.2.0.49154" />
+		<ApplicationVersionInfo Build="6.4.1.50844" Name="LabVIEW NXG" Version="3.1.0" />
+	</SourceModelFeatureSet>
+	<TypeDefinition DataType="@9edbc636648648b68bff53bba1685d8e" Id="b9e8e1eb936f4ac1a4e019feafb3fc5e" xmlns="http://www.ni.com/MocCommon">
+		<Icon Id="1b60042739fe4d7dac05dd207314a324" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="f19ae12c63e24f9b82d139ba47962f7f" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate Height="[float]40" Id="434964217cd74073950ed90713ede125" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
+			</IconPanel>
+		</Icon>
+		<DataItem DataType="@9edbc636648648b68bff53bba1685d8e" Id="9d972908a315471d96f4dc6bf075f1a9" Name="Enum">
+			<p.DefaultValue>0</p.DefaultValue>
+		</DataItem>
+	</TypeDefinition>
+	<EnvoyManagerFile Id="6f81b80a4c034c79ac64df9ea183b403" xmlns="http://www.ni.com/PlatformFramework">
+		<ProjectSettings Id="4529525ba8bc416289c3f066a21cf95b" ModelDefinitionType="ProjectSettings" Name="ZProjectSettings" />
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="8dffb9fad38249cba4f5ebe9e47dc244" Name="Instruments to Detect.gtype" NameTracksFileName="True">
+			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy" Id="b9cf59f85b7542488e84516b2e3a55d5" ModelDefinitionType="NationalInstruments.PanelCommon.SourceModel.ControlDefinition" Name="ControlDefinition">
+				<ControlDefinition DefaultDirection="Control" Id="8c2079a46a7844bd8b9283002587ae7d" xmlns="http://www.ni.com/MocCommon">
+					<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]24" Id="4d3ad7a3574042e8a612b570463ce33a" IsTypeAheadEnabled="[bool]True" Label="[UIModel]ae66ca114c0344e2abaf2d1f697232a7" Left="[float]100" MinHeight="[float]24" TabIndex="[int]0" Top="[float]100" Value="{DataItemBinding Id=9d972908a315471d96f4dc6bf075f1a9}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]113" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+						<EnumSelectorInfo DisplayValue="[string]Photodetector" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]0" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Keythley" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]1" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Monochromator" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]2" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Arduinos" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]3" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]Supercontinuum Laser" DisplayValueOverride="[string]" IsEnabled="[bool]True" Value="[ushort]4" ValueType="[Type]UInt16" />
+					</EnumSelector>
+					<Label Height="[float]16" Id="ae66ca114c0344e2abaf2d1f697232a7" LabelOwner="[UIModel]4d3ad7a3574042e8a612b570463ce33a" Left="[float]100" Text="[string]Enum" Top="[float]80" Width="[float]30" xmlns="http://www.ni.com/PanelCommon" />
+				</ControlDefinition>
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="9edbc636648648b68bff53bba1685d8e">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="Photodetector" />
+					<EnumerationMember Value="1" Name="Keythley" />
+					<EnumerationMember Value="2" Name="Monochromator" />
+					<EnumerationMember Value="3" Name="Arduinos" />
+					<EnumerationMember Value="4" Name="Supercontinuum Laser" />
+				</Members>
+				<DataType>UInt16</DataType>
+			</Enumeration>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>

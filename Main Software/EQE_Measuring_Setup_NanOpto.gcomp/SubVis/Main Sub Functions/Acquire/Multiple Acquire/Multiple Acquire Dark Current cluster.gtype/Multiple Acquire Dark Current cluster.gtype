@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="1ABBB75D7C236B6E50C93D0B456F16173847EFC85A9ADFE0844C2B3FAEECCDF7DBA56726182436ADFCDBCA30B7D451BF8B4EB641C417FFD91093C82903156FD9" Timestamp="1D69D546E0DD6DB" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="6.2.0.49153" Version="6.2.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="6.2.0.49154" Version="6.2.0.49154" />
+		<ApplicationVersionInfo Build="6.4.1.50844" Name="LabVIEW NXG" Version="3.1.0" />
+	</SourceModelFeatureSet>
+	<TypeDefinition DataType="@110bb894196349efb8c572fbbc918870" Id="e7433bb4ecb64bfcab6b118a7c51971c" xmlns="http://www.ni.com/MocCommon">
+		<Icon Id="def1b25d934541e2bc4d750b892110ba" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="77fa2824971c4f8ca15b0bc957a1d24c" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate Height="[float]40" Id="f4d7c74e4a6b4bca806424c33e1429ae" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
+			</IconPanel>
+		</Icon>
+		<DataItem DataType="@110bb894196349efb8c572fbbc918870" Id="9ec263ab09924f8998dbc45a85321a27" Name="Array">
+			<p.DefaultValue>null</p.DefaultValue>
+		</DataItem>
+	</TypeDefinition>
+	<EnvoyManagerFile Id="503477fb7a0a43eba3a2f53d2a105744" xmlns="http://www.ni.com/PlatformFramework">
+		<ProjectSettings Id="dcc62a0ec1ba458f90501686a7410195" ModelDefinitionType="ProjectSettings" Name="ZProjectSettings" />
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="e0ce568568d5452eae930dd5bc3fea6a" Name="Multiple Acquire Dark Current cluster.gtype" NameTracksFileName="True">
+			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy" Id="e61e05d3ff07432f8a9a1acdbc2f5a1a" ModelDefinitionType="NationalInstruments.PanelCommon.SourceModel.ControlDefinition" Name="ControlDefinition">
+				<ControlDefinition DefaultDirection="Control" Id="f3f23113e13f42d097dd1845556dc81f" xmlns="http://www.ni.com/MocCommon">
+					<ArrayViewer ArrayElement="[UIModel]552c446507f24d1d8567f1bf2d796d5e" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]124" Id="61ca37f4c01244b7830580a80fe9c303" IndexVisibility="[Visibility]Visible" IsFixedSize="[bool]False" Label="[UIModel]267123df4a9e4abfb7ba31fe9b6073ab" Left="[float]700" Orientation="[SMOrientation]Horizontal" Rows="[int]1" TabIndex="[int]0" Top="[float]232" Value="{DataItemBinding Id=9ec263ab09924f8998dbc45a85321a27}" Width="[float]155" xmlns="http://www.ni.com/PanelCommon">
+						<p.DefaultElementValue>
+							<Cluster>
+								<Field1>""</Field1>
+								<Field2>0x0</Field2>
+							</Cluster>
+						</p.DefaultElementValue>
+						<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@1a7f8e0352234ef191bb6379beced306" Height="[float]112" Id="552c446507f24d1d8567f1bf2d796d5e" Label="[UIModel]b8e0fe75ece4454a19208b9354b72a3" TabIndex="[int]0" Width="[float]88">
+							<StringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="59fc9035fe864b38ab7abefeaf15294e" Label="[UIModel]4df40c64b4b5498e838a22d8a3dfdeb3" Left="[float]4" MinHeight="[float]24" Text="{ClusterBinding FieldName=Cell\ Label}" Top="[float]24" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+							<Label Height="[float]16" Id="4df40c64b4b5498e838a22d8a3dfdeb3" LabelOwner="[UIModel]59fc9035fe864b38ab7abefeaf15294e" Left="[float]4" Text="[string]Cell Label" Top="[float]4" Width="[float]51" />
+							<NumericText BaseName="[string]Numeric" Height="[float]24" Id="167c3b617cb74bcc8440b0d34ee8025e" Label="[UIModel]f35f89099409489b9321c4e109e686ac" Left="[float]4" MinHeight="[float]24" Top="[float]76" Value="{ClusterBinding FieldName=Dark\ Current}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+							<Label Height="[float]16" Id="f35f89099409489b9321c4e109e686ac" LabelOwner="[UIModel]167c3b617cb74bcc8440b0d34ee8025e" Left="[float]4" Text="[string]Dark Current" Top="[float]56" Width="[float]68" />
+							<Label Height="[float]16" Id="b8e0fe75ece4454a19208b9354b72a3" IsVisualChild="[bool]False" LabelOwner="[UIModel]552c446507f24d1d8567f1bf2d796d5e" Left="[float]61" Text="[string]Cluster" Top="[float]-14" Width="[float]37" />
+						</Cluster>
+					</ArrayViewer>
+					<Label Height="[float]16" Id="267123df4a9e4abfb7ba31fe9b6073ab" LabelOwner="[UIModel]61ca37f4c01244b7830580a80fe9c303" Left="[float]700" Text="[string]Array" Top="[float]212" Width="[float]28" xmlns="http://www.ni.com/PanelCommon" />
+				</ControlDefinition>
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="110bb894196349efb8c572fbbc918870">
+			<VariableArray DereferenceType="@1a7f8e0352234ef191bb6379beced306" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="1a7f8e0352234ef191bb6379beced306">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Cell Label" DataType="String" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Dark Current" DataType="Double" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>

@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="ED7A7EC5011663B8F08806B0758F31C5244A1A6864B8F6D3C5FE399E4A644422218E4E7076CE100A336420AA78721A347A52319B6F3EB081D099C13B522966E7" Timestamp="1D6ABBC2095B85E" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="6.2.0.49153" Version="6.2.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="6.2.0.49154" Version="6.2.0.49154" />
+		<ApplicationVersionInfo Build="6.4.1.50844" Name="LabVIEW NXG" Version="3.1.0" />
+	</SourceModelFeatureSet>
+	<TypeDefinition DataType="@62c2302e3b0b4e34b100e97e8822b536" Id="17263cf1958347bf9025389b15f6e883" xmlns="http://www.ni.com/MocCommon">
+		<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+			<TypeDefinitionTarget TargetName="NI::VISA::Visa.udr::Instr" />
+			<TypeDefinitionTarget TargetName="EQE_Measuring_Setup_NanOpto::SubVis::Instrument Control::Arduinos::XZ Carriage Arduino::R.01 Reference Coordinates.gtype" />
+		</p.TypeDefinitionTargets>
+		<Icon Id="9e718e1c1a694c298f3b5395fb108058" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="f56b63b359994825a9a4a289b65ec79a" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate Height="[float]40" Id="28b911a2674b4ace8126338fa2bf7a51" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
+			</IconPanel>
+		</Icon>
+		<DataItem DataType="@62c2302e3b0b4e34b100e97e8822b536" Id="42d1d89b73134eed8090e5c2de4a9cc3" Name="Cluster">
+			<p.DefaultValue>
+				<Cluster>
+					<Field1>""</Field1>
+					<Field2>""</Field2>
+					<Field3>""</Field3>
+					<Field4>0x0_0x0_0x0_</Field4>
+					<Field5>0x0</Field5>
+					<Field6>""</Field6>
+					<Field7>0x0</Field7>
+					<Field8>0x0</Field8>
+					<Field9>0x0</Field9>
+					<Field10>
+						<Path a="1" />
+					</Field10>
+					<Field11>0x0</Field11>
+					<Field12>0</Field12>
+					<Field13>0x0</Field13>
+					<Field14>0x0</Field14>
+					<Field15>0x0</Field15>
+					<Field16>0x0</Field16>
+					<Field17>False</Field17>
+					<Field18>""</Field18>
+					<Field19>False</Field19>
+					<Field20>null</Field20>
+					<Field21>False</Field21>
+				</Cluster>
+			</p.DefaultValue>
+			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+				<TypeDefinitionTarget TargetName="NI::VISA::Visa.udr::Instr" />
+				<TypeDefinitionTarget TargetName="EQE_Measuring_Setup_NanOpto::SubVis::Instrument Control::Arduinos::XZ Carriage Arduino::R.01 Reference Coordinates.gtype" />
+			</p.TypeDefinitionTargets>
+		</DataItem>
+	</TypeDefinition>
+	<EnvoyManagerFile Id="f5e3511146f94118b97e13cbaf6b7e5f" xmlns="http://www.ni.com/PlatformFramework">
+		<ProjectSettings Id="e2706fe913454cf88195e85984558401" ModelDefinitionType="ProjectSettings" Name="ZProjectSettings" />
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="11e6d56f540946c3a7473d7bf663f49d" Name="R.01 Scan Input Parameters.gtype" NameTracksFileName="True">
+			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy" Id="69f8b9cdf9034c76beafb9fec56ce33f" ModelDefinitionType="NationalInstruments.PanelCommon.SourceModel.ControlDefinition" Name="ControlDefinition">
+				<ControlDefinition DefaultDirection="Control" Id="656a8848d70a4ff2bcdc2dc2c390b1af" xmlns="http://www.ni.com/MocCommon">
+					<Cluster AutoArrange="[AutoArrange]SizeToFit" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@62c2302e3b0b4e34b100e97e8822b536" Height="[float]1384" Id="6267024cbeb9404c80db90d803b91abd" Label="[UIModel]c9b7be8c3e18450090e7baa9af20c6c6" Left="[float]97" TabIndex="[int]0" Top="[float]100" Value="{DataItemBinding Id=42d1d89b73134eed8090e5c2de4a9cc3}" Width="[float]199" xmlns="http://www.ni.com/PanelCommon">
+						<IONameControl AllowUndefinedValues="[bool]True" BaseName="[string]Instr" DataType="[Type]:UDR:TagRefnum|NI::VISA::Visa.udr::Instr|niaggregate://path/ref:%2F%2FNI%2FVISA%2FBase-src%2F18.5.0/file:%2F%2FVISA.gcomp%5CVISA.gcomp/file:%2F%2FVisa.udr" Height="[float]24" Id="32bff1ba22d04aafb562155a41e0b1c8" Label="[UIModel]561dcf57e4ea4ae5b5a3561b0f04316a" Left="[float]7" MinHeight="[float]24" SelectedResource="{ClusterBinding FieldName=Arduino\ Multiplexer\ Address\ In}" ShowType="[bool]False" ShowUserRefresh="[bool]True" Top="[float]24" UdrClass="[string]Instr" UdrNamespace="[string]Visa" Width="[float]175" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+							<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+								<TypeDefinitionTarget TargetName="NI::VISA::Visa.udr::Instr::ControlDefinition" />
+							</p.TypeDefinitionTargets>
+						</IONameControl>
+						<Label Height="[float]16" Id="561dcf57e4ea4ae5b5a3561b0f04316a" LabelOwner="[UIModel]32bff1ba22d04aafb562155a41e0b1c8" Left="[float]7" Text="[string]Arduino Multiplexer Address In" Top="[float]4" Width="[float]164" />
+						<IONameControl AllowUndefinedValues="[bool]True" BaseName="[string]Instr" DataType="[Type]:UDR:TagRefnum|NI::VISA::Visa.udr::Instr|niaggregate://path/ref:%2F%2FNI%2FVISA%2FBase-src%2F18.5.0/file:%2F%2FVISA.gcomp%5CVISA.gcomp/file:%2F%2FVisa.udr" Height="[float]24" Id="9d7bd193ed8e4189aab03d6ccdaba2ea" Label="[UIModel]2771fd5db1534e1697aab9eb3ee9cad9" Left="[float]7" MinHeight="[float]24" SelectedResource="{ClusterBinding FieldName=Arduino\ Filter\ Flipper\ Address}" ShowType="[bool]False" ShowUserRefresh="[bool]True" Top="[float]76" UdrClass="[string]Instr" UdrNamespace="[string]Visa" Width="[float]175" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+							<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+								<TypeDefinitionTarget TargetName="NI::VISA::Visa.udr::Instr::ControlDefinition" />
+							</p.TypeDefinitionTargets>
+						</IONameControl>
+						<Label Height="[float]16" Id="2771fd5db1534e1697aab9eb3ee9cad9" LabelOwner="[UIModel]9d7bd193ed8e4189aab03d6ccdaba2ea" Left="[float]7" Text="[string]Arduino Filter Flipper Address" Top="[float]56" Width="[float]157" />
+						<IONameControl AllowUndefinedValues="[bool]True" BaseName="[string]Instr" DataType="[Type]:UDR:TagRefnum|NI::VISA::Visa.udr::Instr|niaggregate://path/ref:%2F%2FNI%2FVISA%2FBase-src%2F18.5.0/file:%2F%2FVISA.gcomp%5CVISA.gcomp/file:%2F%2FVisa.udr" Height="[float]24" Id="da7943fbd95b49a19f7fb385c694a067" Label="[UIModel]e7961f97fcc4467a8a99b55798e835cb" Left="[float]7" MinHeight="[float]24" SelectedResource="{ClusterBinding FieldName=Carriage\ Arduino\ Address}" ShowType="[bool]False" ShowUserRefresh="[bool]True" Top="[float]128" UdrClass="[string]Instr" UdrNamespace="[string]Visa" Width="[float]175" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+							<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+								<TypeDefinitionTarget TargetName="NI::VISA::Visa.udr::Instr::ControlDefinition" />
+							</p.TypeDefinitionTargets>
+						</IONameControl>
+						<Label Height="[float]16" Id="e7961f97fcc4467a8a99b55798e835cb" LabelOwner="[UIModel]da7943fbd95b49a19f7fb385c694a067" Left="[float]7" Text="[string]Carriage Arduino Address" Top="[float]108" Width="[float]136" />
+						<Cluster BaseName="[string]R.01 Reference Coordinates" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@0e9dd8b430754c54bf9b1970684fb1c6" Height="[float]165" Id="c0de4fbf52b14188afacaccb43a9dfdb" Label="[UIModel]ac863dcea2d7476688aa250a4e57b52d" Left="[float]7" TabIndex="[int]0" Top="[float]180" Value="{ClusterBinding FieldName=R.01\ Reference\ Coordinates}" Width="[float]106" p7:ControlDefinitionChecksum="t3el+DTnQ9k+9GsWJptCBooKkj6ORDlNiIpiHaC6UKc=" xmlns:p7="http://www.ni.com/PanelCommon">
+							<p7:p.TypeDefinitionTargets>
+								<p7:TypeDefinitionTarget TargetName="EQE_Measuring_Setup_NanOpto::SubVis::Instrument Control::Arduinos::XZ Carriage Arduino::R.01 Reference Coordinates.gtype::ControlDefinition" />
+							</p7:p.TypeDefinitionTargets>
+							<NumericText BaseName="[string]Numeric" Enabled="[bool]True" Height="[float]24" Id="c2e435249b1a4c88ab14766f0f7401fd" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Interval="[double]0.01" IsReadOnly="[bool]False" Label="[UIModel]f96842519ebc48239558e41aa4842379" Left="[float]4" Maximum="[double]200" MinHeight="[float]24" Minimum="[double]0" RadixBase="[RadixBase]0" RadixVisibility="[SMVisibility]Collapsed" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=X\ coordinate\ R.01}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+							<p7:Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="f96842519ebc48239558e41aa4842379" LabelOwner="[UIModel]c2e435249b1a4c88ab14766f0f7401fd" Left="[float]4" Text="[string]X coordinate R.01" Top="[float]4" Width="[float]93" />
+							<NumericText BaseName="[string]Numeric" Enabled="[bool]True" Height="[float]24" Id="b2793ad1be61481880e4024c3acc9181" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Interval="[double]0.01" IsReadOnly="[bool]False" Label="[UIModel]68be8a8ecea54750b354b7904f5ab22c" Left="[float]4" Maximum="[double]200" MinHeight="[float]24" Minimum="[double]0" RadixBase="[RadixBase]0" RadixVisibility="[SMVisibility]Collapsed" TabIndex="[int]1" Top="[float]76" Value="{ClusterBinding FieldName=Z\ coordinate\ R.01}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+							<p7:Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="68be8a8ecea54750b354b7904f5ab22c" LabelOwner="[UIModel]b2793ad1be61481880e4024c3acc9181" Left="[float]4" Text="[string]Z coordinate R.01" Top="[float]56" Width="[float]93" />
+							<NumericText BaseName="[string]Numeric" Height="[float]24" Id="ee690b4be2404ef18d7e0221ac9fe786" Label="[UIModel]5c907bd58f44713b1f115ab6880365e" Left="[float]5" Maximum="[double]100" MinHeight="[float]24" Minimum="[double]0" TabIndex="[int]2" Top="[float]126" Value="{ClusterBinding FieldName=Vertical\ Spacing}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+							<p7:Label Height="[float]16" Id="5c907bd58f44713b1f115ab6880365e" LabelOwner="[UIModel]ee690b4be2404ef18d7e0221ac9fe786" Left="[float]5" Text="[string]Vertical Spacing" Top="[float]106" Width="[float]84" />
+						</Cluster>
+						<Label Height="[float]16" Id="ac863dcea2d7476688aa250a4e57b52d" LabelOwner="[UIModel]c0de4fbf52b14188afacaccb43a9dfdb" Left="[float]7" Text="[string]R.01 Reference Coordinates" Top="[float]160" Width="[float]145" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="613bb04bb9db49b4b9369b2c757ca57d" Label="[UIModel]b5e1bcb47e9a4c82b81f6d546311685e" Left="[float]7" MinHeight="[float]24" Top="[float]425" Value="{ClusterBinding FieldName=Z\ scan\ steps}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="b5e1bcb47e9a4c82b81f6d546311685e" LabelOwner="[UIModel]613bb04bb9db49b4b9369b2c757ca57d" Left="[float]7" Text="[string]Z scan steps" Top="[float]405" Width="[float]65" />
+						<IONameControl AllowUndefinedValues="[bool]True" BaseName="[string]Instr" DataType="[Type]:UDR:TagRefnum|NI::VISA::Visa.udr::Instr|niaggregate://path/ref:%2F%2FNI%2FVISA%2FBase-src%2F18.5.0/file:%2F%2FVISA.gcomp%5CVISA.gcomp/file:%2F%2FVisa.udr" Height="[float]24" Id="4e696c1c766a41dc87ad8140f8fdc649" Label="[UIModel]7b16fc06fa7345cf94400c160d15b71c" Left="[float]4" MinHeight="[float]24" SelectedResource="{ClusterBinding FieldName=Keithley\ Address}" ShowType="[bool]False" ShowUserRefresh="[bool]True" Top="[float]369" UdrClass="[string]Instr" UdrNamespace="[string]Visa" Width="[float]175" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+							<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+								<TypeDefinitionTarget TargetName="NI::VISA::Visa.udr::Instr::ControlDefinition" />
+							</p.TypeDefinitionTargets>
+						</IONameControl>
+						<Label Height="[float]16" Id="7b16fc06fa7345cf94400c160d15b71c" LabelOwner="[UIModel]4e696c1c766a41dc87ad8140f8fdc649" Left="[float]4" Text="[string]Keithley Address" Top="[float]349" Width="[float]88" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="5ca944c5e4004b32a65a4b9a326ad58f" Label="[UIModel]b78d1417c7084832b5374a00a4da22fa" Left="[float]7" MinHeight="[float]24" Top="[float]477" Value="{ClusterBinding FieldName=X\ scan\ Range\ (mm)}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="b78d1417c7084832b5374a00a4da22fa" LabelOwner="[UIModel]5ca944c5e4004b32a65a4b9a326ad58f" Left="[float]7" Text="[string]X scan Range (mm)" Top="[float]457" Width="[float]102" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="6265945520e0422fb607bf47c4c6ea66" Label="[UIModel]45d185cec5f04def85358d0482db0853" Left="[float]7" MinHeight="[float]24" Top="[float]529" Value="{ClusterBinding FieldName=Z\ scan\ Range\ (mm)}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="45d185cec5f04def85358d0482db0853" LabelOwner="[UIModel]6265945520e0422fb607bf47c4c6ea66" Left="[float]7" Text="[string]Z scan Range (mm)" Top="[float]509" Width="[float]102" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="a11773d3db364be093ded960da727412" Label="[UIModel]60f1935b948c45c99c1849faa3c1376c" Left="[float]7" MinHeight="[float]24" Top="[float]581" Value="{ClusterBinding FieldName=X\ scan\ steps}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="60f1935b948c45c99c1849faa3c1376c" LabelOwner="[UIModel]a11773d3db364be093ded960da727412" Left="[float]7" Text="[string]X scan steps" Top="[float]561" Width="[float]65" />
+						<PathSelector BaseName="[string]Path" BrowseDialogTitle="[string]Open File" Height="[float]24" Id="a73abfc131e4a29b91b40aab9855fd3" Label="[UIModel]4c6fcf650d96413b9f902678ce25033a" Left="[float]7" MinHeight="[float]24" Path="{ClusterBinding FieldName=Monochromator\ configuration\ file}" Top="[float]633" Width="[float]152" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="4c6fcf650d96413b9f902678ce25033a" LabelOwner="[UIModel]a73abfc131e4a29b91b40aab9855fd3" Left="[float]7" Text="[string]Monochromator configuration file" Top="[float]613" Width="[float]180" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="a209ab18a14144ac935cf1c419944be6" Label="[UIModel]43a47f8fbab74eb6b668e4f627b80961" Left="[float]7" MinHeight="[float]24" Top="[float]685" Value="{ClusterBinding FieldName=Manual\ Range\ \ }" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="43a47f8fbab74eb6b668e4f627b80961" LabelOwner="[UIModel]a209ab18a14144ac935cf1c419944be6" Left="[float]7" Text="[string]Manual Range  " Top="[float]665" Width="[float]83" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="56dc9108e4aa4588aa07d3a25796978e" Interval="[ulong]1" Label="[UIModel]a14924b1560b4a8cb9ef3f7c611bd3a3" Left="[float]7" MinHeight="[float]24" Top="[float]737" Value="{ClusterBinding FieldName=Fianium\ Pe\ Handler}" ValueFormatter="[string]LV:0" ValueType="[Type]UInt64" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="a14924b1560b4a8cb9ef3f7c611bd3a3" LabelOwner="[UIModel]56dc9108e4aa4588aa07d3a25796978e" Left="[float]7" Text="[string]Fianium Pe Handler" Top="[float]717" Width="[float]103" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="43a72ad7825e4873af882c0f5210b4d4" Label="[UIModel]377163deb7344595a91b7b1e4d864464" Left="[float]7" MinHeight="[float]24" Top="[float]789" Value="{ClusterBinding FieldName=Voltage\ Applied\ (V)\ \ }" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="377163deb7344595a91b7b1e4d864464" LabelOwner="[UIModel]43a72ad7825e4873af882c0f5210b4d4" Left="[float]7" Text="[string]Voltage Applied (V)  " Top="[float]769" Width="[float]109" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="748d5d5b25744adea633a3c8dc9c5c70" Label="[UIModel]35909c5cd83a4537b61ae933db078dee" Left="[float]7" MinHeight="[float]24" Top="[float]841" Value="{ClusterBinding FieldName=Max\ current}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="35909c5cd83a4537b61ae933db078dee" LabelOwner="[UIModel]748d5d5b25744adea633a3c8dc9c5c70" Left="[float]7" Text="[string]Max current" Top="[float]821" Width="[float]63" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="ef5a561c6f43490e8c7a5b8c565c8156" Label="[UIModel]bdb458ab5f8749c4b4a216ff0fb68b9f" Left="[float]7" MinHeight="[float]24" Top="[float]893" Value="{ClusterBinding FieldName=Current\ Averages\ \ \ }" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="bdb458ab5f8749c4b4a216ff0fb68b9f" LabelOwner="[UIModel]ef5a561c6f43490e8c7a5b8c565c8156" Left="[float]7" Text="[string]Current Averages   " Top="[float]873" Width="[float]101" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="a604552851a1409083d209bc2d60c0f8" Label="[UIModel]5594ffead1e7423195cce5e892ea8516" Left="[float]7" MinHeight="[float]24" Top="[float]945" Value="{ClusterBinding FieldName=Wavelength\ for\ peak\ detection}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="5594ffead1e7423195cce5e892ea8516" LabelOwner="[UIModel]a604552851a1409083d209bc2d60c0f8" Left="[float]7" Text="[string]Wavelength for peak detection" Top="[float]925" Width="[float]163" />
+						<Switch BaseName="[string]Square LED" FalseContent="[string]Off" Height="[float]72" Id="5c59c80527a64cc4b661c7c54e5f347e" Label="[UIModel]5eef20d12b0e431591be6b468f3b785f" Left="[float]7" MinHeight="[float]36" MinWidth="[float]34" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" Top="[float]997" TrueContent="[string]On" Value="{ClusterBinding FieldName=Autorange\ \ }" Width="[float]40" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="5eef20d12b0e431591be6b468f3b785f" LabelOwner="[UIModel]5c59c80527a64cc4b661c7c54e5f347e" Left="[float]7" Text="[string]Autorange  " Top="[float]977" Width="[float]63" />
+						<StringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="7bc1d63ab53e46329f7fb55516dfb2d5" Label="[UIModel]39af0d4ecaa1473597bd656794cb54e4" Left="[float]7" MinHeight="[float]24" Text="{ClusterBinding FieldName=XZ\ Carriage\ Arduino\ Log\ In}" Top="[float]1097" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="39af0d4ecaa1473597bd656794cb54e4" LabelOwner="[UIModel]7bc1d63ab53e46329f7fb55516dfb2d5" Left="[float]7" Text="[string]XZ Carriage Arduino Log In" Top="[float]1077" Width="[float]144" />
+						<Switch BaseName="[string]Square LED" FalseContent="[string]Off" Height="[float]72" Id="a96826104be845bb9384c5de12126438" Label="[UIModel]a3a2f070c7947d39d26b80a975a8060" Left="[float]7" MinHeight="[float]36" MinWidth="[float]34" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" Top="[float]1149" TrueContent="[string]On" Value="{ClusterBinding FieldName=Automatic\ Measurement?}" Width="[float]40" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="a3a2f070c7947d39d26b80a975a8060" LabelOwner="[UIModel]a96826104be845bb9384c5de12126438" Left="[float]7" Text="[string]Automatic Measurement?" Top="[float]1129" Width="[float]136" />
+						<PathSelector BaseName="[string]Path" BrowseDialogTitle="[string]Open File" Height="[float]30" Id="5e921cf1cdda4cb4a6f529627d11dcbe" InteractionMode="[PathSelectorInteractionModes]BrowseDialog, TextInput, AllowNullPathSelection" Label="[UIModel]cd8e02ac64bc43eda0dfb43e8c703bdf" Left="[float]6" MinHeight="[float]24" Path="{ClusterBinding FieldName=Reference\ Coordinates\ file}" TabIndex="[int]19" Top="[float]1342" Width="[float]74" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="cd8e02ac64bc43eda0dfb43e8c703bdf" LabelOwner="[UIModel]5e921cf1cdda4cb4a6f529627d11dcbe" Left="[float]6" Text="[string]Reference Coordinates file" Top="[float]1322" Width="[float]139" />
+						<Switch BaseName="[string]Square LED" FalseContent="[string]Off" Height="[float]72" Id="e9f49696e4484d8caa0ad8894909fe88" IsReadOnly="[bool]False" Label="[UIModel]93d4972e10e84ec18437e9f75cf7df3f" Left="[float]9" MinHeight="[float]36" MinWidth="[float]34" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" TabIndex="[int]20" Top="[float]1245" TrueContent="[string]On" Value="{ClusterBinding FieldName=Save\ R.01\ Coordinate?}" Width="[float]40" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="93d4972e10e84ec18437e9f75cf7df3f" LabelOwner="[UIModel]e9f49696e4484d8caa0ad8894909fe88" Left="[float]9" Text="[string]Save R.01 Coordinate?" Top="[float]1225" Width="[float]118" />
+					</Cluster>
+					<Label Height="[float]16" Id="c9b7be8c3e18450090e7baa9af20c6c6" LabelOwner="[UIModel]6267024cbeb9404c80db90d803b91abd" Left="[float]97" Text="[string]Cluster" Top="[float]80" Width="[float]37" xmlns="http://www.ni.com/PanelCommon" />
+				</ControlDefinition>
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="62c2302e3b0b4e34b100e97e8822b536">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Arduino Multiplexer Address In" DataType=":UDR:TagRefnum|NI::VISA::Visa.udr::Instr|niaggregate://path/ref:%2F%2FNI%2FVISA%2FBase-src%2F18.5.0/file:%2F%2FVISA.gcomp%5CVISA.gcomp/file:%2F%2FVisa.udr" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Arduino Filter Flipper Address" DataType=":UDR:TagRefnum|NI::VISA::Visa.udr::Instr|niaggregate://path/ref:%2F%2FNI%2FVISA%2FBase-src%2F18.5.0/file:%2F%2FVISA.gcomp%5CVISA.gcomp/file:%2F%2FVisa.udr" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Carriage Arduino Address" DataType=":UDR:TagRefnum|NI::VISA::Visa.udr::Instr|niaggregate://path/ref:%2F%2FNI%2FVISA%2FBase-src%2F18.5.0/file:%2F%2FVISA.gcomp%5CVISA.gcomp/file:%2F%2FVisa.udr" />
+					<Field FieldAccessPolicy="ReadWrite" Name="R.01 Reference Coordinates" DataType="@0e9dd8b430754c54bf9b1970684fb1c6" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Z scan steps" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Keithley Address" DataType=":UDR:TagRefnum|NI::VISA::Visa.udr::Instr|niaggregate://path/ref:%2F%2FNI%2FVISA%2FBase-src%2F18.5.0/file:%2F%2FVISA.gcomp%5CVISA.gcomp/file:%2F%2FVisa.udr" />
+					<Field FieldAccessPolicy="ReadWrite" Name="X scan Range (mm)" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Z scan Range (mm)" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="X scan steps" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Monochromator configuration file" DataType="Path" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Manual Range  " DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Fianium Pe Handler" DataType="UInt64" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Voltage Applied (V)  " DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Max current" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Current Averages   " DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Wavelength for peak detection" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Autorange  " DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="XZ Carriage Arduino Log In" DataType="String" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Automatic Measurement?" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Reference Coordinates file" DataType="Path" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Save R.01 Coordinate?" DataType="Boolean" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="0e9dd8b430754c54bf9b1970684fb1c6">
+			<Attributed AttributedType="@cd1250d605b540bdb5d3c9860abcf758">
+				<AttributeValues>
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]EQE_Measuring_Setup_NanOpto::SubVis::Instrument Control::Arduinos::XZ Carriage Arduino" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="cd1250d605b540bdb5d3c9860abcf758">
+			<Typedef TypedefName="R.01 Reference Coordinates.gtype" UnderlyingType="@c4762c4e6c2c4e5a9161b285ff92ecb7" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="c4762c4e6c2c4e5a9161b285ff92ecb7">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="X coordinate R.01" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Z coordinate R.01" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Vertical Spacing" DataType="Double" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>

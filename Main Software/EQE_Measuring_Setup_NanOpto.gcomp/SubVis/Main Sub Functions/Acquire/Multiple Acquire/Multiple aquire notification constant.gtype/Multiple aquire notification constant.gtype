@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="3A84C7D1DF437D6AE709F82797D55AC237FC75687D45608D93227DC9AE9D412D191B05A0EB2466559D5602CBC0902E1FE214C2445E7F5CACAD2C1E375D7F8440" Timestamp="1D69D79DD238AB3" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="6.2.0.49153" Version="6.2.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="6.2.0.49154" Version="6.2.0.49154" />
+		<ApplicationVersionInfo Build="6.4.1.50844" Name="LabVIEW NXG" Version="3.1.0" />
+	</SourceModelFeatureSet>
+	<TypeDefinition DataType="@0fcbba5c9e72486ba8033b53e05ab0d6" Id="29f009b303414755871d4af80b454a24" xmlns="http://www.ni.com/MocCommon">
+		<Icon Id="1a05dfc2a3e24f0794e1f1bf5ef76cfb" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="e2333c66733c469bbe5648fdf64a1e35" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate Height="[float]40" Id="850d9c5d44d64f6686533f45248c4604" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
+			</IconPanel>
+		</Icon>
+		<DataItem DataType="@0fcbba5c9e72486ba8033b53e05ab0d6" Id="232e74cf2194516a3bf14ffc973b121" Name="Cluster">
+			<p.DefaultValue>
+				<Cluster>
+					<Field1>0x0</Field1>
+					<Field2>0x0</Field2>
+					<Field3>0x0</Field3>
+					<Field4>""</Field4>
+					<Field5>null</Field5>
+					<Field6>False</Field6>
+					<Field7>0x0</Field7>
+					<Field8>0x0</Field8>
+				</Cluster>
+			</p.DefaultValue>
+		</DataItem>
+	</TypeDefinition>
+	<EnvoyManagerFile Id="b6f5723849e649df9ff2a7f062161b0b" xmlns="http://www.ni.com/PlatformFramework">
+		<ProjectSettings Id="b0d5998993d34a1fbe3a7a17b5a0155b" ModelDefinitionType="ProjectSettings" Name="ZProjectSettings" />
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="12ff9b001754d5d9c767946fc6196a3" Name="Multiple aquire notification constant.gtype" NameTracksFileName="True">
+			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy" Id="1e1325cd71954c65b2df127fc1f31e2c" ModelDefinitionType="NationalInstruments.PanelCommon.SourceModel.ControlDefinition" Name="ControlDefinition">
+				<ControlDefinition DefaultDirection="Control" Id="4c7f2e53a22b47f8b412705c52a80c8f" xmlns="http://www.ni.com/MocCommon">
+					<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@0fcbba5c9e72486ba8033b53e05ab0d6" Height="[float]596" Id="aba6d07c30cd44399378b5a03adf605c" Label="[UIModel]65a67498249042a18c4c43bbf13d4e30" Left="[float]100" TabIndex="[int]0" Top="[float]100" Value="{DataItemBinding Id=232e74cf2194516a3bf14ffc973b121}" Width="[float]203" xmlns="http://www.ni.com/PanelCommon">
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="7cfa5cfbc83642ae872f2963cf47442e" Label="[UIModel]70340ad1eefe437fae79bc39e1e46722" Left="[float]4" MinHeight="[float]24" Top="[float]24" Value="{ClusterBinding FieldName=Current\ Value\ (A)\ \ }" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="70340ad1eefe437fae79bc39e1e46722" LabelOwner="[UIModel]7cfa5cfbc83642ae872f2963cf47442e" Left="[float]4" Text="[string]Current Value (A)  " Top="[float]4" Width="[float]96" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="89b2a23cc1f748a09501ea27307522f2" Label="[UIModel]76b9a17905c34429a4ab68e82333d7c4" Left="[float]4" MinHeight="[float]24" Top="[float]76" Value="{ClusterBinding FieldName=EQE\ (%)}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="76b9a17905c34429a4ab68e82333d7c4" LabelOwner="[UIModel]89b2a23cc1f748a09501ea27307522f2" Left="[float]4" Text="[string]EQE (%)" Top="[float]56" Width="[float]42" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="948bf2bc6fa6465ba1899dbf23fe4744" Label="[UIModel]dae968372eed4f109f2b5ba26454a039" Left="[float]4" MinHeight="[float]24" Top="[float]128" Value="{ClusterBinding FieldName=Dark\ Current\ (A)}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="dae968372eed4f109f2b5ba26454a039" LabelOwner="[UIModel]948bf2bc6fa6465ba1899dbf23fe4744" Left="[float]4" Text="[string]Dark Current (A)" Top="[float]108" Width="[float]86" />
+						<StringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="2e162b59841642b4933b2659d7eb672b" Label="[UIModel]ef8cc696b58e40d2940998d81440580d" Left="[float]4" MinHeight="[float]24" Text="{ClusterBinding FieldName=Cell\ being\ measured}" Top="[float]180" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="ef8cc696b58e40d2940998d81440580d" LabelOwner="[UIModel]2e162b59841642b4933b2659d7eb672b" Left="[float]4" Text="[string]Cell being measured" Top="[float]160" Width="[float]108" />
+						<ArrayViewer ArrayElement="[UIModel]ffaabf50d4f4898b2b58b2c013c6156" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]148" Id="a841a693d8d8438da23139d546ba68a0" IndexVisibility="[Visibility]Collapsed" IsFixedSize="[bool]False" Label="[UIModel]1c43a2f2957c4bcf963fc8f4d9cc52b1" Left="[float]4" Orientation="[SMOrientation]Vertical" Rows="[int]1" Top="[float]232" Value="{ClusterBinding FieldName=Automatic\ EQE\ Measurement\ Graph}" VerticalScrollBarVisibility="[ScrollBarVisibility]Visible" Width="[float]159">
+							<p.DefaultElementValue>
+								<Cluster>
+									<Field1>null</Field1>
+									<Field2>null</Field2>
+								</Cluster>
+							</p.DefaultElementValue>
+							<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@4b64098a03e44c95a23c8aa21cf52c88" Height="[float]136" Id="ffaabf50d4f4898b2b58b2c013c6156" Width="[float]127">
+								<ArrayViewer ArrayElement="[UIModel]2e2698ddc73946f5a0d7a13a6099d904" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]36" Id="579c0de84b0f4d07b161a50438aa6dde" IndexVisibility="[Visibility]Collapsed" IsFixedSize="[bool]False" Label="[UIModel]2028e6bded964180a7fe9e12f2f284bb" Left="[float]4" Orientation="[SMOrientation]Vertical" Rows="[int]1" Top="[float]24" Value="{ClusterBinding FieldName=Element\ 1}" VerticalScrollBarVisibility="[ScrollBarVisibility]Visible" Width="[float]104">
+									<p.DefaultElementValue>0x0</p.DefaultElementValue>
+									<NumericText BaseName="[string]Numeric" Height="[float]24" Id="2e2698ddc73946f5a0d7a13a6099d904" MinHeight="[float]24" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								</ArrayViewer>
+								<Label Id="2028e6bded964180a7fe9e12f2f284bb" LabelOwner="[UIModel]579c0de84b0f4d07b161a50438aa6dde" Left="[float]4" Text="[string]Element 1" Top="[float]4" />
+								<ArrayViewer ArrayElement="[UIModel]a3a4fda120654dc583f1f41c2ce563b8" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]36" Id="70cef586b1af4c4ea1bb44d27f7626b4" IndexVisibility="[Visibility]Collapsed" IsFixedSize="[bool]False" Label="[UIModel]3c5ce1d081674cc89b85144a936c28ef" Left="[float]4" Orientation="[SMOrientation]Vertical" Rows="[int]1" Top="[float]88" Value="{ClusterBinding FieldName=Element\ 2}" VerticalScrollBarVisibility="[ScrollBarVisibility]Visible" Width="[float]104">
+									<p.DefaultElementValue>0x0</p.DefaultElementValue>
+									<NumericText BaseName="[string]Numeric" Height="[float]24" Id="a3a4fda120654dc583f1f41c2ce563b8" MinHeight="[float]24" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+								</ArrayViewer>
+								<Label Id="3c5ce1d081674cc89b85144a936c28ef" LabelOwner="[UIModel]70cef586b1af4c4ea1bb44d27f7626b4" Left="[float]4" Text="[string]Element 2" Top="[float]68" />
+							</Cluster>
+						</ArrayViewer>
+						<Label Height="[float]16" Id="1c43a2f2957c4bcf963fc8f4d9cc52b1" LabelOwner="[UIModel]a841a693d8d8438da23139d546ba68a0" Left="[float]4" Text="[string]Automatic EQE Measurement Graph" Top="[float]212" Width="[float]191" />
+						<Switch BaseName="[string]Square LED" FalseContent="[string]Off" Height="[float]72" Id="428b763433924e90884321fe8488f8fc" Label="[UIModel]2af9f6b6b5e249d0bcafc3889a8c738c" Left="[float]4" MinHeight="[float]36" MinWidth="[float]34" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" Top="[float]408" TrueContent="[string]On" Value="{ClusterBinding FieldName=Finished}" Width="[float]40" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="2af9f6b6b5e249d0bcafc3889a8c738c" LabelOwner="[UIModel]428b763433924e90884321fe8488f8fc" Left="[float]4" Text="[string]Finished" Top="[float]388" Width="[float]44" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="475b2593376d4e2cb20f9ef1f3984ad9" Label="[UIModel]2337c32015574b848312dddc4d88a249" Left="[float]4" MinHeight="[float]24" Top="[float]508" Value="{ClusterBinding FieldName=Current\ Wavelength}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="2337c32015574b848312dddc4d88a249" LabelOwner="[UIModel]475b2593376d4e2cb20f9ef1f3984ad9" Left="[float]4" Text="[string]Current Wavelength" Top="[float]488" Width="[float]106" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="6dc7bd4012e245f09a44df519186f90e" Label="[UIModel]59d4865e79e5483bbf5944e7bc8b3e78" Left="[float]6" MinHeight="[float]24" TabIndex="[int]7" Top="[float]558" Value="{ClusterBinding FieldName=Progress}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="59d4865e79e5483bbf5944e7bc8b3e78" LabelOwner="[UIModel]6dc7bd4012e245f09a44df519186f90e" Left="[float]6" Text="[string]Progress" Top="[float]538" Width="[float]46" />
+					</Cluster>
+					<Label Height="[float]16" Id="65a67498249042a18c4c43bbf13d4e30" LabelOwner="[UIModel]aba6d07c30cd44399378b5a03adf605c" Left="[float]100" Text="[string]Cluster" Top="[float]80" Width="[float]37" xmlns="http://www.ni.com/PanelCommon" />
+				</ControlDefinition>
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="0fcbba5c9e72486ba8033b53e05ab0d6">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Current Value (A)  " DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="EQE (%)" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Dark Current (A)" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Cell being measured" DataType="String" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Automatic EQE Measurement Graph" DataType="@b2a861368d62430f8dbb348ef5f29214" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Finished" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Current Wavelength" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Progress" DataType="Double" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="4b64098a03e44c95a23c8aa21cf52c88">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Element 1" DataType="Double[]" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Element 2" DataType="Double[]" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="b2a861368d62430f8dbb348ef5f29214">
+			<VariableArray DereferenceType="@4b64098a03e44c95a23c8aa21cf52c88" />
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>

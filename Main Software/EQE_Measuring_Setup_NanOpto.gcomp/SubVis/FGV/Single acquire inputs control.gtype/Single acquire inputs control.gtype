@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="368D9170599121A56A0326237B572DA6FBE4B4C6BABCCAFAF2C44F8CEE19EF3F483C3E2893399A0711693E1956BCAD320337A8DC0DB62BDB3B5257E96815DC01" Timestamp="1D6ADE6408D4FC8" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="6.2.0.49153" Version="6.2.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="6.2.0.49154" Version="6.2.0.49154" />
+		<ApplicationVersionInfo Build="6.4.1.50844" Name="LabVIEW NXG" Version="3.1.0" />
+	</SourceModelFeatureSet>
+	<TypeDefinition DataType="@f33342fbc491462da9ba6f896bfa2942" Id="e9d9db56126f49169a7860e47468ed00" xmlns="http://www.ni.com/MocCommon">
+		<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+			<TypeDefinitionTarget TargetName="NI::VISA::Visa.udr::Instr" />
+		</p.TypeDefinitionTargets>
+		<Icon Id="bed8425840b34e32802896a0ce81eb20" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="92db8a09f4dc4b9faf6613ff3fd3b7a6" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate Height="[float]40" Id="2bd23931f337483e9aa292396105e4d8" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
+			</IconPanel>
+		</Icon>
+		<DataItem DataType="@f33342fbc491462da9ba6f896bfa2942" Id="85d383ada7194474af77680fd010490f" Name="Single acquire inputs control">
+			<p.DefaultValue>
+				<Cluster>
+					<Field1>null</Field1>
+					<Field2>
+						<Path a="1" />
+					</Field2>
+					<Field3>""</Field3>
+					<Field4>False</Field4>
+					<Field5>0x0</Field5>
+					<Field6>False</Field6>
+					<Field7>""</Field7>
+					<Field8>0</Field8>
+					<Field9>0x0</Field9>
+					<Field10>0x0</Field10>
+					<Field11>0x0</Field11>
+					<Field12>False</Field12>
+					<Field13>False</Field13>
+					<Field14>0</Field14>
+					<Field15>0x0</Field15>
+					<Field16>0x0</Field16>
+				</Cluster>
+			</p.DefaultValue>
+			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+				<TypeDefinitionTarget TargetName="NI::VISA::Visa.udr::Instr" />
+			</p.TypeDefinitionTargets>
+		</DataItem>
+	</TypeDefinition>
+	<EnvoyManagerFile Id="9b7dd21b12544adca887c066f02c4a79" xmlns="http://www.ni.com/PlatformFramework">
+		<ProjectSettings Id="a6d16b6f2b5a469fa1c65c26483f7311" ModelDefinitionType="ProjectSettings" Name="ZProjectSettings" />
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="67a5486261cc480d9318647cb4c9518f" Name="Single acquire inputs control.gtype" NameTracksFileName="True">
+			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy" Id="71ae0ef7fefc44cf97511f8e1bc9029c" ModelDefinitionType="NationalInstruments.PanelCommon.SourceModel.ControlDefinition" Name="ControlDefinition">
+				<ControlDefinition DefaultDirection="Control" Id="e3216ccc77bd4d20954bbf60911a3cd0" xmlns="http://www.ni.com/MocCommon">
+					<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@f33342fbc491462da9ba6f896bfa2942" Height="[float]1106" Id="f0eaaab414ce46a7bca597c469c5bf5f" Label="[UIModel]a8f53e3cbb9345be8e523e5f0bc3be52" Left="[float]714" TabIndex="[int]0" Top="[float]100" Value="{DataItemBinding Id=85d383ada7194474af77680fd010490f}" Width="[float]264" xmlns="http://www.ni.com/PanelCommon">
+						<ArrayViewer ArrayElement="[UIModel]26f810cd5fd546608f936c0b56629ed5" BaseName="[string]Array" Columns="[int]2" Dimensions="[int]2" Height="[float]120" Id="a8ed85176d2545c4928d41255f6b3ea3" IndexVisibility="[Visibility]Visible" IsFixedSize="[bool]False" Label="[UIModel]61394d60fb164d2c9204457fc823c5df" Left="[float]4" Orientation="[SMOrientation]Vertical" Rows="[int]4" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=Light\ calibration\ data}" VerticalScrollBarVisibility="[ScrollBarVisibility]Visible" Width="[float]235">
+							<p.DefaultElementValue>0x0</p.DefaultElementValue>
+							<NumericText BaseName="[string]Numeric" Height="[float]24" Id="26f810cd5fd546608f936c0b56629ed5" MinHeight="[float]24" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						</ArrayViewer>
+						<Label Height="[float]16" Id="61394d60fb164d2c9204457fc823c5df" LabelOwner="[UIModel]a8ed85176d2545c4928d41255f6b3ea3" Left="[float]4" Text="[string]Light calibration data" Top="[float]4" Width="[float]112" />
+						<PathSelector BaseName="[string]Path" BrowseDialogTitle="[string]Open File" Height="[float]24" Id="46fbe41d66d64f59a744db504a85344e" Label="[UIModel]29572be1cc504c6bbc3b5a85321c5c9c" Left="[float]4" MinHeight="[float]24" Path="{ClusterBinding FieldName=Fiannium\ Configuration\ File}" TabIndex="[int]1" Top="[float]178" Width="[float]152" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="29572be1cc504c6bbc3b5a85321c5c9c" LabelOwner="[UIModel]46fbe41d66d64f59a744db504a85344e" Left="[float]4" Text="[string]Fiannium Configuration File" Top="[float]158" Width="[float]146" />
+						<IONameControl AllowUndefinedValues="[bool]True" BaseName="[string]Instr" DataType="[Type]:UDR:TagRefnum|NI::VISA::Visa.udr::Instr|niaggregate://path/ref:%2F%2FNI%2FVISA%2FBase-src%2F18.5.0/file:%2F%2FVISA.gcomp%5CVISA.gcomp/file:%2F%2FVisa.udr" Height="[float]24" Id="eb5a4daf40e546ca9db0e1291ecbc3c7" Label="[UIModel]d35de639b1974f878f1cd8abcd5e6616" Left="[float]4" MinHeight="[float]24" SelectedResource="{ClusterBinding FieldName=Arduino\ Filter\ Flipper\ Address}" ShowType="[bool]False" ShowUserRefresh="[bool]True" TabIndex="[int]2" Top="[float]230" UdrClass="[string]Instr" UdrNamespace="[string]Visa" Width="[float]175" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+							<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+								<TypeDefinitionTarget TargetName="NI::VISA::Visa.udr::Instr::ControlDefinition" />
+							</p.TypeDefinitionTargets>
+						</IONameControl>
+						<Label Height="[float]16" Id="d35de639b1974f878f1cd8abcd5e6616" LabelOwner="[UIModel]eb5a4daf40e546ca9db0e1291ecbc3c7" Left="[float]4" Text="[string]Arduino Filter Flipper Address" Top="[float]210" Width="[float]157" />
+						<Switch BaseName="[string]Square LED" FalseContent="[string]Off" Height="[float]72" Id="7bba449ad0314024bad3f05a4a842e2f" Label="[UIModel]dd0728dcb9a34578a688af556788c6e4" Left="[float]4" MinHeight="[float]36" MinWidth="[float]34" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" TabIndex="[int]3" Top="[float]282" TrueContent="[string]On" Value="{ClusterBinding FieldName=Filter\ Arduino\ Status}" Width="[float]40" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="dd0728dcb9a34578a688af556788c6e4" LabelOwner="[UIModel]7bba449ad0314024bad3f05a4a842e2f" Left="[float]4" Text="[string]Filter Arduino Status" Top="[float]262" Width="[float]107" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="d920c43b1ef94d31ac5a3741690e13e2" Label="[UIModel]7b784dd80b7e407580770c287ae2a58d" Left="[float]4" MinHeight="[float]24" TabIndex="[int]4" Top="[float]382" Value="{ClusterBinding FieldName=Dark\ Current\ Averages}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="7b784dd80b7e407580770c287ae2a58d" LabelOwner="[UIModel]d920c43b1ef94d31ac5a3741690e13e2" Left="[float]4" Text="[string]Dark Current Averages" Top="[float]362" Width="[float]119" />
+						<Switch BaseName="[string]Square LED" FalseContent="[string]Off" Height="[float]72" Id="4613c49ded9b4df99804e0aa5e4ede6b" Label="[UIModel]c0a633e289004f5ea6924093fadd27c2" Left="[float]4" MinHeight="[float]36" MinWidth="[float]34" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" TabIndex="[int]5" Top="[float]434" TrueContent="[string]On" Value="{ClusterBinding FieldName=Measure\ dark\ current?}" Width="[float]40" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="c0a633e289004f5ea6924093fadd27c2" LabelOwner="[UIModel]4613c49ded9b4df99804e0aa5e4ede6b" Left="[float]4" Text="[string]Measure dark current?" Top="[float]414" Width="[float]119" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="5a7bf54964a649e7b0c604e0ba03311e" Interval="[int]1" Label="[UIModel]9b08b14d1a3746c1865c2c41cffaddbc" Left="[float]4" MinHeight="[float]24" TabIndex="[int]7" Top="[float]586" Value="{ClusterBinding FieldName=Current\ Aveages}" ValueFormatter="[string]LV:0" ValueType="[Type]Int32" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="9b08b14d1a3746c1865c2c41cffaddbc" LabelOwner="[UIModel]5a7bf54964a649e7b0c604e0ba03311e" Left="[float]4" Text="[string]Current Aveages" Top="[float]566" Width="[float]87" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="a250db049a404689bc286e66c7e71cd1" Label="[UIModel]f277758bbc9444599eca90fa0905da0f" Left="[float]4" MinHeight="[float]24" TabIndex="[int]8" Top="[float]638" Value="{ClusterBinding FieldName=Voltage\ Applied\ (V)}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="f277758bbc9444599eca90fa0905da0f" LabelOwner="[UIModel]a250db049a404689bc286e66c7e71cd1" Left="[float]4" Text="[string]Voltage Applied (V)" Top="[float]618" Width="[float]102" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="4e51944e8022455aa1e9e01ce737de79" Label="[UIModel]a11503b0f20b469d84809efd04e3b482" Left="[float]4" MinHeight="[float]24" TabIndex="[int]9" Top="[float]690" Value="{ClusterBinding FieldName=Max\ current\ compliance}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="a11503b0f20b469d84809efd04e3b482" LabelOwner="[UIModel]4e51944e8022455aa1e9e01ce737de79" Left="[float]4" Text="[string]Max current compliance" Top="[float]670" Width="[float]127" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="2736aefe5f7e4f068d750ba0de9db756" Label="[UIModel]3d059eebd9774bba89cddc28b86f7e63" Left="[float]4" MinHeight="[float]24" TabIndex="[int]10" Top="[float]742" Value="{ClusterBinding FieldName=Manual\ Current\ Range}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="3d059eebd9774bba89cddc28b86f7e63" LabelOwner="[UIModel]2736aefe5f7e4f068d750ba0de9db756" Left="[float]4" Text="[string]Manual Current Range" Top="[float]722" Width="[float]119" />
+						<Switch BaseName="[string]Square LED" FalseContent="[string]Off" Height="[float]72" Id="cd5a67f1f8784d8585318b1bf2aff1fa" Label="[UIModel]3710dbbe05784d3283b6b74bbe6084c4" Left="[float]4" MinHeight="[float]36" MinWidth="[float]34" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" TabIndex="[int]11" Top="[float]794" TrueContent="[string]On" Value="{ClusterBinding FieldName=Enable\ Auto\ Range}" Width="[float]40" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="3710dbbe05784d3283b6b74bbe6084c4" LabelOwner="[UIModel]cd5a67f1f8784d8585318b1bf2aff1fa" Left="[float]4" Text="[string]Enable Auto Range" Top="[float]774" Width="[float]101" />
+						<Switch BaseName="[string]Square LED" FalseContent="[string]Off" Height="[float]72" Id="4d01ae18008044b29f9b969caae61386" Label="[UIModel]48b99cd8e583422bb88cd0b5152d0fdf" Left="[float]5" MinHeight="[float]36" MinWidth="[float]34" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" TabIndex="[int]12" Top="[float]891" TrueContent="[string]On" Value="{ClusterBinding FieldName=Automatic\ measurement}" Width="[float]41" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="48b99cd8e583422bb88cd0b5152d0fdf" LabelOwner="[UIModel]4d01ae18008044b29f9b969caae61386" Left="[float]5" Text="[string]Automatic measurement" Top="[float]871" Width="[float]130" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="f65856e360c4c7c9777ce60142efff0" Interval="[ulong]1" IsReadOnly="[bool]False" Label="[UIModel]bd058a59dac44fcd8a35650d9dc0af0c" Left="[float]4" MinHeight="[float]24" TabIndex="[int]13" Top="[float]986" Value="{ClusterBinding FieldName=Fiannium\ Pe\ Handler}" ValueFormatter="[string]LV:0" ValueType="[Type]UInt64" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="bd058a59dac44fcd8a35650d9dc0af0c" LabelOwner="[UIModel]f65856e360c4c7c9777ce60142efff0" Left="[float]4" Text="[string]Fiannium Pe Handler" Top="[float]966" Width="[float]109" />
+						<IONameControl AllowUndefinedValues="[bool]True" BaseName="[string]Instr" DataType="[Type]:UDR:TagRefnum|NI::VISA::Visa.udr::Instr|niaggregate://path/ref:%2F%2FNI%2FVISA%2FBase-src%2F18.5.0/file:%2F%2FVISA.gcomp%5CVISA.gcomp/file:%2F%2FVisa.udr" Height="[float]24" Id="9575fcb10e4f45018eee4a1ba75491ff" IsTabStop="[bool]True" Label="[UIModel]7365a7912b194d69b9222dd58d1d9fe1" Left="[float]4" SelectedResource="{ClusterBinding FieldName=Keithley\ Address}" ShowUserRefresh="[bool]True" TabIndex="[int]6" Top="[float]534" UdrClass="[string]Instr" UdrNamespace="[string]Visa" Width="[float]175" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+							<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+								<TypeDefinitionTarget TargetName="NI::VISA::Visa.udr::Instr::ControlDefinition" />
+							</p.TypeDefinitionTargets>
+						</IONameControl>
+						<Label Height="[float]16" Id="7365a7912b194d69b9222dd58d1d9fe1" LabelOwner="[UIModel]9575fcb10e4f45018eee4a1ba75491ff" Left="[float]4" Text="[string]Keithley Address" Top="[float]514" Width="[float]88" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="79a1f5b396574b658d7f7f73adbf4d8b" Label="[UIModel]6ff855a8bdf941fbb390b33397062825" Left="[float]5" MinHeight="[float]24" TabIndex="[int]14" Top="[float]1030" Value="{ClusterBinding FieldName=Dead\ Cell?\ Current\ Threshold}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="6ff855a8bdf941fbb390b33397062825" LabelOwner="[UIModel]79a1f5b396574b658d7f7f73adbf4d8b" Left="[float]5" Text="[string]Dead Cell? Current Threshold" Top="[float]1010" Width="[float]155" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="14a32d6e631941c88f2e1936a4ef2b03" Label="[UIModel]b903f96af330413ebecdde9a1357ae2b" Left="[float]6" MinHeight="[float]24" TabIndex="[int]15" Top="[float]1074" Value="{ClusterBinding FieldName=Automatic\ measurement\ Cell\ Dark\ current}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="b903f96af330413ebecdde9a1357ae2b" LabelOwner="[UIModel]14a32d6e631941c88f2e1936a4ef2b03" Left="[float]6" Text="[string]Automatic measurement Cell Dark current" Top="[float]1054" Width="[float]223" />
+					</Cluster>
+					<Label Height="[float]16" Id="a8f53e3cbb9345be8e523e5f0bc3be52" LabelOwner="[UIModel]f0eaaab414ce46a7bca597c469c5bf5f" Left="[float]714" Text="[string]Single acquire inputs control" Top="[float]80" Width="[float]151" xmlns="http://www.ni.com/PanelCommon" />
+				</ControlDefinition>
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="f33342fbc491462da9ba6f896bfa2942">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Light calibration data" DataType="Double[,]" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Fiannium Configuration File" DataType="Path" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Arduino Filter Flipper Address" DataType=":UDR:TagRefnum|NI::VISA::Visa.udr::Instr|niaggregate://path/ref:%2F%2FNI%2FVISA%2FBase-src%2F18.5.0/file:%2F%2FVISA.gcomp%5CVISA.gcomp/file:%2F%2FVisa.udr" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Filter Arduino Status" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Dark Current Averages" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Measure dark current?" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Keithley Address" DataType=":UDR:TagRefnum|NI::VISA::Visa.udr::Instr|niaggregate://path/ref:%2F%2FNI%2FVISA%2FBase-src%2F18.5.0/file:%2F%2FVISA.gcomp%5CVISA.gcomp/file:%2F%2FVisa.udr" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Current Aveages" DataType="Int32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Voltage Applied (V)" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Max current compliance" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Manual Current Range" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Enable Auto Range" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Automatic measurement" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Fiannium Pe Handler" DataType="UInt64" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Dead Cell? Current Threshold" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Automatic measurement Cell Dark current" DataType="Double" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>
