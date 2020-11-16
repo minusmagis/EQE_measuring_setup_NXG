@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="FB80BBE65687F90A8CC15230D51B96C8BB910EAC17AC644ED87283B8DE2F03AD0F26C8392B5524A2CFA5B758FC5C53A8DCF12AE914BC17F5664D619B428BEEAC" Timestamp="1D6B2A5F22146E4" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="6.2.0.49153" Version="6.2.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="6.2.0.49154" Version="6.2.0.49154" />
+		<ApplicationVersionInfo Build="6.4.1.50844" Name="LabVIEW NXG" Version="3.1.0" />
+	</SourceModelFeatureSet>
+	<VirtualInstrument Id="2881744da68b4e5d968ef972ca283106" xmlns="http://www.ni.com/LabVIEW.VI">
+		<Icon Id="bc2204c421945899fa036230be63700" ListViewIconCrop="0 0 20 20" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]20" Id="d81d3e43be6f45a0be3382a3ca2b57b6" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]20">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]20" Id="1012ef4b7eeb48d4a9eb277eb8cd7665" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]20">
+					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="92374e964ccd4d6797d937c785b87d9a" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="540f5b57486a4a3797e8294f77887a51" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+					<FileNameText Attached="[bool]False" Height="[float]16" Id="4fdb3378ab294d58b7d4264ece92f653" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]gl" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]16">
+						<FontSetting FontFamily="Symbol" FontSize="9.75" Id="1c5f1d07cceb4486bc1fa8d32d8aec80" />
+					</FileNameText>
+				</IconTemplate>
+			</IconPanel>
+		</Icon>
+		<ConnectorPane Height="20" Id="ce63353a09474f72bb4e736002a61d34" ListViewHeight="55" ListViewWidth="150" Width="20" xmlns="http://www.ni.com/PlatformFramework">
+			<ConnectorPaneTerminal />
+			<ConnectorPaneTerminal Hotspot="0 15" />
+			<ConnectorPaneTerminal Hotspot="20 5" />
+			<ConnectorPaneTerminal Hotspot="20 15" ListViewHotspot="150 35" Parameter="b7b922aafa2d4e5cbb7af7a497fc3dc2" />
+		</ConnectorPane>
+		<DiagramUnplacedItems Id="3cbe5aee89c3457ab631ed4b9a57301d" xmlns="http://www.ni.com/MocCommon" />
+		<FrontPanelUnplacedItems Id="36e67b0b684424eac502b25de223787" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" />
+		<BlockDiagram Id="66e29b84182749e19adf52f7a661bdbd">
+			<DataAccessor Bounds="390 215 40 15" DataItem="b7b922aafa2d4e5cbb7af7a497fc3dc2" Id="d13de2823d6451098aa4015af4d2e1f" Label="a91b557f0424a6dbefc6b4f17fff72c" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Double" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="d13de2823d6451098aa4015af4d2e1f" Bounds="435 215 155 14" Id="a91b557f0424a6dbefc6b4f17fff72c" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Grating Change Wavelength</p.Text>
+			</NodeLabel>
+			<Literal Bounds="318 215 45 15" DataType="Double" Id="7d3401e20a0c4d1b9246a4baea4e430a" Label="fc936b62db5d432ebdadbd4774d6ed93" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>0x4082700000000000</p.Data>
+				<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
+			</Literal>
+			<NodeLabel AttachedTo="7d3401e20a0c4d1b9246a4baea4e430a" Bounds="318 197 30 15" Id="fc936b62db5d432ebdadbd4774d6ed93" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Grating Change Wavelength</p.Text>
+			</NodeLabel>
+			<Wire Id="8211823044ab4209828227fdb314e142" Joints="N(7d3401e20a0c4d1b9246a4baea4e430a:Out)|(363,220) N(d13de2823d6451098aa4015af4d2e1f:Value)|(393,220)" xmlns="http://www.ni.com/PlatformFramework" />
+		</BlockDiagram>
+		<NativeFrontPanel Height="[float]1600" HtmlPanel="[bool]False" Id="568508aa898f49b29d67f960ae836ab9" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" Width="[float]2000">
+			<PanelExecutionWindow Id="f515c47c96c148a1b2e7d63f1905a358" />
+			<NumericText BaseName="[string]Numeric" Enabled="[bool]False" Height="[float]24" Id="17be8daf4717463588847a01e410b83f" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" IsReadOnly="[bool]True" Label="[UIModel]150b4c79476044a3bf01d87111c4217a" Left="[float]276" MinHeight="[float]24" TabIndex="[int]0" Top="[float]228" Value="{DataItemBinding Id=b7b922aafa2d4e5cbb7af7a497fc3dc2}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Height="[float]16" Id="150b4c79476044a3bf01d87111c4217a" LabelOwner="[UIModel]17be8daf4717463588847a01e410b83f" Left="[float]276" Text="[string]Grating Change Wavelength" Top="[float]208" Width="[float]150" xmlns="http://www.ni.com/PanelCommon" />
+		</NativeFrontPanel>
+		<DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="0" DataType="Double" Id="b7b922aafa2d4e5cbb7af7a497fc3dc2" Name="Grating Change Wavelength" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0x4082700000000000</p.DefaultValue>
+		</DataItem>
+	</VirtualInstrument>
+</SourceFile>
