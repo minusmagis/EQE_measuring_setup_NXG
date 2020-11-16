@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="C67CBC5233A86F5CBE5404C8C64ACDEBCF83BFAF85BD126C706EE998FE8347633F4EE9DE1CE5500E8412625F1CCA149C426C1A74DDE99ED0E2C073E895C1832A" Timestamp="1D63BE7F42F96B0" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="F704623C7F951B91A01FDE6313A2A68A2AF2466A6DE449ABF6C84C0159F561A71A149DB1074E9ED60F7BC38952E76BDCE564D5BA1AF81E1D45E2C95059D802BE" Timestamp="1D6BC307683DE95" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
@@ -87,11 +87,11 @@
 			<NodeLabel AttachedTo="ca7d8335d82c4f3cac823be9142a6aba" Bounds="741 480 104 14" Id="42f65d3c328d4a3a85ff66d0fed98c0b" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Function (0: Volts)</p.Text>
 			</NodeLabel>
-			<Literal Bounds="810 455 55 42" DataType="String" Id="b2c876cd788449f596d30a3597928710" Label="54dc46867e2f4969aa9a61b72d64a7b0" xmlns="http://www.ni.com/MocCommon">
+			<Literal Bounds="785 415 55 42" DataType="String" Id="b2c876cd788449f596d30a3597928710" Label="54dc46867e2f4969aa9a61b72d64a7b0" xmlns="http://www.ni.com/MocCommon">
 				<p.Data>"VOLT\nCURR\nRES"</p.Data>
 				<StringBehavior TextDisplayMode="Default" />
 			</Literal>
-			<NodeLabel AttachedTo="b2c876cd788449f596d30a3597928710" Bounds="810 438 47 14" Id="54dc46867e2f4969aa9a61b72d64a7b0" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="b2c876cd788449f596d30a3597928710" Bounds="785 398 47 14" Id="54dc46867e2f4969aa9a61b72d64a7b0" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Function</p.Text>
 			</NodeLabel>
 			<Select Bounds="1035 515 40 40" Id="8e98b8995df649e888ff4491e4db1232" />
@@ -104,7 +104,7 @@
 			<Wire Id="cfb07b828fe340a0b31cf69a88524716" Joints="N(6e0bd85f622e47fabca65e19e9d814e7:Value)|(890,625) N(590934cfcbf44e24b2373e8ccacb3037:L0)|(1195,625)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="b791f8b8d51f470a86d986c581f43a47" Joints="N(df2f6f8745484ce2b3a99f956d0301d8:output string)|(950,480) h(144) v(45) N(7876b06be190454ca2420b7f01665332:c0t0v)|(1115,525)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="e14cb3f3ab10401d940db995ee2ee8c7" Joints="N(ca7d8335d82c4f3cac823be9142a6aba:Value)|(890,485) h(9) v(10) N(df2f6f8745484ce2b3a99f956d0301d8:line index)|(910,495)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="4b31ad2c7e354eb9b7eb7a78c2eca7e3" Joints="N(b2c876cd788449f596d30a3597928710:Out)|(865,460) h(34) v(20) N(df2f6f8745484ce2b3a99f956d0301d8:multi-line string)|(910,480)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="4b31ad2c7e354eb9b7eb7a78c2eca7e3" Joints="N(b2c876cd788449f596d30a3597928710:Out)|(840,420) h(59) v(60) N(df2f6f8745484ce2b3a99f956d0301d8:multi-line string)|(910,480)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="ba5b61f60f4a4db0b6487ae0559a925e" Joints="N(f82d46b665f64a8fb0614c2491344969:Value)|(890,530) h(10) v(5) N(8e98b8995df649e888ff4491e4db1232:s)|(1035,535)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="63c2dd11bac447b39d2affc8fb581df1" Joints="N(7876b06be190454ca2420b7f01665332:outString)|(1155,495) h(34) v(150) N(590934cfcbf44e24b2373e8ccacb3037:L2)|(1195,645)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="2960f4aefa6341868781d8df9a0bb69c" Joints="N(8e98b8995df649e888ff4491e4db1232:s? t:f)|(1075,535) N(7876b06be190454ca2420b7f01665332:c1t0v)|(1115,535)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -133,7 +133,7 @@
 				<Terminal DataType="Error" Direction="Output" Hotspot="50 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="UInt32" Direction="Output" Hotspot="50 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
 			</MethodCall>
-			<MethodCall Bounds="1275 600 40 40" Id="be4197518a844494a916c441258dd374" Label="68533c03ec5d48228b8ca1bb75c57e26" ResolveFailedHint="&quot;C:\\Users\\minus\\Documents\\LabVIEW Projects\\Keithley 2450 NXG Library\\Public\\Utility\\Error Query.gvi&quot;" Signature="@92deb9f04636417eaedbded561eb7563" Target="Keithley 2450 NXG Library::Public::Utility::Error Query.gvi" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="1275 600 40 40" Id="be4197518a844494a916c441258dd374" Label="68533c03ec5d48228b8ca1bb75c57e26" ResolveFailedHint="&quot;C:\\Users\\Agustín\\Documents\\GitHub\\EQE measuring setup NXG\\Keithley 2450 NXG\\Keithley 2450 NXG Library.gcomp\\Public\\Utility\\Error Query.gvi&quot;" Signature="@92deb9f04636417eaedbded561eb7563" Target="Keithley 2450 NXG Library::Public::Utility::Error Query.gvi" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L0" Desc="VISA resource name" />
@@ -280,7 +280,7 @@
 		<p.TypeReference TypeId="12a7dc0db18d4a2495948d12f30988fe">
 			<Function Id="1" IsStatic="True" IsConstructor="False" Name="Write (Instr, String).gvi" ReturnType="Void" GenericTypeDefinition="Void">
 				<Parameters>
-					<Attributed AttributedType="@71176fe16d1c4a73b29edf366d9c9505">
+					<Attributed AttributedType="@6c7f028759d142ea80056a817ec88631">
 						<AttributeValues>
 							<AttributeValue Name="NI.UserDefinedName" Value="[string]session in" />
 						</AttributeValues>
@@ -295,7 +295,7 @@
 							<AttributeValue Name="NI.UserDefinedName" Value="[string]write buffer" />
 						</AttributeValues>
 					</Attributed>
-					<Attributed AttributedType="@61e8375f232349d7a643c27fbfefece3">
+					<Attributed AttributedType="@cfc1ff5cfc124092b654555550a3ece3">
 						<AttributeValues>
 							<AttributeValue Name="NI.UserDefinedName" Value="[string]session out" />
 						</AttributeValues>
@@ -305,7 +305,7 @@
 							<AttributeValue Name="NI.UserDefinedName" Value="[string]error out" />
 						</AttributeValues>
 					</Attributed>
-					<Attributed AttributedType="@0a74171411dc4eceac8778f7e661ffc8">
+					<Attributed AttributedType="@59e906550df342299155bdc4fd31be21">
 						<AttributeValues>
 							<AttributeValue Name="NI.UserDefinedName" Value="[string]return count" />
 						</AttributeValues>
@@ -316,17 +316,17 @@
 		<p.TypeReference TypeId="f05a716edf264a0c940e911a48a0a888">
 			<Function Id="1" IsStatic="True" IsConstructor="False" Name="Error Query.gvi" ReturnType="Void" GenericTypeDefinition="Void">
 				<Parameters>
-					<Attributed AttributedType="@71176fe16d1c4a73b29edf366d9c9505">
+					<Attributed AttributedType="@6c7f028759d142ea80056a817ec88631">
 						<AttributeValues>
 							<AttributeValue Name="NI.UserDefinedName" Value="[string]VISA resource name" />
 						</AttributeValues>
 					</Attributed>
-					<Attributed AttributedType="@12929694b53c4457bb92c70d7b47a331">
+					<Attributed AttributedType="@7c6610e1c21a4a7e8330bee8540dfd49">
 						<AttributeValues>
 							<AttributeValue Name="NI.UserDefinedName" Value="[string]error in (no error)" />
 						</AttributeValues>
 					</Attributed>
-					<Attributed AttributedType="@61e8375f232349d7a643c27fbfefece3">
+					<Attributed AttributedType="@cfc1ff5cfc124092b654555550a3ece3">
 						<AttributeValues>
 							<AttributeValue Name="NI.UserDefinedName" Value="[string]VISA resource name out" />
 						</AttributeValues>
@@ -341,7 +341,7 @@
 							<AttributeValue Name="NI.UserDefinedName" Value="[string]Error Message" />
 						</AttributeValues>
 					</Attributed>
-					<Attributed AttributedType="@47936048be5b472cac3d6d3fbf904b95">
+					<Attributed AttributedType="@413b6d07258c404c9f53d2c398600b38">
 						<AttributeValues>
 							<AttributeValue Name="NI.UserDefinedName" Value="[string]error out" />
 						</AttributeValues>
@@ -349,7 +349,7 @@
 				</Parameters>
 			</Function>
 		</p.TypeReference>
-		<p.TypeReference TypeId="71176fe16d1c4a73b29edf366d9c9505">
+		<p.TypeReference TypeId="6c7f028759d142ea80056a817ec88631">
 			<Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="L0" DataType=":UDR:TagRefnum|NI::VISA::Visa.udr::Instr|niaggregate://path/ref:%2F%2FNI%2FVISA%2FBase-src%2F18.5.0/file:%2F%2FVISA.gcomp%5CVISA.gcomp/file:%2F%2FVisa.udr" />
 		</p.TypeReference>
 		<p.TypeReference TypeId="024dff5dec214532b7a265739f021d03">
@@ -358,16 +358,16 @@
 		<p.TypeReference TypeId="18399efc6a534d43a613477e05bcfa90">
 			<Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="L2" DataType="String" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="61e8375f232349d7a643c27fbfefece3">
+		<p.TypeReference TypeId="cfc1ff5cfc124092b654555550a3ece3">
 			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R0" DataType=":UDR:TagRefnum|NI::VISA::Visa.udr::Instr|niaggregate://path/ref:%2F%2FNI%2FVISA%2FBase-src%2F18.5.0/file:%2F%2FVISA.gcomp%5CVISA.gcomp/file:%2F%2FVisa.udr" />
 		</p.TypeReference>
 		<p.TypeReference TypeId="f3591c3204384c409ea74b91ae45f3ed">
 			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R1" DataType="Error" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="0a74171411dc4eceac8778f7e661ffc8">
+		<p.TypeReference TypeId="59e906550df342299155bdc4fd31be21">
 			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R2" DataType="UInt32" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="12929694b53c4457bb92c70d7b47a331">
+		<p.TypeReference TypeId="7c6610e1c21a4a7e8330bee8540dfd49">
 			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L3" DataType="Error" />
 		</p.TypeReference>
 		<p.TypeReference TypeId="e40005bcf3ca4c44a4be4d9ab4214342">
@@ -376,7 +376,7 @@
 		<p.TypeReference TypeId="0d986ac7b79b4cd9ac2fcdd5fc397627">
 			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R2" DataType="String" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="47936048be5b472cac3d6d3fbf904b95">
+		<p.TypeReference TypeId="413b6d07258c404c9f53d2c398600b38">
 			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R3" DataType="Error" />
 		</p.TypeReference>
 	</DataTypeReferenceTable>

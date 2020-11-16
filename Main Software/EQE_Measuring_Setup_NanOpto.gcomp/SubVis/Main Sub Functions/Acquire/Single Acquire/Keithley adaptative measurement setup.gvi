@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="D91BE311F1B019DD49EA9D038C75FD81CE39D65904E7D0FDDFE20FD1EE63A8B02DB9B3F02FB1E0FB721C9E06268361BD39DB1AA5B99460DD28E92F85E0C43D3C" Timestamp="1D6AE0EFF6F2DDE" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="D9C15A1BB94C4089F182D7DD28CB50095F774E6CEA5EC73C8B704C095AB2B5E1FC3351BA57D295311479461CFD4CF17D7CCCFD1C6FFD8FA97F99243514A1BFD6" Timestamp="1D6BC3076EBA53A" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="6.4.1.50844" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
@@ -174,7 +174,7 @@
 						<BooleanBehavior />
 						<DockedConstantFacade UndockedSize="25 15" />
 					</Literal>
-					<Wire Facade="WireInvisibleFacade" Id="d8b8b4359c3643468187f26583352d93" Joints="N(cbdbaf7aa39544a185f8cdd0f7aaa904:Out)|(426,48) v(32) N(bd87a02cd8c347cda7194fb5699adbc1:initial value)|(410,55)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Facade="WireInvisibleFacade" Id="d8b8b4359c3643468187f26583352d93" Joints="N(cbdbaf7aa39544a185f8cdd0f7aaa904:Out)|(426,48) v(7) N(bd87a02cd8c347cda7194fb5699adbc1:initial value)|(410,55)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
 					<NodeLabel AttachedTo="cbdbaf7aa39544a185f8cdd0f7aaa904" Bounds="414 55 30 15" Id="eab1fdf0028c4e96b2b7a353ee312b57" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 						<p.Text>initial value</p.Text>
 					</NodeLabel>
@@ -188,32 +188,12 @@
 						<CaseStructure.Case Bounds="5 5 765 190" Id="47f14a6056e14c63954ad1ebfa7cac95" Pattern="True">
 							<CaseStructure Bounds="25 15 710 155" Id="d5eb24cd03d3435c92a3b791569c4a74" Selected="b603d9022bf84a45b026a56d102fd5a6" UserSelectorBounds="311 0 88 17">
 								<CaseStructure.Case Bounds="5 5 700 145" Id="b603d9022bf84a45b026a56d102fd5a6" Pattern="True">
-									<Wire Id="8d3e21f3894342779a71d3da0749a245" Joints="N(61818dde54ea416bb2c228d78d980482:b603d9022bf84a45b026a56d102fd5a6)|(4,40) N(10e9a29953284e579a6bae02597e82d7:L0)|(485,40)" xmlns="http://www.ni.com/PlatformFramework" />
-									<Wire Id="49872de20f824641ba3a61d591a30b59" Joints="N(dda7ddc0f9fb471ca5643766d495e0c1:b603d9022bf84a45b026a56d102fd5a6)|(4,55) h(11) v(15) N(10e9a29953284e579a6bae02597e82d7:L3)|(485,70)" xmlns="http://www.ni.com/PlatformFramework" />
-									<Wire Id="42aa7a892776494ead69439df8a57cda" Joints="N(10e9a29953284e579a6bae02597e82d7:R3)|(525,70) N(af2d1e483c924948843e0137cef7aefd:b603d9022bf84a45b026a56d102fd5a6)|(696,70)" xmlns="http://www.ni.com/PlatformFramework" />
-									<MethodCall Bounds="485 35 40 40" Id="10e9a29953284e579a6bae02597e82d7" Label="14b43b0184be459ab8b8b51873fbe77e" ResolveFailedHint="&quot;C:\\Users\\Agustín\\Documents\\GitHub\\EQE measuring setup NXG\\Keithley 2450 NXG\\Keithley 2450 NXG Library.gcomp\\Public\\Configure\\Configure Measurement Range.gvi&quot;" Signature="@98ba493effc3422688a2f9689193a9ce" Target="Keithley 2450 NXG Library::Public::Configure::Configure Measurement Range.gvi" xmlns="http://www.ni.com/MocCommon">
-										<p.MethodDeclaration>
-											<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
-												<Parameter Id="B0" Desc="Manual Range (1.0)" />
-												<Parameter Id="L0" Desc="VISA resource name" />
-												<Parameter Id="L1" Desc="Function (0: Volts)" />
-												<Parameter Id="L2" Desc="Enable Auto Range (T:Enable)" />
-												<Parameter Id="L3" Desc="error in (no error)" />
-												<Parameter Id="R0" Desc="VISA resource name out" />
-												<Parameter Id="R3" Desc="error out" />
-											</MethodDeclaration>
-										</p.MethodDeclaration>
-										<Terminal DataType="Double" Direction="Input" Hotspot="15 40" Id="B0" xmlns="http://www.ni.com/PlatformFramework" />
-										<Terminal DataType=":UDR:TagRefnum|NI::VISA::Visa.udr::Instr|niaggregate://path/ref:%2F%2FNI%2FVISA%2FBase-src%2F18.5.0/file:%2F%2FVISA.gcomp%5CVISA.gcomp/file:%2F%2FVisa.udr" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
-										<Terminal DataType="UInt16" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
-										<Terminal DataType="Boolean" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
-										<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
-										<Terminal DataType=":UDR:TagRefnum|NI::VISA::Visa.udr::Instr|niaggregate://path/ref:%2F%2FNI%2FVISA%2FBase-src%2F18.5.0/file:%2F%2FVISA.gcomp%5CVISA.gcomp/file:%2F%2FVisa.udr" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
-										<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
-									</MethodCall>
-									<Wire Id="c6ea59469dac4aa8a51739b32db09ccf" Joints="N(10e9a29953284e579a6bae02597e82d7:R0)|(525,40) N(ec52df3ea47e4d8894d0f4051c7ca907:b603d9022bf84a45b026a56d102fd5a6)|(696,40)" xmlns="http://www.ni.com/PlatformFramework" />
-									<NodeLabel AttachedTo="10e9a29953284e579a6bae02597e82d7" Bounds="485 18 171 14" Id="14b43b0184be459ab8b8b51873fbe77e" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
-										<p.Text>Configure Measurement Range</p.Text>
+									<Wire Id="8d3e21f3894342779a71d3da0749a245" Joints="N(61818dde54ea416bb2c228d78d980482:b603d9022bf84a45b026a56d102fd5a6)|(4,40) N(b84a2bcb488545d3b426457705c77abe:L0)|(485,40)" xmlns="http://www.ni.com/PlatformFramework" />
+									<Wire Id="49872de20f824641ba3a61d591a30b59" Joints="N(dda7ddc0f9fb471ca5643766d495e0c1:b603d9022bf84a45b026a56d102fd5a6)|(4,55) h(11) v(15) N(b84a2bcb488545d3b426457705c77abe:L3)|(485,70)" xmlns="http://www.ni.com/PlatformFramework" />
+									<Wire Id="42aa7a892776494ead69439df8a57cda" Joints="N(b84a2bcb488545d3b426457705c77abe:R3)|(525,70) N(af2d1e483c924948843e0137cef7aefd:b603d9022bf84a45b026a56d102fd5a6)|(696,70)" xmlns="http://www.ni.com/PlatformFramework" />
+									<Wire Id="c6ea59469dac4aa8a51739b32db09ccf" Joints="N(b84a2bcb488545d3b426457705c77abe:R0)|(525,40) N(ec52df3ea47e4d8894d0f4051c7ca907:b603d9022bf84a45b026a56d102fd5a6)|(696,40)" xmlns="http://www.ni.com/PlatformFramework" />
+									<NodeLabel AttachedTo="b84a2bcb488545d3b426457705c77abe" Bounds="485 18 147 14" Id="14b43b0184be459ab8b8b51873fbe77e" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+										<p.Text>Enable Source Auto Range</p.Text>
 									</NodeLabel>
 									<DataAccessor Bounds="250 80 40 15" DataItem="477bd4455042418d9c50a9d42e87dfc2" Id="cf98a9a54f5b4f749ec3d83eb9d8d929" Label="68e7d5c9337540a0ba0ec8f995d793f2" xmlns="http://www.ni.com/MocCommon">
 										<Terminal DataType="@944f4e9329c04c92afb04b0a07e43309" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
@@ -238,7 +218,7 @@
 									<NodeLabel AttachedTo="2a8fa4b8923b45329d5dd33813885edb" Bounds="350 63 30 15" Id="f800b044ccd74af69e50b4d01a376d00" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 										<p.Text>Function (0: Volts)</p.Text>
 									</NodeLabel>
-									<Wire Id="af8674ea6f94631b3926ddd28c131c4" Joints="N(2a8fa4b8923b45329d5dd33813885edb:Out)|(465,50) N(10e9a29953284e579a6bae02597e82d7:L1)|(485,50)" xmlns="http://www.ni.com/PlatformFramework" />
+									<Wire Id="af8674ea6f94631b3926ddd28c131c4" Joints="N(2a8fa4b8923b45329d5dd33813885edb:Out)|(465,50) N(b84a2bcb488545d3b426457705c77abe:L1)|(485,50)" xmlns="http://www.ni.com/PlatformFramework" />
 									<PropertyNode Bounds="310 80 139 35" HasErrorTerminals="False" Id="962e6749e830494394bb86c4e1f89e92" InstanceDataType="@944f4e9329c04c92afb04b0a07e43309" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
 										<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
 											<TypeDefinitionTarget TargetName="EQE_Measuring_Setup_NanOpto::SubVis::FGV::Single acquire inputs control.gtype" />
@@ -246,7 +226,25 @@
 										<PropertyItemTerminal DataType="Boolean" Hotspot="139 15" Id="c0t0v" Path="Enable Auto Range" PathElementMemberKinds="Field" Usage="Optional" />
 									</PropertyNode>
 									<Wire Id="58efdafd451845629dae87d427186d2b" Joints="N(cf98a9a54f5b4f749ec3d83eb9d8d929:Value)|(290,85) N(962e6749e830494394bb86c4e1f89e92:instance in)|(310,85)" xmlns="http://www.ni.com/PlatformFramework" />
-									<Wire Id="ea5e9623c5624921bd85b3f2b9f4d45d" Joints="N(962e6749e830494394bb86c4e1f89e92:c0t0v)|(449,95) h(26) v(-35) N(10e9a29953284e579a6bae02597e82d7:L2)|(485,60)" xmlns="http://www.ni.com/PlatformFramework" />
+									<Wire Id="ea5e9623c5624921bd85b3f2b9f4d45d" Joints="N(962e6749e830494394bb86c4e1f89e92:c0t0v)|(449,95) h(26) v(-35) N(b84a2bcb488545d3b426457705c77abe:L2)|(485,60)" xmlns="http://www.ni.com/PlatformFramework" />
+									<MethodCall Bounds="485 35 40 40" Id="b84a2bcb488545d3b426457705c77abe" Label="14b43b0184be459ab8b8b51873fbe77e" ResolveFailedHint="&quot;C:\\Users\\Agustín\\Documents\\GitHub\\EQE measuring setup NXG\\Keithley 2450 NXG\\Keithley 2450 NXG Library.gcomp\\Public\\Configure\\Enable Source Auto Range.gvi&quot;" Signature="@283b1fc52a11458e8f7c797dbac1c62d" Target="Keithley 2450 NXG Library::Public::Configure::Enable Source Auto Range.gvi" xmlns="http://www.ni.com/MocCommon">
+										<p.MethodDeclaration>
+											<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+												<Parameter Id="L0" Desc="VISA resource name" />
+												<Parameter Id="L1" Desc="Function (0: Volts)" />
+												<Parameter Id="L2" Desc="Enable Auto Range (T:Enable)" />
+												<Parameter Id="L3" Desc="error in (no error)" />
+												<Parameter Id="R0" Desc="VISA resource name out" />
+												<Parameter Id="R3" Desc="error out" />
+											</MethodDeclaration>
+										</p.MethodDeclaration>
+										<Terminal DataType=":UDR:TagRefnum|NI::VISA::Visa.udr::Instr|niaggregate://path/ref:%2F%2FNI%2FVISA%2FBase-src%2F18.5.0/file:%2F%2FVISA.gcomp%5CVISA.gcomp/file:%2F%2FVisa.udr" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+										<Terminal DataType="UInt16" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+										<Terminal DataType="Boolean" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+										<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+										<Terminal DataType=":UDR:TagRefnum|NI::VISA::Visa.udr::Instr|niaggregate://path/ref:%2F%2FNI%2FVISA%2FBase-src%2F18.5.0/file:%2F%2FVISA.gcomp%5CVISA.gcomp/file:%2F%2FVisa.udr" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+										<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+									</MethodCall>
 								</CaseStructure.Case>
 								<CaseStructure.Case Bounds="5 5 700 145" Id="e28848465dd14cfea82c93f44a8b667e" Pattern="False">
 									<Wire Id="1e748d4c6d8413d91d4d80ae6289744" Joints="N(61818dde54ea416bb2c228d78d980482:e28848465dd14cfea82c93f44a8b667e)|(4,40) N(a7e519cfb9b940a099616b9ff4fc6f5d:L0)|(235,40)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -494,6 +492,14 @@
 				</AttributeValues>
 			</Attributed>
 		</p.TypeReference>
+		<p.TypeReference TypeId="283b1fc52a11458e8f7c797dbac1c62d">
+			<Attributed AttributedType="@3589505079304c4ca6f2549a41b6a4ad">
+				<AttributeValues>
+					<AttributeValue Name="NI.ConnectorPaneHeight" Value="[int]40" />
+					<AttributeValue Name="NI.ConnectorPaneWidth" Value="[int]40" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
 		<p.TypeReference TypeId="98ba493effc3422688a2f9689193a9ce">
 			<Attributed AttributedType="@6bbd3805a2ba4fd9a298cdea1d4f8560">
 				<AttributeValues>
@@ -504,6 +510,42 @@
 		</p.TypeReference>
 		<p.TypeReference TypeId="7a6ef313575e4ec08edbed8aa76bb449">
 			<Typedef TypedefName="Single acquire inputs control.gtype" UnderlyingType="@f33342fbc491462da9ba6f896bfa2942" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="3589505079304c4ca6f2549a41b6a4ad">
+			<Function Id="1" IsStatic="True" IsConstructor="False" Name="Enable Source Auto Range.gvi" ReturnType="Void" GenericTypeDefinition="Void">
+				<Parameters>
+					<Attributed AttributedType="@6c7f028759d142ea80056a817ec88631">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]VISA resource name" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@f9c09b89b6d242bea2bb4466376606b7">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Function (0: Volts)" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@91db38147f214eb797b9e32f0467c711">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Enable Auto Range (T:Enable)" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@7c6610e1c21a4a7e8330bee8540dfd49">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]error in (no error)" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@cfc1ff5cfc124092b654555550a3ece3">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]VISA resource name out" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@413b6d07258c404c9f53d2c398600b38">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]error out" />
+						</AttributeValues>
+					</Attributed>
+				</Parameters>
+			</Function>
 		</p.TypeReference>
 		<p.TypeReference TypeId="6bbd3805a2ba4fd9a298cdea1d4f8560">
 			<Function Id="1" IsStatic="True" IsConstructor="False" Name="Configure Measurement Range.gvi" ReturnType="Void" GenericTypeDefinition="Void">
@@ -568,9 +610,6 @@
 				</Members>
 			</Composite>
 		</p.TypeReference>
-		<p.TypeReference TypeId="397625252afa4de1a43ba2c95c6d460d">
-			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="B0" DataType="Double" />
-		</p.TypeReference>
 		<p.TypeReference TypeId="6c7f028759d142ea80056a817ec88631">
 			<Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="L0" DataType=":UDR:TagRefnum|NI::VISA::Visa.udr::Instr|niaggregate://path/ref:%2F%2FNI%2FVISA%2FBase-src%2F18.5.0/file:%2F%2FVISA.gcomp%5CVISA.gcomp/file:%2F%2FVisa.udr" />
 		</p.TypeReference>
@@ -589,8 +628,27 @@
 		<p.TypeReference TypeId="413b6d07258c404c9f53d2c398600b38">
 			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R3" DataType="Error" />
 		</p.TypeReference>
+		<p.TypeReference TypeId="397625252afa4de1a43ba2c95c6d460d">
+			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="B0" DataType="Double" />
+		</p.TypeReference>
 	</DataTypeReferenceTable>
 	<IconTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.IconModel Target="Keithley 2450 NXG Library::Public::Configure::Enable Source Auto Range.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="[string]GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<Image Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD8SURBVEhL3ZDRcsIwDAT5/59OZZ+9PkshtCU8tDuasHeyA8PjeHxqLAQugGurUQQv5ywbC9YI4yu5npR7Mxcx4iK68BSp7zNvxqQdUl14k5595jqGVgLJ65lUzll2+9gvupvx6vgO4RF36ZuGysCjPGiu3PsBcZz4VQzWgjZJjcJL2Fb6EGrX7o0YjCxUBRfxVJIHzVV9gv/xav4puUvfNCjxU/LOL/xIKtsiXbh4UT1JA1vWCaFI/1Iq2+L0Jh4k91i52r3JX3+1/rtg5NngVURyWIGFS3V/QopiVe1qh+jC81mUOCuzk/TDA0rkWXRW9c3LLiI5bOFOjuMLMh1u9Dic1b4AAAAASUVORK5CYII=" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[string][Comp]Keithley 2450 NXG Library.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
 		<p.IconModel Target="Keithley 2450 NXG Library::Public::Configure::Configure Measurement Range.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
