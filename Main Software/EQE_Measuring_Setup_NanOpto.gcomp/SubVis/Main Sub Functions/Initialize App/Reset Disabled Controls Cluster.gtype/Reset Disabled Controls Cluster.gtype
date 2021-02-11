@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="69C9C7A17A624CA94598AB50AE0375387A3C785C771F9B8AB6C5FDA4696F1CF8EB7BD07B73023E9F6D3AA192F0AA651A50535D2BAE0CAD3921F63EB2E8B28B86" Timestamp="1D700866D6CDAC3" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ApplicationVersionInfo Build="8.1.0.50414" Name="LabVIEW NXG" Version="5.0.0" />
+	</SourceModelFeatureSet>
+	<TypeDefinition DataType="@34da8b2561d94cd9bb8812f3791ff260" Id="f850e0e9a202450b891de578cd1fe7e8" xmlns="http://www.ni.com/MocCommon">
+		<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+			<TypeDefinitionTarget TargetName="NI::G Core::Color Picker::Color.gtype" />
+			<TypeDefinitionTarget TargetName="NI::G Core::User Interface::ScrollBarVisibility.gtype" />
+		</p.TypeDefinitionTargets>
+		<Icon Id="21925c68993443e0adb421928de06d8a" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="31323c6cf73d4d41a0a89f14f83ec69e" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate Height="[float]40" Id="707e59b2655c4381a8c895589116e0c0" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
+			</IconPanel>
+		</Icon>
+		<DataItem DataType="@34da8b2561d94cd9bb8812f3791ff260" Id="f9b11e583e4946bb856c681d624fd859" Name="Cluster">
+			<p.DefaultValue>False_False_0_0_0_0_0_0_0_0_0_</p.DefaultValue>
+			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+				<TypeDefinitionTarget TargetName="NI::G Core::Color Picker::Color.gtype" />
+				<TypeDefinitionTarget TargetName="NI::G Core::User Interface::ScrollBarVisibility.gtype" />
+			</p.TypeDefinitionTargets>
+		</DataItem>
+	</TypeDefinition>
+	<EnvoyManagerFile Id="facf0c9d4919449d8a53650e32a1a482" xmlns="http://www.ni.com/PlatformFramework">
+		<EnvoyManagerRootEnvoy Id="b62785366e06410aabd47980561ad1d7" ModelDefinitionType="EnvoyManagerRootEnvoy" Name="RootEnvoy" />
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="bf57d7b9a5a84183a303e146be3de200" Name="Reset Disabled Controls Cluster.gtype" NameTracksFileName="True">
+			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy" Id="f9f21725f32b4543ae468190948d27fb" ModelDefinitionType="{http://www.ni.com/MocCommon}ControlDefinition" Name="ControlDefinition">
+				<ControlDefinition DefaultDirection="Control" Id="95f078ee4d39430aa56e6ad5a200ddc3" xmlns="http://www.ni.com/MocCommon">
+					<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@34da8b2561d94cd9bb8812f3791ff260" Height="[float]676" Id="4609dd924de64b52a76b69c186d3b1ba" Label="[UIModel]5d10ac032e53483e9ff45ba9e0d77f6f" Left="[float]100" TabIndex="[int]0" Top="[float]100" Value="{DataItemBinding Id=f9b11e583e4946bb856c681d624fd859}" Width="[float]205" xmlns="http://www.ni.com/PanelCommon">
+						<Switch BaseName="[string]Square LED" FalseContent="[string]Off" Height="[float]72" Id="6a2df86da2dd4fc4af4abc67a55c58c0" Label="[UIModel]f3022e24f37e43b7be91b853fe842ccb" Left="[float]4" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" Top="[float]24" TrueContent="[string]On" Value="{ClusterBinding FieldName=Custom\ date}" Width="[float]40" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="f3022e24f37e43b7be91b853fe842ccb" LabelOwner="[UIModel]6a2df86da2dd4fc4af4abc67a55c58c0" Left="[float]4" Text="[string]Custom date" Top="[float]4" Width="[float]68" />
+						<Switch BaseName="[string]Square LED" FalseContent="[string]Off" Height="[float]72" Id="ef49c36b891432ba46a822821afd451" Label="[UIModel]3993983d0d2c405487565d83f8648723" Left="[float]4" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" Top="[float]124" TrueContent="[string]On" Value="{ClusterBinding FieldName=Autorange\ }" Width="[float]40" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="3993983d0d2c405487565d83f8648723" LabelOwner="[UIModel]ef49c36b891432ba46a822821afd451" Left="[float]4" Text="[string]Autorange " Top="[float]104" Width="[float]60" />
+						<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="55df36c065454b9e80330a17786285a9" Label="[UIModel]39fff8f053e049f6a44f2711ab555d00" Left="[float]4" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.NumericTextBoxDoubleProxy, NationalInstruments.Controls.Runtime" Top="[float]224" Value="{ClusterBinding FieldName=Dead\ Current\ Threshold\ Reference}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="39fff8f053e049f6a44f2711ab555d00" LabelOwner="[UIModel]55df36c065454b9e80330a17786285a9" Left="[float]4" Text="[string]Dead Current Threshold Reference" Top="[float]204" Width="[float]183" />
+						<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="432cb3e53d994fe4bf9732bcd9d97ba8" Label="[UIModel]5a0624f37f8643f4ba82c2de03d539b5" Left="[float]4" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.NumericTextBoxDoubleProxy, NationalInstruments.Controls.Runtime" Top="[float]276" Value="{ClusterBinding FieldName=Manual\ Range\ Reference}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="5a0624f37f8643f4ba82c2de03d539b5" LabelOwner="[UIModel]432cb3e53d994fe4bf9732bcd9d97ba8" Left="[float]4" Text="[string]Manual Range Reference" Top="[float]256" Width="[float]132" />
+						<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="c291265839ee4a759f8dee2a20b1f97b" Label="[UIModel]30e6516229154b8fba21b887a3de4b39" Left="[float]4" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.NumericTextBoxDoubleProxy, NationalInstruments.Controls.Runtime" Top="[float]328" Value="{ClusterBinding FieldName=Dark\ Current\ Averages\ Reference}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="30e6516229154b8fba21b887a3de4b39" LabelOwner="[UIModel]c291265839ee4a759f8dee2a20b1f97b" Left="[float]4" Text="[string]Dark Current Averages Reference" Top="[float]308" Width="[float]175" />
+						<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="9db084094cb4441fa6c9edac82b48660" Label="[UIModel]8cb10ee343954b5f9da388c1b0d83418" Left="[float]4" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.StringControlProxy, NationalInstruments.Controls.Runtime" Top="[float]380" Value="{ClusterBinding FieldName=Current\ Date\ Reference}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="8cb10ee343954b5f9da388c1b0d83418" LabelOwner="[UIModel]9db084094cb4441fa6c9edac82b48660" Left="[float]4" Text="[string]Current Date Reference" Top="[float]360" Width="[float]124" />
+						<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="ba785a16960740a39d6e7aea40665e3a" Label="[UIModel]638b51c247274e309e4ab910f0de3c14" Left="[float]4" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.NumericTextBoxDoubleProxy, NationalInstruments.Controls.Runtime" Top="[float]432" Value="{ClusterBinding FieldName=Manual\ Current\ Range\ Reference}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="638b51c247274e309e4ab910f0de3c14" LabelOwner="[UIModel]ba785a16960740a39d6e7aea40665e3a" Left="[float]4" Text="[string]Manual Current Range Reference" Top="[float]412" Width="[float]175" />
+						<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="c6d4d0e09616421ab26a7aaf695e8418" Label="[UIModel]ba43ac15d7f84e21ab738a4221894dba" Left="[float]4" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.BooleanControlBaseProxy, NationalInstruments.Controls.Runtime" Top="[float]484" Value="{ClusterBinding FieldName=Skip\ To\ Next\ Cell\ Reference}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="ba43ac15d7f84e21ab738a4221894dba" LabelOwner="[UIModel]c6d4d0e09616421ab26a7aaf695e8418" Left="[float]4" Text="[string]Skip To Next Cell Reference" Top="[float]464" Width="[float]145" />
+						<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="7200d27e24b64b49a894e49f8623bd51" Label="[UIModel]f6ed519f10e24362b4563599e4b17864" Left="[float]4" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.NumericTextBoxDoubleProxy, NationalInstruments.Controls.Runtime" Top="[float]536" Value="{ClusterBinding FieldName=Z\ position\ Reference}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="f6ed519f10e24362b4563599e4b17864" LabelOwner="[UIModel]7200d27e24b64b49a894e49f8623bd51" Left="[float]4" Text="[string]Z position Reference" Top="[float]516" Width="[float]109" />
+						<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="f608beec4484278a3d89c95c8f11f7a" Label="[UIModel]fc63c944ed6498ea350a9f450f99d65" Left="[float]4" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.BooleanControlBaseProxy, NationalInstruments.Controls.Runtime" Top="[float]588" Value="{ClusterBinding FieldName=Keithley\ Disable\ Output\ Reference}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="fc63c944ed6498ea350a9f450f99d65" LabelOwner="[UIModel]f608beec4484278a3d89c95c8f11f7a" Left="[float]4" Text="[string]Keithley Disable Output Reference" Top="[float]568" Width="[float]181" />
+						<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="ddba1f07003d4a33be156ffd2c19288d" Label="[UIModel]2b2d42ef92cc477cb0061de333561b5c" Left="[float]4" RefnumType="[Type]:DotNet:NationalInstruments.Controls.Runtime.NumericTextBoxDoubleProxy, NationalInstruments.Controls.Runtime" Top="[float]640" Value="{ClusterBinding FieldName=X\ position\ Reference}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="2b2d42ef92cc477cb0061de333561b5c" LabelOwner="[UIModel]ddba1f07003d4a33be156ffd2c19288d" Left="[float]4" Text="[string]X position Reference" Top="[float]620" Width="[float]109" />
+					</Cluster>
+					<Label Height="[float]16" Id="5d10ac032e53483e9ff45ba9e0d77f6f" LabelOwner="[UIModel]4609dd924de64b52a76b69c186d3b1ba" Left="[float]100" Text="[string]Cluster" Top="[float]80" Width="[float]37" xmlns="http://www.ni.com/PanelCommon" />
+				</ControlDefinition>
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="34da8b2561d94cd9bb8812f3791ff260">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Custom date" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Autorange " DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Dead Current Threshold Reference" DataType=":DotNet:NationalInstruments.Controls.Runtime.NumericTextBoxDoubleProxy, NationalInstruments.Controls.Runtime" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Manual Range Reference" DataType=":DotNet:NationalInstruments.Controls.Runtime.NumericTextBoxDoubleProxy, NationalInstruments.Controls.Runtime" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Dark Current Averages Reference" DataType=":DotNet:NationalInstruments.Controls.Runtime.NumericTextBoxDoubleProxy, NationalInstruments.Controls.Runtime" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Current Date Reference" DataType=":DotNet:NationalInstruments.Controls.Runtime.StringControlProxy, NationalInstruments.Controls.Runtime" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Manual Current Range Reference" DataType=":DotNet:NationalInstruments.Controls.Runtime.NumericTextBoxDoubleProxy, NationalInstruments.Controls.Runtime" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Skip To Next Cell Reference" DataType=":DotNet:NationalInstruments.Controls.Runtime.BooleanControlBaseProxy, NationalInstruments.Controls.Runtime" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Z position Reference" DataType=":DotNet:NationalInstruments.Controls.Runtime.NumericTextBoxDoubleProxy, NationalInstruments.Controls.Runtime" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Keithley Disable Output Reference" DataType=":DotNet:NationalInstruments.Controls.Runtime.BooleanControlBaseProxy, NationalInstruments.Controls.Runtime" />
+					<Field FieldAccessPolicy="ReadWrite" Name="X position Reference" DataType=":DotNet:NationalInstruments.Controls.Runtime.NumericTextBoxDoubleProxy, NationalInstruments.Controls.Runtime" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>

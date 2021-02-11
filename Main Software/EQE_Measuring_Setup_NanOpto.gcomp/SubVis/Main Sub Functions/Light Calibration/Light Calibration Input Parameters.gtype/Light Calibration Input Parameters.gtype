@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="5E43787FAF56CBD305B4C785DB0D5A291A1714C4CE161F871C4D31839B36825ABA196E00171E6CC80EA5EC99EE65E607CAA04C0009331BC4B9C747AE30F506CA" Timestamp="1D7008F7F7D5D2A" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.1.0.50414" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ApplicationVersionInfo Build="8.1.0.50414" Name="LabVIEW NXG" Version="5.0.0" />
+	</SourceModelFeatureSet>
+	<TypeDefinition DataType="@5cdcfca598eb4965a0155da225347908" Id="f20128e16136402b9cece8922d96c061" xmlns="http://www.ni.com/MocCommon">
+		<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+			<TypeDefinitionTarget TargetName="NI::VISA::Visa.udr::Instr" />
+		</p.TypeDefinitionTargets>
+		<Icon Id="1ab1a65533884113b98deca89db1862b" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="42928063fd3b467ebebd2fa74bf53510" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate Height="[float]40" Id="c2ebb2d62b6c4bfab760c6c998d0bf3b" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
+			</IconPanel>
+		</Icon>
+		<DataItem DataType="@5cdcfca598eb4965a0155da225347908" Id="ffcab13ff8514f54b7f9fe6c3a3aedca" Name="Cluster">
+			<p.DefaultValue>
+				<Cluster>
+					<Field1>0</Field1>
+					<Field2>0x0</Field2>
+					<Field3>0x0</Field3>
+					<Field4>0x0</Field4>
+					<Field5>False</Field5>
+					<Field6>""</Field6>
+					<Field7>False</Field7>
+					<Field8>0</Field8>
+					<Field9>
+						<Path a="1" />
+					</Field9>
+				</Cluster>
+			</p.DefaultValue>
+			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+				<TypeDefinitionTarget TargetName="NI::VISA::Visa.udr::Instr" />
+			</p.TypeDefinitionTargets>
+		</DataItem>
+	</TypeDefinition>
+	<EnvoyManagerFile Id="d1d1bf20c4164671aa5c38c268d45ff4" xmlns="http://www.ni.com/PlatformFramework">
+		<EnvoyManagerRootEnvoy Id="9e150e223906438298fb457ae675b279" ModelDefinitionType="EnvoyManagerRootEnvoy" Name="RootEnvoy" />
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="683bef7ce0ae4817b1d47dad166b92a5" Name="Light Calibration Input Parameters.gtype" NameTracksFileName="True">
+			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy" Id="83a266ef441043a5b45f32a8a5e77cbf" ModelDefinitionType="{http://www.ni.com/MocCommon}ControlDefinition" Name="ControlDefinition">
+				<ControlDefinition DefaultDirection="Control" Id="470a585018694907be431c7f509dd222" xmlns="http://www.ni.com/MocCommon">
+					<Cluster AutoArrange="[AutoArrange]SizeToFit" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@5cdcfca598eb4965a0155da225347908" Height="[float]563" Id="bde701ba1c3a4d34bf5df4d541d923c5" Label="[UIModel]8f53b93e7d024f92b1fecc3d0aabd238" Left="[float]222" TabIndex="[int]0" Top="[float]100" Value="{DataItemBinding Id=ffcab13ff8514f54b7f9fe6c3a3aedca}" Width="[float]191" xmlns="http://www.ni.com/PanelCommon">
+						<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]24" Id="32c56e699d704209832d711e1c8b50e5" Label="[UIModel]3e00ea0e91f74b379e9510ff9875385e" Left="[float]4" RefnumType="[Type]@267dfb4b19ed40e9b5c38e96035b1de3" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=Notifier\ Input}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="3e00ea0e91f74b379e9510ff9875385e" LabelOwner="[UIModel]32c56e699d704209832d711e1c8b50e5" Left="[float]4" Text="[string]Notifier Input" Top="[float]4" Width="[float]72" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="e2b8d4db4ee94d13b247eb6a89c07cb4" Label="[UIModel]bf13639bd3c7472b874f56bebfc72c2d" Left="[float]4" TabIndex="[int]1" Top="[float]76" Value="{ClusterBinding FieldName=Wavelength\ Step\ (nm)}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="bf13639bd3c7472b874f56bebfc72c2d" LabelOwner="[UIModel]e2b8d4db4ee94d13b247eb6a89c07cb4" Left="[float]4" Text="[string]Wavelength Step (nm)" Top="[float]56" Width="[float]118" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="9e14b045081549dfb5a933e847423c87" Label="[UIModel]9d115a8a58804b6aa832ff125cbbe55a" Left="[float]4" TabIndex="[int]2" Top="[float]128" Value="{ClusterBinding FieldName=End\ Wavelength\ (nm)}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="9d115a8a58804b6aa832ff125cbbe55a" LabelOwner="[UIModel]9e14b045081549dfb5a933e847423c87" Left="[float]4" Text="[string]End Wavelength (nm)" Top="[float]108" Width="[float]114" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="9d35e81d9b394ce2894bdde849ec2039" Label="[UIModel]11ccadf706de4132a9a817d131fe36f0" Left="[float]4" TabIndex="[int]3" Top="[float]180" Value="{ClusterBinding FieldName=Start\ Wavelength\ (nm)}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="11ccadf706de4132a9a817d131fe36f0" LabelOwner="[UIModel]9d35e81d9b394ce2894bdde849ec2039" Left="[float]4" Text="[string]Start Wavelength (nm)" Top="[float]160" Width="[float]119" />
+						<Switch BaseName="[string]Square LED" FalseContent="[string]Off" Height="[float]72" Id="956357ee763c47db9bf94c2d61d75ae5" Label="[UIModel]779eca0d1a2b4b6b8a6de01052f608e2" Left="[float]4" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" TabIndex="[int]4" Top="[float]232" TrueContent="[string]On" Value="{ClusterBinding FieldName=Filter\ Arduino\ Status}" Width="[float]40" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="779eca0d1a2b4b6b8a6de01052f608e2" LabelOwner="[UIModel]956357ee763c47db9bf94c2d61d75ae5" Left="[float]4" Text="[string]Filter Arduino Status" Top="[float]212" Width="[float]108" />
+						<IONameControl AllowUndefinedValues="[bool]True" BaseName="[string]Instr" DataType="[Type]:UDR:TagRefnum|NI::VISA::Visa.udr::Instr" Height="[float]24" Id="3c8954eecd584defb652fb3173d06b36" Label="[UIModel]42723c8afd434fdeb2db58eb97fe01a0" Left="[float]4" MinHeight="[float]24" SelectedResource="{ClusterBinding FieldName=Arduino\ Filter\ Flipper\ Address}" ShowType="[bool]False" ShowUserRefresh="[bool]True" TabIndex="[int]5" Top="[float]332" Width="[float]175" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+							<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+								<TypeDefinitionTarget TargetName="NI::VISA::Visa.udr::Instr::ControlDefinition" />
+							</p.TypeDefinitionTargets>
+						</IONameControl>
+						<Label Height="[float]16" Id="42723c8afd434fdeb2db58eb97fe01a0" LabelOwner="[UIModel]3c8954eecd584defb652fb3173d06b36" Left="[float]4" Text="[string]Arduino Filter Flipper Address" Top="[float]312" Width="[float]158" />
+						<Switch BaseName="[string]Square LED" FalseContent="[string]Off" Height="[float]72" Id="2a79cb75aaf249d9974016832aab7bd3" Label="[UIModel]63e804846dd94b93a3200e086463f147" Left="[float]4" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" TabIndex="[int]6" Top="[float]384" TrueContent="[string]On" Value="{ClusterBinding FieldName=Monochromator}" Width="[float]40" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="63e804846dd94b93a3200e086463f147" LabelOwner="[UIModel]2a79cb75aaf249d9974016832aab7bd3" Left="[float]4" Text="[string]Monochromator" Top="[float]364" Width="[float]87" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="326dbd54e95c44369e88b36063a1ce4e" Interval="[ushort]1" Label="[UIModel]90851f89d204426a0de769111b530e5" Left="[float]4" TabIndex="[int]7" Top="[float]484" Value="{ClusterBinding FieldName=Powermeter\ Averages}" ValueFormatter="[string]LV:0" ValueType="[Type]UInt16" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="90851f89d204426a0de769111b530e5" LabelOwner="[UIModel]326dbd54e95c44369e88b36063a1ce4e" Left="[float]4" Text="[string]Powermeter Averages" Top="[float]464" Width="[float]116" />
+						<PathSelector BrowseDialogTitle="[null]" BrowseOption="[BrowseOption]ExistingFiles" Enabled="[bool]True" Height="[float]24" Id="9ea0ed2f539d4364b270ceaf84e0cfaf" InitialDirectory="[null]" InteractionMode="[PathSelectorInteractionModes]BrowseDialog, TextInput, AllowNullPathSelection" IsTabStop="[bool]True" Label="[UIModel]1c10e64b51f1410f95606b3429e95b90" Left="[float]12" Path="{ClusterBinding FieldName=Configuration\ File}" TabIndex="[int]8" TextAlignment="[TextAlignment]Left" Top="[float]527" Width="[float]104" WrapText="[bool]False" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Foreground="[SMColor]#ff000000" Height="[float]16" Id="1c10e64b51f1410f95606b3429e95b90" LabelOwner="[UIModel]9ea0ed2f539d4364b270ceaf84e0cfaf" Left="[float]12" Text="[string]Configuration File" Top="[float]507" Width="[float]94" />
+					</Cluster>
+					<Label Height="[float]16" Id="8f53b93e7d024f92b1fecc3d0aabd238" LabelOwner="[UIModel]bde701ba1c3a4d34bf5df4d541d923c5" Left="[float]222" Text="[string]Cluster" Top="[float]80" Width="[float]37" xmlns="http://www.ni.com/PanelCommon" />
+				</ControlDefinition>
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="5cdcfca598eb4965a0155da225347908">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Notifier Input" DataType="@267dfb4b19ed40e9b5c38e96035b1de3" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Wavelength Step (nm)" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="End Wavelength (nm)" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Start Wavelength (nm)" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Filter Arduino Status" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Arduino Filter Flipper Address" DataType=":UDR:TagRefnum|NI::VISA::Visa.udr::Instr" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Monochromator" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Powermeter Averages" DataType="UInt16" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Configuration File" DataType="Path" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="267dfb4b19ed40e9b5c38e96035b1de3">
+			<Attributed AttributedType="@2a7dbe302a404869866e30e65c2e9783">
+				<AttributeValues>
+					<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]Refnum" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="2a7dbe302a404869866e30e65c2e9783">
+			<Composite Id="1" Name="NationalInstruments.SourceModel.DataTypes.Notifier" ReferenceClass="" Sealed="" GenericTypeDefinition="@534ed36a16b34057984278a38fd6c093">
+				<ClosedGenericParameters>
+					<TypeRef>@aa04639188224389a905f46255b72f04</TypeRef>
+				</ClosedGenericParameters>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="534ed36a16b34057984278a38fd6c093">
+			<Attributed AttributedType="@d378d1595ab44f4c9bfef43ed8b52222">
+				<AttributeValues>
+					<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]Refnum" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="aa04639188224389a905f46255b72f04">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Element 1" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Element 2" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Element 3" DataType="Boolean" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="d378d1595ab44f4c9bfef43ed8b52222">
+			<Composite Id="1" Name="NationalInstruments.SourceModel.DataTypes.Notifier" ReferenceClass="" Sealed="" GenericTypeDefinition="@534ed36a16b34057984278a38fd6c093">
+				<GenericParameters>
+					<Generic GenericName="DataType" />
+				</GenericParameters>
+				<BaseType>Void</BaseType>
+			</Composite>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>
